@@ -5,19 +5,20 @@ body {
 }
 
 
-
 h1, p {
     text-align:center;
 }
 
 .navbar {
+    margin-bottom: 2%;
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: relative;
+    margin: 0;
+    z-index: 100;
     top: 0;
-    z-index: 1;
     transition: top 0.6;
-    overflow: hidden;
+    overflow: auto;
     width: 100%;
     background-color: #ffd404;
 }
@@ -36,6 +37,7 @@ h1, p {
 
 
 main {
+    margin-top: 2%;
     margin-left: 50px;
     margin-right: 50px;
 
