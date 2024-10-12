@@ -43,7 +43,25 @@ main {
 
 }
 
-footer {
+.footer {
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 50px;
     background-color: #ffd404;
-    padding: 10px;
+    display: flex;
+    text-decoration: none;
+}
+
+.footer div {
+    margin-bottom: 30px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+.col-2, il{
+    display: inline-block;
+   
 }
