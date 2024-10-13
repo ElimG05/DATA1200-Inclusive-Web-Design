@@ -44,24 +44,32 @@ main {
 }
 
 .footer {
-    margin: 0;
-    padding: 20px;
-    padding-bottom: 50px;
+    padding: 80px;
     background-color: #ffd404;
     display: flex;
-    text-decoration: none;
+    font-size: small;
+    justify-content: center
 }
 
 .footer div {
-    margin-bottom: 30px;
     text-align: center;
-    display: block;
-    text-decoration: none;
-    margin-bottom: 10px;
     flex-grow: 1;
+    
 }
 
-.col-2, il{
-    display: inline-block;
-   
+a {
+    color: #000000f4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.col-1 p {
+    margin-top: 5px;      
+    margin-bottom: 5px;   
+}
+
+
+.col-2 ul li, .col-3 ul li {
+    margin-bottom: 15px;
+    list-style-type: none;
 }
