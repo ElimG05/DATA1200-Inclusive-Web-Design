@@ -58,7 +58,6 @@ nav {
     text-decoration: none;
     display: block;
 }
-.dropdown-meny a:hover {background-color: burlywood;}
 .meny:hover .dropdown-meny {display: block;}
 
 main {
@@ -118,16 +117,13 @@ body{
 }
 
 a{
-    color: rgb(222, 247, 0);
+
+
     text-decoration: none;
     font-size: inherit;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8rem;
-}
+
 
 .font-4xl{
     font-size: 3rem;
