@@ -9,32 +9,57 @@ h1, p {
     text-align:center;
 }
 
-.navbar {
-    margin-bottom: 2%;
+nav {
+    background-color: #ffd404;
+    padding: 1em;
+    padding-left: 275px;
+    padding-right: 275px;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    row-gap: 2em;
+}
+.logo {
+    width: 65px;
+    grid-column: 1/7;
+}
+#oversikt {
     display: flex;
-    justify-content: center;
-    position: relative;
-    margin: 0;
-    z-index: 100;
-    top: 0;
-    transition: top 0.6;
-    overflow: auto;
-    width: 100%;
-    background-color: #ffd404;
-}
-
-.navbar a {
-    display: inline-block;
-    color: #000000f4;
-    text-align: center;
+    grid-column: 14/15;
+    gap: 20px;
+    list-style: none;
     text-decoration: none;
-    padding: 30px;
+    font-size: 16px;
+    color: #333;
 }
-
-.navbar a:hover {
+#studieoversikt {
+    grid-row: 2;
+    text-decoration: underline;
+}
+.dropbtn {
     background-color: #ffd404;
+    color: #333;
+    border: none;
 }
+.meny {
+    position: relative;
+    display: inline-block;
 
+}
+.dropdown-meny {
+    display: none;
+    position: absolute;
+    background-color: #ffd404;
+    min-width: 500px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+    z-index: 1;
+}
+.dropdown-meny a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-meny a:hover {background-color: burlywood;}
+.meny:hover .dropdown-meny {display: block;}
 
 main {
     margin-top: 2%;
