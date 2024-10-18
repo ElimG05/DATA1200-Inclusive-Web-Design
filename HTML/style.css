@@ -28,7 +28,7 @@ nav {
     gap: 20px;
     list-style: none;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 16px;
     color: #333;
 }
 #studieoversikt {
@@ -43,7 +43,6 @@ nav {
 .meny {
     position: relative;
     display: inline-block;
-
 }
 .dropdown-meny {
     display: none;
@@ -58,8 +57,8 @@ nav {
     text-decoration: none;
     display: block;
 }
+.dropdown-meny a:hover {background-color: burlywood;}
 .meny:hover .dropdown-meny {display: block;}
-
 
 :root{
     --brand-color: #ffd404
@@ -74,32 +73,6 @@ body {
 
 h1, p {
     text-align:center;
-}
-
-.navbar {
-    margin-bottom: 2%;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin: 0;
-    z-index: 100;
-    top: 0;
-    transition: top 0.6;
-    overflow: auto;
-    width: 100%;
-    background-color: var(--brand-color);
-}
-
-.navbar a {
-    display: inline-block;
-    color: #000000f4;
-    text-align: center;
-    text-decoration: none;
-    padding: 30px;
-}
-
-.navbar a:hover {
-    background-color: var(--brand-color);
 }
 
 
@@ -165,12 +138,6 @@ body{
     font-size: inherit;
 }*/
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8rem;
-}
-
 .font-4xl{
     font-size: 3rem;
 }
@@ -225,16 +192,6 @@ nav{
     margin: 1.25rem;
 }
 
-.nav-links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 2.5rem;
-}
-
-.nav-links a {
-    color: black;
-}
 
 iframe{
     width: 100%;
