@@ -12,8 +12,10 @@
         <nav>
                 <a href = "https://www.oslomet.no/"><img src="oslomet.png" alt="Oslomet - Forside" class="logo"></a> 
                 <ul id="oversikt">
-                  <li><div id="sok"><b>SØK⌕</b></div></li>
-                  <li><div class="meny">
+                  <li><div id="sok"><b>SØK⌕</b></div>
+                </li>
+                  <li>
+                    <div class="meny">
                     <button class="dropbtn"><b>MENY≡</b></button>
                     <div class="dropdown-meny">
                       <a href="index.html">index</a>
@@ -21,34 +23,48 @@
                       <a href="github.html">github</a>
                       <a href="activity.html">activity</a>
                   </div>
-                  </div></li>
+                  </div>
+                </li>
                   
                 </ul>                                         
                 <a href = "https://www.oslomet.no/studier/studieoversikt" id="studieoversikt">Studieoversikt</a>
-        </nav>
+                <ul id="oversikt-sm">
+                    <a href="index.html">index</a>
+                    <a href="accessibility.html">accessibility</a>
+                    <a href="github.html">github</a>
+                    <a href="activity.html">activity</a> 
+            </nav>
 
     </header>
 
     <main>
       <article> 
-          <h1>Matematisk modellering og datavitenskap – ingeniør </h1>
+          <h1 class="font-3xl">Matematisk modellering <br> og <br> datavitenskap – ingeniør </h1>
           
 
                 <main class="container">
-                  <iframe src="https://www.youtube.com/embed/rylaiB2uH2A?si=SnuBL6C5sq2TE4Df" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          
-                  <div class="title space-top">
+                    <div class="title space-top">
                       <!-- Title -->
-                      <h1 class="main-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, animi.
-                      </h1>
                       <h2 class="subtitle">Bachelorprogram</h2>
                   </div>
                   <div class="info">
                       <div class="info-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px">
+                            <path fill-rule="evenodd"
+                                d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <div class="">
                           <h3>Studiested</h3>
-                          <p>Pilestredet i Oslo</p>
+                          <p><a href="https://www.oslomet.no/om/studiested-pilestredet"></a>Pilestredet i Oslo</p>
                       </div>
                       <div class="info-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px">
+                            <path fill-rule="evenodd"
+                                d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <div class="">
                           <h3>Studiested</h3>
                           <p>Pilestredet i Oslo</p>
                       </div>
@@ -76,89 +92,127 @@
           
                   <hr>
           
-                  
-                  <div class="container container-sm">
-                      <p class="font-xl">Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.</p>
-                      <div class="flex">
-                          <p class="font-lg m-lg">+</p>
-                          <div>
-                              <h4 class="font-lg m-lg">Studiestart</h4>
-                              <div>
-                                  <p class="m-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, ut.</p>
-                                  <p class="m-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, ut.</p>
-                                  <p class="m-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, ut.</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+                  <!-- introduction -->
+                  <div class="container">
+                        <div class="introduction">
+                        <div class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px"
+                                class="introduction-icon">
+                                <path fill-rule="evenodd"
+                                    d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+
+                        <div class="introduction-text">
+                            <h4 class="font-lg ">Introduction</h4>
+                            <div>
+                      <p class="">Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.</p>
+                      <video width="50%" controls class="">
+                        <source src="../multimedia/3195394-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video width="50%" controls class="">
+                        <source src="../multimedia/3195394-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="introduction">
+                        <div class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px"
+                                class="introduction-icon">
+                                <path fill-rule="evenodd"
+                                    d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="introduction-text">
+                            <h4 class="font-lg ">Introduction</h4>
+                            <div>
+                                <p class="">Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange
+                                    praktiske og samfunnsnyttige oppgaver.</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum at, quisquam numquam
+                                    fugit molestias magni harum libero reprehenderit quod voluptates?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
           
                   <!-- Studiested -->
-                  <div class="container container-sm">
-                      <div class="section">
-                          <h3 class="font-3xl">Studiested</h3>
-                          <a href="">Studiested Pilestredet</a>
-                      </div>
-                      <div class="section">
-                          <h3 class="font-3xl">Spørsmål om utdanningen?</h3>
-                          <a href="">Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</a>
-                      </div>
-                      <div class="section">
-                          <h3 class="font-3xl">Faglig leder</h3>
-                          <div class="person">
-                              <img src="../multimedia/fagleder.png" alt="">
-                              <div class="person-info">
-                                  <p class="bold font-xl">
-                                      Kristoffer Herland Hellton
-                                  </p>
-                                  <p class="font-lg">
-                                      førsteamanuensis
-                                  </p>
-                                  <div class="contact">
-                                      <span>+471928393</span>
-                                      <span>email@mail.com</span>
-                                  </div>
-                              </div>
-                              <div>></div>
-                          </div>
-                      </div>
+                  <div class="container">
+                    <div class="flex person-qa">
+                        <div class="section leder">
+                            <h3 class="font-xl">Faglig leder</h3>
+                            <div class="person">
+                                <img src="../multimedia/fagleder.png" alt="">
+                                <div class="person-info">
+                                    <p class="bold">
+                                        Kristoffer Herland Hellton
+                                    </p>
+                                    <p class="">
+                                        førsteamanuensis
+                                    </p>
+                                    <div class="contact">
+                                        <span>+471928393</span>
+                                        <span>email@mail.com</span>
+                                    </div>
+                                </div>
+                                <div>></div>
+                            </div>
+                        </div>
+                      <div class="section qa">
+                        <h3 class="font-xl">Spørsmål om utdanningen?</h3>
+                            <div>
+                                <a href="" class="person">Har du spørsmål om utdanningen, kontakt oss gjennom vårt
+                                    kontaktskjema.</a>
+                            </div>
+                        </div>
+                    </div>     
                       <div class="section">
                           <h3 class="font-3xl">Du er kanskje også interessert i disse?</h3>
                           <div class="courses">
                               <div class="course">
+                                <div class="program">
+                                    <span>Bachelorprogram</span>
+                                    <span>Oslo</span>
+                                </div>
                                   <p class="font-lg bold">Anvendt datateknologi</p>
                                   <div class="course-info">
-                                      <span>Bachelorprogram</span>
-                                      <span>3 år</span>
-                                      <span>Pilestredet i Oslo</span>
-                                      <span>Heltid</span>
-                                  </div>
-                              </div>
+                                    <span>Heltid 3 år</span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            fill="currentColor" width="20px">
+                                            <path fill-rule="evenodd"
+                                                d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>       
                               <div class="course">
-                                  <p class="font-lg bold">Anvendt datateknologi</p>
-                                  <div class="course-info">
-                                      <span>Bachelorprogram</span>
-                                      <span>3 år</span>
-                                      <span>Pilestredet i Oslo</span>
-                                      <span>Heltid</span>
-                                  </div>
-                              </div>
-                              <div class="course">
-                                  <p class="font-lg bold">Anvendt datateknologi</p>
-                                  <div class="course-info">
-                                      <span>Bachelorprogram</span>
-                                      <span>3 år</span>
-                                      <span>Pilestredet i Oslo</span>
-                                      <span>Heltid</span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </main>
-          
+                                <div class="program">
+                                    <span>Bachelorprogram</span>
+                                    <span>Oslo</span>
+                                </div>
+                                <p class="font-xl bold">Anvendt datateknologi</p>
+                                <div class="course-info">
+                                    <span>Heltid 3 år</span>
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                            fill="currentColor" width="20px">
+                                            <path fill-rule="evenodd"
+                                                d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
               <div class="container container-lg">
                   <h2 class="font-3xl">Studenthistorier</h2>
                   <div class="bottom-card">
+                    <div class="card-img"><img src="../multimedia/picture 2 person.jpg" alt=""></div>
                       <div class="card-text">
                           <a href="" class="font-lg">Teknologi og design</a>
                           <div>
@@ -166,8 +220,7 @@
                               <p class="font-lg">Har du lyst til å finne ut hva som vil skje i fremtiden? Lær å bruke verktøy for å forutsi alt fra været og strømprisene til utviklingen i boligmarkedet.</p>
                           </div>
                       </div>
-                      <div class="card-img"><img src="../multimedia/picture 2 person.jpg" alt=""></div>
-                  </div>
+                    </div>
                   <div class="load-more font-lg">
                   <a href="">Flere studenthistorier</a>
                   <svg xmlns="http://www.w3.org/2000/svg" width="15px" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="size-6">
@@ -175,10 +228,7 @@
                   </svg>  
               </div>
             </div>   
-          </body>
-          </html>
-
-
+          
       </article>
       <article> 
           <h3> </h3>
