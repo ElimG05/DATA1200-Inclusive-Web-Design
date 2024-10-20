@@ -82,7 +82,7 @@ nav {
 
 
 
-.oversikt {
+/*.oversikt {
     grid-column: 2;
     display: flex;
     gap: 20px;
@@ -172,7 +172,7 @@ nav {
     }
 
     .dropdown-meny {
-        min-width: 100%;
+        min-width: 100%;*/
 
 
 /* Vanessa */
