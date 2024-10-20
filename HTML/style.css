@@ -257,6 +257,7 @@ iframe{
     margin-top: 0px;
 }
 
+
 .introduction{
     display: flex;
     align-items: flex-start;
@@ -303,6 +304,7 @@ iframe{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    
 }
 
 .course{
@@ -311,6 +313,8 @@ iframe{
     padding: 15px 15px;
     border: #000 1px solid;
     border-radius: 12px;
+    background-color: #d00909;
+    color: white;
 }
 
 .program{
