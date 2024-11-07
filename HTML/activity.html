@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity</title>
-   <link rel ="stylesheet" href="style.css">
-  </head>
+    <link rel ="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="../Images/oslometlogo2.jpg">
+    <!-- https://www.w3schools.com/icons/fontawesome5_intro.asp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head> 
   <body>
     <header>
       <nav>
-        <a href="https://www.oslomet.no/"><img src="oslomet.png" alt="Oslomet - Forside" class="logo"></a> 
+        <a href="https://www.oslomet.no/"><img src="../Images/oslometlogo.jpg" alt="Oslomet - Forside" class="logo"></a> 
         <a href="https://www.oslomet.no/studier/studieoversikt" id="studieoversikt">Studieoversikt</a>
     
             <div class="meny">
-                <button class="dropbtn"><b>MENY≡</b></button>
+                <button class="dropbtn"><b>MENY <i class="fa-solid fa-bars"></i></b></button>
                 <div class="dropdown-meny">
                     <a href="index.html">index</a>
                     <a href="accessibility.html">accessibility</a>
@@ -24,51 +27,128 @@
     </nav>
     </header>
     <main>
-      <article> 
-          <h1>Activity </h1>
-          <p> HEIHEI </p>
-          <h3> </h3>
-          <p> </p>
-      </article>
-      <article> 
-          <h3> </h3>
-      </article>
-      <aside>
-          <h4> </h4>
-      </aside>
-  </main>
-  <footer>  
-    <div class = "footer">
-      <div class = "col-1">
-        <h3>OSLO METROPOLITAN UNIVERSITY</h3>
-        <p>STORBYUNIVERSITET</p>
-        <p>Postboks 4, St. Olavs plass</p>
-        <p>0130 Oslo</p>
-        <p>Tlf.: 67 23 50 00 </p>
-        <a href = "https://www.oslomet.no/om/kontakt"> Kontakt oss </a>
+      <!-- Hovedseksjon -->
+      <section class="hovedseksjon">
+        <div class="innhold">
+          <h1>Studentkjøkkenet</h1>
+          <p>En studentforening for deg som liker å lage mat</p>
+        </div>
+        </section>
+        <!-- Ukens Oppskrifter -->
+<section class="oppskrifter">   
+  <div class="ukensoppskrifter"> 
+  <h2> Ukens Oppskrifter </h2>
+
+  <div class="CSSgal">
+      <s id="s1"></s> 
+      <s id="s2"></s>
+      <s id="s3"></s>
+      <s id="s4"></s>
+      <s id="s5"></s>
+      <s id="s6"></s>
+      
+      <div class="slider">
+          <div class="slide" id="slide1">
+              <div class="navn"><a href="https://www.matprat.no/oppskrifter/kos/langpannepizza/">Langpannepizza</a></div>
+              <img src="../Images/Pizza i langpanne.jpg" alt="Pizza i langpanne">
+              <p class="info">20 min | Enkel | 4 porsjoner</p>
+          </div>
+          <div class="slide" id="slide2">
+              <div class="navn"><a href="https://www.matprat.no">Tacosalat</a></div>
+              <img src="../Images/Enkel tacosalat.jpg" alt="Enkel tacosalat">
+              <p class="info">30 min | Middels | 2 porsjoner</p>
+          </div>
+          <div class="slide" id="slide3">
+              <div class="navn"><a href="https://www.matprat.no">Bakt potet</a></div>
+              <img src="../Images/Bakt potet.jpg" alt="Bakt potet">
+              <p class="info">30 min | Middels | 2 porsjoner</p>
+          </div>
+          <div class="slide" id="slide4">
+              <div class="navn"><a href="https://www.matprat.no">Pasta carbonara</a></div>
+              <img src="../Images/Klassisk pasta carbonara.jpg" alt="Klassisk pasta carbonara">
+              <p class="info">20 min | Enkel | 4 porsjoner</p>
+          </div>
+          <div class="slide" id="slide5">
+              <div class="navn"><a href="https://www.matprat.no">Spicy kylling med basilikum</a></div>
+              <img src="../Images/Spicy kylling med basilikum.jpg" alt="Spicy kylling med basilikum">
+              <p class="info">20 min | Enkel | 4 porsjoner</p>
+          </div>
+          <div class="slide" id="slide6">
+              <div class="navn"><a href="https://www.matprat.no">Fiskeburger</a></div>
+              <img src="../Images/Fiskeburger.jpg" alt="Fiskeburger">
+              <p class="info">30 min | Enkel | 2 porsjoner</p>
+          </div>
       </div>
+      <div class="prevNext">
+          <div><a href="#s6"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s2"> <i class="fa-solid fa-arrow-right"></i> </a></div>
+          <div><a href="#s1"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s3"> <i class="fa-solid fa-arrow-right"></i> </a></div>
+          <div><a href="#s2"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s4"> <i class="fa-solid fa-arrow-right"></i> </a></div>
+          <div><a href="#s3"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s5"> <i class="fa-solid fa-arrow-right"></i> </a></div>
+          <div><a href="#s4"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s6"> <i class="fa-solid fa-arrow-right"></i> </a></div>
+          <div><a href="#s5"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s1"> <i class="fa-solid fa-arrow-right"></i> </a></div>
+      </div>
+      
+      <div class="bullets">
+          <a href="#s1">1</a>
+          <a href="#s2">2</a>
+          <a href="#s3">3</a>
+          <a href="#s4">4</a>
+          <a href="#s5">5</a>
+          <a href="#s6">6</a>
+      </div>
+  </div>
+</div>
+  
+  <aside class="oppskrift-aside">
+      <h4>Tips til planlegging og innkjøp av mat</h4>
+      <ul>
+        <il>  Lorem Ipsum is simply dummy text of the printing and typesetting industry.</il>
 
-      <div class = "col-2">
-        <ul>
-          <li> <a href = "https://www.oslomet.no/en"> English </a> </li>
-          <li> <a href = "https://www.oslomet.no/om/for-studenter"> For studenter </a></li>
-          <li> <a href = "https://www.oslomet.no/om/for-ansatte"> For ansatte </a></li>
-          <li> <a href = "#"> Admin </a></li>
+        <il>  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</il>
 
+        <il>  It has survived not only five centuries, but also the leap into electronic typesetting. </il>
       </ul>
+      
+  </aside>
 
-      </div>
-      <div class = "col-3"> 
-        <ul>
-           <li><a href = "#"> Facebook </a> </li>
-           <li><a href = "#"> X (Twitter) </a> </li>
-           <li><a href = "#"> LinkedIn </a> </li>
-           <li><a href = "#"> Instagram </a> </li>
+</section>
 
-      </ul>
+</main>
 
-      </div>
 
-</footer>
+ <footer>
+        <div class="footer">
+            <div class="footer-col col-1">
+                <h3>OSLO METROPOLITAN UNIVERSITY</h3>
+                <h4>STORBYUNIVERSITET<h4>
+                <p>Postboks 4, St. Olavs plass</p>
+                <p>0130 Oslo</p>
+                <p>Tlf.: 67 23 50 00 </p>
+                <a href = "https://www.oslomet.no/om/kontakt">   Kontakt oss </a>
+            </div>
+            <div class="footer-col col-2">
+                <h3>Nyttige lenker</h3>
+                <ul>
+                  <li> <a href = "https://www.oslomet.no/en">English </a> </li>
+                  <li> <a href = "https://www.oslomet.no/studier/soknad-og-opptak">Søknad og opptak </a> </li>
+                  <li> <a href = "https://www.oslomet.no/ub/bibliotekene">Bibliotekene </a> </li>
+                  <li> <a href = "https://www.oslomet.no/om/for-studenter">For studenter </a></li>
+                  <li> <a href = "https://www.oslomet.no/om/for-ansatte">For ansatte </a></li>
+                  <li> <a href = "https://www.oslomet.no/nyhetsbrev">Nyhetsbrev </a> </li>
+          
+              </ul>
+          
+            </div>
+            <div class="footer-col col-3">
+                <h3>Sosiale medier</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/oslomet/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Foslomet" target="_blank"><i class="fa-brands fa-x-twitter"></i> X (Twitter)</a></li>
+                    <li><a href="https://no.linkedin.com/school/oslomet/" target="_blank" ><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/oslomet/?hl=nb" target="_blank" ><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
   </body>
   </html>
