@@ -1,2 +1,2 @@
 Hei 
-Dette er activity del 2. Kristine
+Dette er siden for GitHub
