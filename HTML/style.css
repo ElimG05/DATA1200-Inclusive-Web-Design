@@ -1,0 +1,73 @@
+/* Header */
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+* {
+    border: 1px solid red
+}
+
+
+nav {
+    background-color: #ffd404;
+    padding: 1em;
+    padding-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    row-gap: 2em;
+}
+.logo {
+    width: 100px;
+    grid-column: 1/7;
+
+}
+
+#studieoversikt {
+    grid-row: 2;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+    font-weight: bold;
+    display: flex;
+    gap: 0.5em; /* Mellomrom mellom text og ikon */
+}
+
+.dropbtn {
+    background-color: #ffd404;
+    padding: 10px 20px; /* Adjust padding for a balanced look */
+    border: none;
+    font-size: 1em;
+    display: flex;
+    align-items: center; /* Ensures icon and text are vertically centered */
+    z-index: 1;
+    gap: 0.5em;
+}
+
+
+.meny {
+    grid-column: 11 / 15; /* Adjust to control button placement within the grid */
+    position: relative;
+}
+
+
+.dropdown-meny {
+    display: none;
+    position: absolute;
+    background-color: #ffd404;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+    z-index: 1;
+}
+.dropdown-meny a {
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.dropdown-meny a:hover {
+    background-color: burlywood;
+}
+.meny:hover .dropdown-meny {
+    display: block;
+}
