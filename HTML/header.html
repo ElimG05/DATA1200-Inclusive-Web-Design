@@ -1,32 +1,50 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
-    <link rel ="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tester1.css">
     <link rel="icon" href="../Images/oslometlogo2.jpg">
-    <!-- https://www.w3schools.com/icons/fontawesome5_intro.asp -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head> 
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
     <header>
-        <nav>
-            <a href="https://www.oslomet.no/">
-                <img src="../multimedia/oslomet.png" alt="Oslomet - Forside" class="logo">
-            </a> 
-            <a href="https://www.oslomet.no/studier/studieoversikt" id="studieoversikt"> <i class="fa-solid fa-less-than"></i> Studieoversikt</a>
-
-            <div class="meny">
-                <button class="dropbtn"><b>MENY <i class="fa-solid fa-bars"></i> </b></button>
-                <div class="dropdown-meny">
-                    <a href="index.html">Index</a>
-                    <a href="accessibility.html">Accessibility</a>
-                    <a href="github.html">GitHub</a>
-                    <a href="activity.html">Activity</a>
-                </div>
-            </div>
+        <div class="header1">
+        <a href="https://www.oslomet.no/">
+            <img src="../multimedia/oslomet.png" alt="Oslomet - Forside" class="logo">
+        </a> 
+        
+        <!-- Hamburger Menu Wrapper -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <div class="hamb">
+            <label for="side-menu" class="dropbtn">
+                MENY <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#">Index</a></li>
+                <li><a href="#">Activity</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Accessibility</a></li>
+            </ul>
         </nav>
-    </header>
+    </div>
+
+    <div class="header2">
+    <!-- Navigation 2 directly under the logo -->
+    <nav class="nav2">
+        <a href="https://www.oslomet.no/studier/studieoversikt" id="studieoversikt">
+            <i class="fa-solid fa-less-than"></i>Studieoversikt
+        </a>
+    </nav>
+</div>
+
+</header>
 </body>
 </html>
