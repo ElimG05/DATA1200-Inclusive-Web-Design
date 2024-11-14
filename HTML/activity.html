@@ -12,21 +12,40 @@
 <body>
     <a id="backToTop"></a>
     <header>
-        <nav>
-          <a href="https://www.oslomet.no/"><img src="../Images/oslometlogo.jpg" alt="Oslomet - Forside" class="logo"></a> 
-          <a href="https://www.oslomet.no/studier/studieoversikt" id="studieoversikt">Studieoversikt</a>
-      
-              <div class="meny">
-                  <button class="dropbtn"><b>MENY <i class="fa-solid fa-bars"></i></b></button>
-                  <div class="dropdown-meny">
-                      <a href="index.html">index</a>
-                      <a href="accessibility.html">accessibility</a>
-                      <a href="github.html">github</a>
-                      <a href="activity.html">activity</a>
-                  </div>
-              </div>
-      </nav>
-      </header>
+        <div class="header1">
+        <a href="https://www.oslomet.no/">
+            <img src="../Images/oslomet2.png" alt="Oslomet - Forside" class="logo">
+        </a> 
+        
+        <!-- Hamburger meny https://blog.logrocket.com/create-responsive-mobile-menu-css-without-javascript/ -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <div class="hamb">
+            <label for="side-menu" class="dropbtn">
+                MENY <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+        
+        <!-- nav -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#">Index</a></li>
+                <li><a class="active" href="testtest.html">Activity</a></li>
+                <li><a href="2github.html">GitHub</a></li>
+                <li><a href="2accessibility.html">Accessibility</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="header2">
+    <!-- nav del 2 -->
+    <nav class="nav2">
+        <a href="https://www.oslomet.no/studier/studieoversikt" id="studieoversikt">
+            <i class="fa-solid fa-less-than"></i>Studieoversikt
+        </a>
+    </nav>
+    </div>
+    
+    </header>    
       <main>
       <section class="hovedseksjon">
         <div class="innhold">
@@ -80,9 +99,11 @@
           </div>
       </div>
   </section>
-  <section class="oppskrifter">   
-    <div class="ukensoppskrifter"> 
-    <h2> Ukens Oppskrifter </h2>
+
+  
+<!-- Ukens Oppskrifter (legg til <h2> Ukens Oppskrifter </h2> )-->
+<section class="oppskrifter">   
+    <div class="ukensoppskrifter"> <!-- kan byttes ut til "article"-->
   
     <div class="CSSgal">
         <s id="s1"></s> 
@@ -94,33 +115,33 @@
         
         <div class="slider">
             <div class="slide" id="slide1">
-                <div class="navn"><a href="https://www.matprat.no/oppskrifter/kos/langpannepizza/">Langpannepizza</a></div>
-                <img src="../Images/Pizza i langpanne.jpg" alt="Pizza i langpanne">
-                <p class="info">20 min | Enkel | 4 porsjoner</p>
+                <div class="navn"><a href="https://www.tine.no/oppskrifter/middag-og-hovedretter/pizza-og-pai/pizza-med-kj%C3%B8ttdeig">Pizza med kjøttdeig</a></div>
+                <img src="./images/pizza-med-kjøttdeig.jpeg" alt="Pizza med kjøttdeig">
+                <p class="info">45 min | Enkel | 6 porsjoner</p>
             </div>
             <div class="slide" id="slide2">
-                <div class="navn"><a href="https://www.matprat.no">Tacosalat</a></div>
-                <img src="../Images/Enkel tacosalat.jpg" alt="Enkel tacosalat">
-                <p class="info">30 min | Middels | 2 porsjoner</p>
+                <div class="navn"><a href="https://mills.no/mills/oppskrift/tacosalat/">Tacosalat</a></div>
+                <img src="./images/tacosalat.jpeg" alt="Tacosalat">
+                <p class="info">30 min | Enkel | 4 porsjoner</p>
             </div>
             <div class="slide" id="slide3">
                 <div class="navn"><a href="https://www.matprat.no">Bakt potet</a></div>
-                <img src="../Images/Bakt potet.jpg" alt="Bakt potet">
+                <img src="./images/Bakt potet.jpeg" alt="Bakt potet">
                 <p class="info">30 min | Middels | 2 porsjoner</p>
             </div>
             <div class="slide" id="slide4">
                 <div class="navn"><a href="https://www.matprat.no">Pasta carbonara</a></div>
-                <img src="../Images/Klassisk pasta carbonara.jpg" alt="Klassisk pasta carbonara">
+                <img src="./images/pasta carbonara.jpeg" alt="Pasta carbonara">
                 <p class="info">20 min | Enkel | 4 porsjoner</p>
             </div>
             <div class="slide" id="slide5">
                 <div class="navn"><a href="https://www.matprat.no">Spicy kylling med basilikum</a></div>
-                <img src="../Images/Spicy kylling med basilikum.jpg" alt="Spicy kylling med basilikum">
+                <img src="./images/Spicy kylling med basilikum.jpeg" alt="Spicy kylling med basilikum">
                 <p class="info">20 min | Enkel | 4 porsjoner</p>
             </div>
             <div class="slide" id="slide6">
-                <div class="navn"><a href="https://www.matprat.no">Fiskeburger</a></div>
-                <img src="../Images/Fiskeburger.jpg" alt="Fiskeburger">
+                <div class="navn"><a href="https://www.rema.no/oppskrifter/grillmat/kylling-pa-grillen/meksikansk-kyllingburger/">Meksikansk kyllingburger</a></div>
+                <img src="./images/meksikansk-kyllingburger.jpeg" alt="Meksikansk kyllingburger">
                 <p class="info">30 min | Enkel | 2 porsjoner</p>
             </div>
         </div>
@@ -143,17 +164,21 @@
         </div>
     </div>
   </div>
-  <aside class="oppskrift-aside">
-    <h4>Tips til planlegging og innkjøp av mat</h4>
-    <ul>
-      <il>  Lorem Ipsum is simply dummy text of the printing and typesetting industry.</il>
-
-      <il>  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</il>
-
-      <il>  It has survived not only five centuries, but also the leap into electronic typesetting. </il>
-    </ul>
-</aside>
-</section>
+    <!-- Aside tips--> 
+    <aside class="oppskrift-aside">
+        <h3>5 gode tips til studentmaten:</h3> <!-- https://www.matprat.no/studentmat/-->
+        <ol>
+          <li>Lag matpakke, så sparer du penger.</li>
+          <li>Lag matpakken kvelden før, så kan du sove lenger.</li>
+          <li>Sjekk kjøleskapet før du handler, og planlegg ukas måltider.</li>
+          <li>Rester kan bli til gode retter!</li>
+          <li>Velg mat som holder deg mett lenge!</li>
+          <!-- <a href="https://www.matprat.no/studentmat/" > Les mer</a> -->
+        </ol>
+    </aside>
+  </section>
+  
+  </section>
     <section class="activity-info">
         <img src="multimedia/backgroundBlobBottom.png" alt="Blob Background 2" class="blob-background">
         <div class="contactUs">
