@@ -1,6 +1,6 @@
 /* Generelt */
 body {
-    background-color: #f7f7f7;
+    background-color: white;
     margin: 0;  
     padding: 0; 
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -10,7 +10,7 @@ body {
 
 /* Styling for Header STARTER HER */
 header {
-    background-color: #ffd404; 
+    background-color: #ff9310; 
     padding-top: 10px;
     position: sticky;
 }
@@ -23,7 +23,7 @@ header {
   
 .menu a.active {
     padding: 5px;
-    background-color: #ebc60b;
+    background-color: #ff9310;
     color: white;
   }
 
@@ -98,7 +98,7 @@ header {
         top: 85px; 
         right: 5px; 
         width: 100vw;
-        background-color: #ffd404; 
+        background-color: #ff9310; 
         border-radius: 20px; 
         z-index: 1;
 
@@ -144,7 +144,7 @@ header {
 /* Styling for Main STARTER HER */
 /* Hovedseksjon */
 .hovedseksjon {
-    background-image: url('../Images/bakgrunnsbilde.png'); /*https://www.w3schools.com/css/css_background_image.asp*/
+    background-image: url('../Images/testLilla.jpg'); /*https://www.w3schools.com/css/css_background_image.asp*/
     background-size: cover;
     background-position: center;
     height: 25vh;
@@ -310,7 +310,7 @@ http://stackoverflow.com/a/34696029/383904 */
 }
 
 .CSSgal {
-    background-color: #d7dff6;
+    background-color: #a52b98;
     border: 6px double #000000;
     position: relative;
     overflow: hidden;
@@ -345,7 +345,7 @@ http://stackoverflow.com/a/34696029/383904 */
 }
 
 .navn a:hover {
-    color: #3f1dfe;
+    color: #ff9310;
 }
 
 .info {
@@ -506,7 +506,7 @@ http://stackoverflow.com/a/34696029/383904 */
     align-items: center;
     height: auto;
     max-height: 500px;
-    background-color: #b3c4f8;
+    background-color: #ef5800;
     border-radius: 40px;
     margin-left: 25px;
 }
@@ -641,7 +641,7 @@ http://stackoverflow.com/a/34696029/383904 */
 /* Styling for footeren STARTER HER */
 .footer {
     padding: 80px 50px;
-    background-color: #FFD700;
+    background-color: #ff9310;
     min-height: 200px; /* Sett minimum høyde */
     display: flex;
     justify-content: center;
