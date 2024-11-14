@@ -248,45 +248,50 @@ header {
     margin: 2em auto;
 }
 
+/* Kommende aktiviteter som en tabell */
 .events-title {
-    text-align: center;
-}
+    display: flex;
+    justify-content: center;
+    color: #ef5800;
 
+}
 .activity-events {
     display: flex;
     justify-content: center;
+    margin-top: 2em;
 }
 
-.activity-events-boxes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
+.activity-events-table {
+    width: 80%;
+    max-width: 800px;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
-.event-box {
-    display: flex;
-    align-items: center;
-    height: 100px;
-    width: 400px;
-    padding: 0.5em;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .13);
-    border-radius: 10px;
-    background: white;
+.activity-events-table thead {
+    background-color: #a30e4e;
+    color: white;
 }
 
-.event-date {
-    background-color: #c4dfb9;
+.activity-events-table th, .activity-events-table td {
     padding: 1em;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
 }
 
-.event-box p {
-    text-align: center;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.activity-events-table th {
+    font-size: 1.2em;
+}
+
+.activity-events-table td h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.activity-events-table tbody tr:hover {
+    background-color: #f9f9f9;
 }
 
 
