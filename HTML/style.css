@@ -15,7 +15,7 @@ header {
     position: sticky;
 }
 
-.menu a:hover {
+.menu a:hover, .contactUsLinks a:hover {
     padding: 8px;
     background-color: #ddd;
     color: black;
@@ -269,8 +269,8 @@ header {
     margin: 2em;
     border-radius: 50px;
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, .23);
-    max-width: 100%;
-    height: auto;
+    height: 350px;
+    width: auto;
 }
 .contactUs{
     display: flex;
@@ -291,6 +291,10 @@ header {
     border-radius: 20px;
     color: black;
     text-decoration: none;
+}
+.contactUsLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 /* Kommende aktiviteter */
@@ -640,6 +644,9 @@ http://stackoverflow.com/a/34696029/383904 */
         padding: 50px;
         margin-top: 20px;
     }
+    .contactUsLinks {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media only screen and (max-width: 799px) {
@@ -661,6 +668,11 @@ http://stackoverflow.com/a/34696029/383904 */
         max-width: 500px;
         padding: 50px;
         margin-top: 20px;
+    }
+    .about-us {
+        grid-template-columns: 1fr;
+        gap: 0;
+        
     }
 }
 
@@ -788,3 +800,15 @@ http://stackoverflow.com/a/34696029/383904 */
     font-size: 1.3em
 }
 /* Styling for footeren SLUTTER HER */
+
+#btn-to-top { 
+    color: black;
+    text-decoration: none;
+    background: #ef5800;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    padding: 1em;
+    border-radius: 20px;
+    z-index: 1000;
+}
