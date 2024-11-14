@@ -672,7 +672,6 @@ http://stackoverflow.com/a/34696029/383904 */
     .about-us {
         grid-template-columns: 1fr;
         gap: 0;
-        
     }
 }
 
