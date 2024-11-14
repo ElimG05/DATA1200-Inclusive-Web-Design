@@ -285,9 +285,6 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 1em;
 }
-.contactUsImg {
-    display: flex;
-}
 .contactUsLinks a {
     border: 2px solid black;
     padding: 0.5em;
@@ -661,6 +658,9 @@ http://stackoverflow.com/a/34696029/383904 */
     }
     .contactUsLinks {
         grid-template-columns: 1fr 1fr;
+    }
+    .contactUsImage img {
+        height: 200px
     }
     .about-us {
         grid-template-columns: 1fr 1fr;
