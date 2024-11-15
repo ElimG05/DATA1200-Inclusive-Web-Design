@@ -261,10 +261,6 @@ header {
     max-width: 860px; 
     margin: 0 auto;   
     gap: 2em;
-    align-items: center;
-    justify-content: center;
-    padding: 2em;
-    position: relative;
 }
 
 .about-us h1 {
@@ -702,15 +698,18 @@ http://stackoverflow.com/a/34696029/383904 */
         height: 65%;
     }
     .about-us {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: wrap;
     }
     .about-us img {
-    display: flex;  
-    max-width: 860px; 
-    margin: 0 auto;
-    width: 50%;
-    height: 60%;
+    display: flex;
+    flex-grow: 1;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    }
+    .contactUs {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -737,6 +736,12 @@ http://stackoverflow.com/a/34696029/383904 */
     .blob-background {
         height: 50%;
     }
+    .about-us img {
+        display: flex;
+        flex-grow: 1;
+        margin-right:3rem;
+        margin-left: 3rem;
+        }
 }
 
 
