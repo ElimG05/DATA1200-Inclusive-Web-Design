@@ -131,15 +131,9 @@ header {
         transition: 1s ease-out;
     }
 
-    .nav2 {
+    .nav2, .logo {
         margin-left: 50px; 
     }
-
-    .logo {
-        margin-left: 50px;
-    }
-
-
     #side-menu:checked + .hamb + .nav {
         display: block; 
     }
@@ -706,10 +700,6 @@ http://stackoverflow.com/a/34696029/383904 */
     flex-grow: 1;
     margin-right: 7rem;
     margin-left: 7rem;
-    }
-    .contactUs {
-        display: grid;
-        grid-template-columns: 1fr;
     }
 }
 
