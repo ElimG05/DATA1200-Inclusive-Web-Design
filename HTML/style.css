@@ -7,6 +7,11 @@ body {
     width: 100%; 
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
+/*
+* {
+    border: 1px solid red;
+}
+    */
 
 /* Styling for Header STARTER HER */
 header {
@@ -15,16 +20,22 @@ header {
     position: sticky;
 }
 
-.menu a:hover, .contactUsLinks a:hover {
-    padding: 8px;
-    background-color: #ddd;
-    color: black;
+.menu a:hover {
+    color: #fff7f7;
+    transition: 0.5s;
   }
+
+.contactUsLinks a:hover {
+    background-color: #1d1d1d;
+    color: #ddd;
+    transition: 0.4s;
+
+}
   
 .menu a.active {
     padding: 5px;
     background-color: #ff9310;
-    color: white;
+    color:#ffffff;
   }
 
 .header1 {
@@ -47,6 +58,7 @@ header {
 
 .fa-bars:hover {
     color: #fffdfd;
+    transition: 0.4s;
 }
 
 .fa-bars {
@@ -80,6 +92,7 @@ header {
 
 .nav2 a:hover {
     font-weight: bold;
+    transition: 0.4s;
 }
 
 
@@ -251,6 +264,7 @@ header {
     justify-content: center;
     padding: 2em;
     position: relative;
+   /* border: 10px double #000000;*/
 }
 
 .about-us h1 {
@@ -266,6 +280,7 @@ header {
 }
 .about-us-text {
     grid-column-start: 2;
+    
 }
 .activityBoxImg {
     margin: 2em;
@@ -308,7 +323,9 @@ header {
 .events-title {
     display: flex;
     justify-content: center;
-    color: #ef5800;
+    color: #393737;
+    font-size: 3em;
+    margin-bottom: 0;
 
 }
 .activity-events {
@@ -358,6 +375,11 @@ RESPONSIVE CSS3 SLIDE CAROUSEL GALLERY
 http://stackoverflow.com/a/34696029/383904 */
 
 /* */
+
+.ukensoppskrifter {
+    padding-bottom: 100px;
+
+}
 .oppskrifter {
     display: flex;
     flex-direction: row;
@@ -367,7 +389,7 @@ http://stackoverflow.com/a/34696029/383904 */
 }
 
 .CSSgal {
-    background-color: #a52b98;
+    background-color: #a14c99;
     border: 6px double #000000;
     position: relative;
     overflow: hidden;
@@ -402,7 +424,7 @@ http://stackoverflow.com/a/34696029/383904 */
 }
 
 .navn a:hover {
-    color: #ff9310;
+    color: #f3742a;
 }
 
 .info {
@@ -559,11 +581,12 @@ http://stackoverflow.com/a/34696029/383904 */
 
 .oppskrift-aside {
     padding: 15px;
+    padding-left: 30px;
     justify-content: center;
     align-items: center;
     height: auto;
     max-height: 500px;
-    background-color: #ef5800;
+    background-color: #f3742a;
     border-radius: 40px;
     margin-left: 25px;
 }
