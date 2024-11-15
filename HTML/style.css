@@ -25,7 +25,7 @@ header {
     transition: 0.5s;
   }
 
-.contactUsLinks a:hover {
+.contact-us-links a:hover {
     background-color: #1d1d1d;
     color: #ddd;
     transition: 0.4s;
@@ -271,14 +271,14 @@ header {
 .about-us-text {
     grid-column-start: 2;
 }
-.activityBoxImg {
+.activity-box-img {
     margin: 2em;
     border-radius: 50px;
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, .23);
     height: 350px;
     width: auto;
 }
-.contactUs{
+.contact-us{
     display: flex;
     align-items: center;
     border-top: 1px #2e2e2e solid;
@@ -288,14 +288,14 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 1em;
 }
-.contactUsLinks a {
+.contact-us-links a {
     border: 2px solid black;
     padding: 0.5em;
     border-radius: 20px;
     color: black;
     text-decoration: none;
 }
-.contactUsLinks {
+.contact-us-links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -441,7 +441,7 @@ http://stackoverflow.com/a/34696029/383904 */
     border: 2px solid #000000;
 }
 
-.CSSgal .prevNext {
+.CSSgal .prev-next {
     position: absolute;
     z-index: 1;
     top: 50%;
@@ -449,11 +449,11 @@ http://stackoverflow.com/a/34696029/383904 */
     height: 0;
 }
 
-.CSSgal .prevNext > div + div {
+.CSSgal .prev-next > div + div {
     visibility: hidden;
 }
 
-.CSSgal .prevNext a {
+.CSSgal .prev-next a {
     background: #fff;
     position: absolute;
     width: 40px;
@@ -465,11 +465,11 @@ http://stackoverflow.com/a/34696029/383904 */
     transform: translateY(-50%);
 }
 
-.CSSgal .prevNext a:hover {
+.CSSgal .prev-next a:hover {
     opacity: 1;
 }
 
-.CSSgal .prevNext a + a {
+.CSSgal .prev-next a + a {
     right: 0px;
 }
 
@@ -525,25 +525,25 @@ http://stackoverflow.com/a/34696029/383904 */
 }
 
 /* Prev/Next containers visibility */
-.CSSgal > s:target ~ .prevNext > * {
+.CSSgal > s:target ~ .prev-next > * {
     visibility: hidden;
 }
-#s1:target ~ .prevNext > *:nth-child(1) {
+#s1:target ~ .prev-next > *:nth-child(1) {
     visibility: visible;
 }
-#s2:target ~ .prevNext > *:nth-child(2) {
+#s2:target ~ .prev-next > *:nth-child(2) {
     visibility: visible;
 }
-#s3:target ~ .prevNext > *:nth-child(3) {
+#s3:target ~ .prev-next > *:nth-child(3) {
     visibility: visible;
 }
-#s4:target ~ .prevNext > *:nth-child(4) {
+#s4:target ~ .prev-next > *:nth-child(4) {
     visibility: visible;
 }
-#s5:target ~ .prevNext > *:nth-child(5) {
+#s5:target ~ .prev-next > *:nth-child(5) {
     visibility: visible;
 }
-#s6:target ~ .prevNext > *:nth-child(6) {
+#s6:target ~ .prev.next > *:nth-child(6) {
     visibility: visible;
 }
 
@@ -658,10 +658,10 @@ http://stackoverflow.com/a/34696029/383904 */
         padding: 50px;
         margin-top: 20px;
     }
-    .contactUsLinks {
+    .contact-us-links {
         grid-template-columns: 1fr 1fr;
     }
-    .contactUsImage img {
+    .contact-us-image img {
         height: 200px
     }
  
