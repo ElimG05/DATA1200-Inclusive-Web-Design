@@ -244,13 +244,10 @@ header {
 }
 
 .about-us {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;  
+    max-width: 860px; 
+    margin: 0 auto;   
     gap: 2em;
-    align-items: center;
-    justify-content: center;
-    padding: 2em;
-    position: relative;
 }
 
 .about-us h1 {
@@ -264,12 +261,9 @@ header {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
-.about-us-text {
-    grid-column-start: 2;
-}
+
 .activityBoxImg {
     margin: 2em;
-    grid-column-start: 3;
     border-radius: 50px;
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, .23);
     height: 350px;
@@ -622,15 +616,6 @@ http://stackoverflow.com/a/34696029/383904 */
         font-style: italic;
         font-size: 1.1em;
     }
-    .about-us {
-        grid-template-columns: 1fr 1fr;
-    }
-    .about-us-text {
-        grid-column-start: 1;
-    }
-    .activityBoxImg {
-        grid-column-start: 2;
-    }
 
 
 }
@@ -662,15 +647,7 @@ http://stackoverflow.com/a/34696029/383904 */
     .contactUsImage img {
         height: 200px
     }
-    .about-us {
-        grid-template-columns: 1fr 1fr;
-    }
-    .about-us-text {
-        grid-column-start: 1;
-    }
-    .activityBoxImg {
-        grid-column-start: 2;
-    }
+ 
 
 }
 
@@ -694,19 +671,19 @@ http://stackoverflow.com/a/34696029/383904 */
         padding: 50px;
         margin-top: 20px;
     }
-    .about-us {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-    .about-us-text {
-        grid-column-start: 1;
-    }
-    .activityBoxImg {
-        grid-column-start: 1;
-        grid-row-start: 2;
-    }
     .blob-background {
         height: 65%;
+    }
+    .about-us {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about-us img {
+    display: flex;  
+    max-width: 860px; 
+    margin: 0 auto;
+    width: 50%;
+    height: 60%;
     }
 }
 
