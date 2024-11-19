@@ -1,6 +1,7 @@
 /* Generelt */
 body {
     background-color: white;
+    font-size: 1.2em;
     margin: 0;  
     padding: 0; 
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -11,7 +12,6 @@ body {
 /* H3 og H2 overskrifter */
 .footer-col h3, .activity-events-table td h3, .col-1 h3 {
     font-weight: bold;
-    font-size: 1.2rem;
     margin-bottom: 2px;
 }
 .h2-style {
@@ -20,9 +20,12 @@ body {
     color: #393737;
     font-size: 2em;
     margin-bottom: 0;
-
 }
 
+/* ulike font størrelser*/ 
+.fa-bars, .navn, .content p {
+    font-size: 1.6em;
+}
 /*
 * {
     border: 1px solid red;
@@ -77,17 +80,12 @@ header {
     transition: 0.4s;
 }
 
-.fa-bars {
-    font-size: 1.5em; 
-}
-
 /* Hamburger meny */
 .hamb {
     display: none; 
 }
 
 .hamb label {
-    font-size: 1.1em; 
     padding-right: 50px; 
 }
 
@@ -97,7 +95,6 @@ header {
 
 
 .nav2 {
-    font-size: 1.2em;
     margin-left: 80px; 
 }
 
@@ -123,7 +120,6 @@ header {
     margin-right: 20px;
     text-decoration: none; 
     color: black;
-    font-size: 1.2em;
 }
 
 
@@ -210,7 +206,6 @@ header {
 
 .content p {
     margin-top: 5px;
-    font-size: 1.8em;
 }
 /*Under 995px og over 450px*/
 @media (min-width: 480px) and (max-width: 750px) {
@@ -280,7 +275,6 @@ header {
 
 .about-us p {
     text-align: left;
-    font-size: 1.2em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
@@ -350,10 +344,6 @@ header {
     text-align: center;
     border: 1px solid #ddd;
 }
-
-.activity-events-table th {
-    font-size: 1.2em;
-}
 .activity-events-table tbody tr:hover {
     background-color: #f9f9f9;
 }
@@ -402,7 +392,6 @@ http://stackoverflow.com/a/34696029/383904 */
     padding-top: 40px;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: 1.7em;
     color: black;
     text-align: center;
     font-style: italic;
@@ -420,7 +409,6 @@ http://stackoverflow.com/a/34696029/383904 */
 .info {
     margin-top: 10px;
     margin-bottom: 40px;
-    font-size: 1.1em;
     color: black;
     text-align: center;
     font-style: italic;
@@ -584,7 +572,6 @@ http://stackoverflow.com/a/34696029/383904 */
 .oppskrift-aside li {
     margin-bottom: 25px;
     font-style: italic;
-    font-size: 1.2em;
 }
 
 /* Media query for.... */
@@ -814,9 +801,7 @@ http://stackoverflow.com/a/34696029/383904 */
     margin-bottom: 10px;
 }
 
-.fa-brands {
-    font-size: 1.3em
-}
+
 /* Styling for footeren SLUTTER HER */
 /* style et knappe-utseende på link opp til anker*/
 #btn-to-top { 
