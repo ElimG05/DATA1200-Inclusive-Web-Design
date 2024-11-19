@@ -7,6 +7,22 @@ body {
     width: 100%; 
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
+
+/* H3 og H2 overskrifter */
+.footer-col h3, .activity-events-table td h3, .col-1 h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+}
+.h2-style {
+    display: flex;
+    justify-content: center;
+    color: #393737;
+    font-size: 2em;
+    margin-bottom: 0;
+
+}
+
 /*
 * {
     border: 1px solid red;
@@ -308,14 +324,7 @@ header {
 }
 
 /* Kommende aktiviteter som en tabell */
-.events-title {
-    display: flex;
-    justify-content: center;
-    color: #393737;
-    font-size: 3em;
-    margin-bottom: 0;
 
-}
 .activity-events {
     display: flex;
     justify-content: center;
@@ -345,13 +354,6 @@ header {
 .activity-events-table th {
     font-size: 1.2em;
 }
-
-.activity-events-table td h3 {
-    margin: 0;
-    font-size: 1.1em;
-    color: #333;
-}
-
 .activity-events-table tbody tr:hover {
     background-color: #f9f9f9;
 }
@@ -579,11 +581,6 @@ http://stackoverflow.com/a/34696029/383904 */
     margin-left: 25px;
 }
 
-.oppskrift-aside h3 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
 .oppskrift-aside li {
     margin-bottom: 25px;
     font-style: italic;
@@ -623,11 +620,6 @@ http://stackoverflow.com/a/34696029/383904 */
         width: 100%;
         margin-top: 20px;
     }
-    .oppskrift-aside h3 {
-        font-size: 1.5em;
-        margin-bottom: 10px;
-    }
-    
     .oppskrift-aside li {
         margin-bottom: 25px;
         font-style: italic;
@@ -762,10 +754,6 @@ http://stackoverflow.com/a/34696029/383904 */
 }
 
 /* Tekststil i kolonne 1 */
-.col-1 h3 {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
 
 .col-1 h4 {
     font-weight: 100;
@@ -820,12 +808,6 @@ http://stackoverflow.com/a/34696029/383904 */
     text-decoration: underline;
 }
 
-/* H3 og H2 overskrifter */
-.footer-col h3 {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 2px;
-}
 
 /* Sosiale medier */
 .social-links li {
