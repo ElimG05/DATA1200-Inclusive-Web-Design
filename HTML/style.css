@@ -164,7 +164,7 @@ header {
 
 /* Styling for Main STARTER HER */
 /*Overskrift + bakgrunnsbilde*/
-.hovedseksjon {
+.main-article {
     position: relative; 
     height: 25vh;
     padding: 40vh 5vw;
@@ -174,7 +174,7 @@ header {
     text-align: center;
 }
 
-.hovedseksjon .bakgrunnsbilde {
+.main-article .bakgrunnsbilde {
     position: absolute;
     top: 0;
     left: 0;
@@ -184,7 +184,7 @@ header {
     z-index: -1;
 }
 
-.innhold h1 {
+.content h1 {
     margin-bottom: 0px;
     text-shadow: 2px 2px 2px #ffffff;
     font-size: 5rem;
@@ -192,38 +192,38 @@ header {
 }
 
 
-.innhold p {
+.content p {
     margin-top: 5px;
     font-size: 1.8em;
 }
 /*Under 995px og over 450px*/
 @media (min-width: 480px) and (max-width: 750px) {
-    .hovedseksjon {
+    .main-article {
         height: 30vh; 
         padding: 10vh 5vw;
     }
     
-    .innhold h1 {
+    .content h1 {
         font-size: 3rem;
     }
     
-    .innhold p {
+    .content p {
         font-size: 1rem;
     }
 }
 
 /* Under 450px */
 @media (max-width: 479px) {
-    .hovedseksjon {
+    .main-article {
         height: 20vh;
         padding: 5vh 3vw;
     }
     
-    .innhold h1 {
+    .content h1 {
         font-size: 2.2rem;
     }
     
-    .innhold p {
+    .content p {
         font-size: 0.8rem;
         max-width: 90%;
     }
@@ -239,7 +239,7 @@ header {
     overflow: hidden;
 }
 
-.blob-background {
+.bubbles-background {
     position: absolute;
     top: 0;
     left: 50%;
@@ -364,11 +364,11 @@ http://stackoverflow.com/a/34696029/383904 */
 
 /* */
 
-.ukensoppskrifter {
+.weekly-recipes {
     padding-bottom: 100px;
 
 }
-.oppskrifter {
+.recipes {
     display: flex;
     flex-direction: row;
     padding: 45px;
@@ -639,7 +639,7 @@ http://stackoverflow.com/a/34696029/383904 */
 
 /* Media query for... */
 @media only screen and (max-width: 1049px) {
-    .oppskrifter {
+    .recipes {
         flex-direction: column;
         align-items: center;
     }
@@ -669,7 +669,7 @@ http://stackoverflow.com/a/34696029/383904 */
 }
 
 @media only screen and (max-width: 799px) {
-    .oppskrifter {
+    .recipes {
         flex-direction: column; /* Stack items vertically */
         align-items: center;
     }
@@ -688,7 +688,7 @@ http://stackoverflow.com/a/34696029/383904 */
         padding: 50px;
         margin-top: 20px;
     }
-    .blob-background {
+    .bubbles-background {
         height: 65%;
     }
     .about-us {
@@ -704,7 +704,7 @@ http://stackoverflow.com/a/34696029/383904 */
 }
 
 @media only screen and (max-width: 550px) {
-    .oppskrifter {
+    .recipes {
         flex-direction: column; /* Stack items vertically */
         align-items: center;
     }
@@ -723,7 +723,7 @@ http://stackoverflow.com/a/34696029/383904 */
         padding: 50px;
         margin-top: 20px;
     }
-    .blob-background {
+    .bubbles-background {
         height: 50%;
     }
     .about-us img {
@@ -836,7 +836,7 @@ http://stackoverflow.com/a/34696029/383904 */
     font-size: 1.3em
 }
 /* Styling for footeren SLUTTER HER */
-
+/* style et knappe-utseende på link opp til anker*/
 #btn-to-top { 
     color: black;
     text-decoration: none;

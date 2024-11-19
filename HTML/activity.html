@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <a id="backToTop"></a>
+    <!-- anker for link-knapp-->
+    <a id="back-to-top"></a>
+    <!--header felles for alle sider-->
     <header>
         <div class="header1">
         <a href="https://www.oslomet.no/">
@@ -39,23 +41,22 @@
     <div class="header2">
     <!-- nav del 2 -->
     <nav class="nav2">
-        <a href="https://www.oslomet.no/studier/studieoversikt" id="studieoversikt">
+        <a href="https://www.oslomet.no/studier/studieoversikt" id="study-overview">
             <i class="fa-solid fa-less-than"></i>Studieoversikt
         </a>
     </nav>
     </div>
-    
     </header>    
       <main>
-        <section class="hovedseksjon">
-            <article class="innhold">
+        <article class="main-article">
+            <div class="content">
                 <img src="../Images/bakgrunnsbilde.jpeg" alt="bakgrunnsbilde" class="bakgrunnsbilde">
                 <h1>Studentkjøkkenet</h1>
                 <p>En studentforening for deg som liker å lage mat</p>
-            </article>
-        </section>
-    <section class="activity-info">
-        <img src="../Images/blobBackgroundTopPurple.jpeg" alt="Blob Background" class="blob-background">
+            </div>
+        </article>
+    <article class="activity-info">
+        <img src="../Images/blobBackgroundTopPurple.jpeg" alt="Blob Background" class="bubbles-background">
         <div class="about-us">
             <div class="about-us-text">
                 <h2 class="events-title">Om oss</h2>
@@ -76,10 +77,11 @@
             </div>
             <img src="../Images/pieImages.jpeg" alt="Simple Dish" class="activity-box-img">
         </div>
-    </section>
+    </article>
     <img src="../Images/dishLogoPurple.jpeg" class="activity-logo" alt="Activity Logo">
+    <!--table med plan for arrangement-->
     <h2 class="events-title">Kommende aktiviteter</h2>
-    <section class="activity-events">
+    <article class="activity-events">
       <table class="activity-events-table">
         <thead>
           <tr>
@@ -114,13 +116,13 @@
           </tr>
         </tbody>
       </table>
-  </section>
+    </article>
 
   
 <!-- Ukens Oppskrifter (legg til <h2> Ukens Oppskrifter </h2> )-->
 <h2 class="events-title">Ukens oppskrifter</h2>
-<section class="oppskrifter">   
-    <div class="ukensoppskrifter"> <!-- kan byttes ut til "article"-->
+<article class="recipes">   
+    <div class="weekly-recipes"> <!-- kan byttes ut til "article"-->
   
     <div class="CSSgal">
         <s id="s1"></s> 
@@ -193,11 +195,11 @@
           <!-- <a href="https://www.matprat.no/studentmat/" > Les mer</a> -->
         </ol>
     </aside>
-  </section>
-  
-  </section>
-    <section class="activity-info">
-        <img src="../Images/blobBackgroundBottomPurple.jpeg" alt="Blob Background 2" class="blob-background">
+</article>
+</article>
+    <!--kontaktinformasjon-->
+    <article class="activity-info">
+        <img src="../Images/blobBackgroundBottomPurple.jpeg" alt="Blob Background 2" class="bubbles-background">
         <div class="contact-us">
             <div id="contact-us-text">
                 <div class="contact-info">
@@ -215,8 +217,9 @@
             </div>
            <div class="contact-us-image"> <img src="../Images/cookingclasspeople.jpg" alt="Social cooking" class="activityBoxImg"></div>
         </div>
-    </section>
+    </article>
 </main>
+<!--footer - felles for alle sider-->
 <footer>
     <div class="footer">
         <div class="footer-col col-1">
@@ -251,6 +254,8 @@
         </div>
     </div>
 </footer>  
-    <a href="#backToTop" id="btn-to-top">Back to top</a>
+<!--linker til anker på topp av siden-->
+<!--https://stackoverflow.com/questions/32102747/how-to-make-a-back-to-top-button-using-css-and-html-only-->
+    <a href="#back-to-top" id="btn-to-top">Til toppen</a>
 </body>
 </html>
