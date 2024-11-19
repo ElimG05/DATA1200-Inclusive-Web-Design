@@ -7,7 +7,6 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
-
 /* H3 og H2 overskrifter */
 .footer-col h3, .activity-events-table td h3, .col-1 h3 {
     font-weight: bold;
@@ -26,27 +25,19 @@ body {
 .body, .main-article .bakgrunnsbilde, .bubbles-background, .CSSgal .prev-next, .CSSgal .bullets {
     width: 100%;
 }
-
 /*text-decoration: none*/
 .menu li a, .contact-us-links a, .navn a, .CSSgal .prev-next a, .col-1 a, .footer-col a, .col-2 a, #btn-to-top {
     text-decoration-line: none;
 }
-
 /*felles farger*/
 .h2-style, .nav2 a, .menu li a, .contact-us-links a, .navn, .navn a, .info, .col-1 a, .footer-col a, .col-2 a, #btn-to-top {
     color: black;
 }
-
 /*felles plassering */ 
 .h2-style, .main-article, .activity-events, .recipes, .oppskrift-aside, .footer {
     justify-content: center;
 }
 
-/*
-* {
-    border: 1px solid red;
-}
-    */
 
 /* Styling for Header STARTER HER */
 header {
@@ -268,24 +259,29 @@ header {
     gap: 2em;
 }
 
-.about-us h1 {
-    text-align: center;
-    font-size: 3em;
+.about-us-text h2 {
+    margin-top: 0;
 }
 
 .about-us p {
     text-align: left;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    opacity: 1;
 }
 .about-us-text {
     grid-column-start: 2;
-}
-.activity-box-img {
-    margin: 2em;
+    background-color: white;
     border-radius: 50px;
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, .23);
-    height: 350px;
+    padding: 1em;
+    padding-top: 2em;
+    height: 500px;
+}
+.activity-box-img {
+    border-radius: 50px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, .23);
+    height: 550px;
     width: auto;
 }
 .contact-us{
@@ -306,6 +302,9 @@ header {
 .contact-us-links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.contact-us-image img {
+    height: 300px
 }
 
 /* Kommende aktiviteter */
