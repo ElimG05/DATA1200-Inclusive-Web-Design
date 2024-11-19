@@ -14,37 +14,38 @@
     <a id="back-to-top"></a>
     <!--header felles for alle sider-->
     <header>
-        <div class="header1">
+        <!--Første delen av headeren som består av oslomet-logoen og navigasjonsbaren-->
+        <div class="header-part1">
         <a href="https://www.oslomet.no/">
-            <img src="../Images/oslometlogo.jpeg" alt="Oslomet - Forside" class="logo">
+            <img src="../Images/oslometlogo.jpeg" alt="Oslomet-Forside" class="school-logo">
         </a> 
-        
-        <!-- Hamburger meny https://blog.logrocket.com/create-responsive-mobile-menu-css-without-javascript/ -->
-        <input class="side-menu" type="checkbox" id="side-menu"/>
-        <div class="hamb">
-            <label for="side-menu" class="dropbtn">
-                MENY <i class="fa-solid fa-bars"></i>
-            </label>
-        </div>
-        
-        <!-- nav -->
-        <nav class="nav">
+         <!--Hamburger Meny. Her er planen at utseende på menyen skal endres når man trykker den, slik at det er enklet å se om den er trykket på eller ikke-->
+         <input class="side-menu" type="checkbox" id="side-menu" />
+         <div class="menu-display">
+             <label for="side-menu" class="dropbtn">
+                 <div class="menu-enter">MENY <i class="fa-solid fa-bars"></i></div>
+                 <div class="menu-exit">MENY <i class="fa-solid fa-square-xmark"></i></div>
+             </label>
+         </div>
+ 
+         <!--Navigasjonsbar. Her er en oversikt over alle sidene våre-->
+        <nav class="navigation-bar">
             <ul class="menu">
                 <li><a href="index.html">Index</a></li>
-                <li><a class="active" href="activity.html">Activity</a></li>
+                <li><a class="active" href="activity.html">Activity</a></li>    <!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
                 <li><a href="github.html">GitHub</a></li>
                 <li><a href="accessibility.html">Accessibility</a></li>
             </ul>
         </nav>
     </div>
     
-    <div class="header2">
-    <!-- nav del 2 -->
-    <nav class="nav2">
-        <a href="https://www.oslomet.no/studier/studieoversikt" id="study-overview">
+    <!--Andre delen av headeren som består av "studieoversikt"-->
+    <div class="header-part2">
+    <div class="study-overview">
+        <a href="https://www.oslomet.no/studier/studieoversikt" class="study-overview-link">
             <i class="fa-solid fa-less-than"></i>Studieoversikt
         </a>
-    </nav>
+    </div>
     </div>
     </header>    
       <main>

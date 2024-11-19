@@ -1,3 +1,4 @@
+
 /* Generelt */
 body {
     background-color: white;
@@ -18,7 +19,7 @@ body {
     margin-bottom: 0;
 }
 /* felles font størrelser*/ 
-.fa-bars, .navn, .content p {
+.fa-bars, .fa-square-xmark, .navn, .content p {
     font-size: 1.6em;
 }
 /*100% av bilde/boks*/
@@ -30,7 +31,7 @@ body {
     text-decoration-line: none;
 }
 /*felles farger*/
-.h2-style, .nav2 a, .menu li a, .contact-us-links a, .navn, .navn a, .info, .col-1 a, .footer-col a, .col-2 a, #btn-to-top {
+.h2-style, .study-overview a, .menu li a, .contact-us-links a, .navn, .navn a, .info, .col-1 a, .footer-col a, .col-2 a, #btn-to-top {
     color: black;
 }
 /*felles plassering */ 
@@ -40,130 +41,138 @@ body {
 
 
 /* Styling for Header STARTER HER */
-header {
-    background-color: #ff9310; 
-    padding-top: 10px;
-    position: sticky;
+header{
+	background-color:#ff9310;
+    padding-bottom: 20px;
+	position:sticky;
 }
 
+.fa-solid:hover .menu a:hover {
+    font-size: 1.5em;
+    transition: 0.4s;
+}
+
+.navigation-bar {
+    padding-right: 50px;
+}
 .menu a:hover {
     color: #fff7f7;
-    transition: 0.5s;
-  }
-
-.contact-us-links a:hover {
-    background-color: #1d1d1d;
-    color: #ddd;
     transition: 0.4s;
-
 }
-  
 .menu a.active {
     padding: 5px;
     background-color: #ff9310;
     color:#ffffff;
-  }
+}
 
-.header1 {
+.header-part1{
+	display:flex;
+	align-items:center;
+	justify-content:space-between
+}
+
+.header-part2{
+	padding-bottom:20px
+}
+.school-logo{
+	height:100px;
+}
+#side-menu,.menu-display{
+	display:none
+}
+.menu-display label{
+	font-size:1.1em;
+	padding-right:50px
+}
+.study-overview{
+    font-size: 1.2em;
+}
+.study-overview a{
+	color:#000;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.study-overview a:hover{
+    font-weight: bolder ;
+}
+
+.navigation-bar {    
+padding-top: 50px;}
+
+
+.navigation-bar .menu{
+	display:flex;
+	list-style:none;
+	margin-right:40px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: row;  
 }
 
-.header2 {
-    padding-bottom: 20px;
+.menu li a{
+	color:#000;
+	font-size:1.2em;
+}
+#side-menu+label:before{
+	list-style-type:square;
+}
+#side-menu:checked ~ .menu-display .menu-enter{
+    display: none;
+}
+#side-menu:checked ~ .menu-display .menu-exit {
+    display: inline-block;
+}
+.menu-enter {
+	padding-right: 50px;
+}
+.school-logo,.study-overview{
+    padding-left:80px
+}
+.menu li{
+    margin:10px;
+    font-size:1em;
+
+}
+@media only screen and (max-width:800px){
+	#side-menu:checked+.menu-display+.navigation-bar, .menu-display{
+		display:block
 }
 
-.logo {
-    height: 70px; 
-    margin-left: 100px;
-}
-.fa-solid {
-    padding: 10px;
+.menu-exit {
+	display: none;
 }
 
-.fa-bars:hover {
-    color: #fffdfd;
+.navigation-bar{
+    display:none;
+    position:absolute;
+    top:75px;
+    right:0px;
+	width:100vw;
+	background-color:#ff9310;
+	border-radius:20px;
+	z-index:1;
+    padding-right: 0px;
+    padding-top: 0;
+
+}
+.navigation-bar .menu{ 
+    flex-direction: column; /**/
+    align-items:end;
+    justify-content: end;
+
+}
+.menu a:hover {
+    color: #fff7f7;
     transition: 0.4s;
 }
+.school-logo,.study-overview{
+    padding-left:35px
 
-/* Hamburger meny */
-.hamb, .side-menu {
-    display: none; 
-}
-
-.hamb label {
-    padding-right: 50px; 
-}
-
-.nav2 {
-    margin-left: 80px; 
-}
-
-.nav2 a {
-    text-decoration: underline; 
-}
-
-.nav2 a:hover {
-    font-weight: bold;
-    transition: 0.4s;
 }
 
 
-.nav .menu {
-    display: flex;
-    list-style: none; 
-    padding-top: 40px;
-    margin-right: 80px;
 }
 
-.menu li a {
-    margin-right: 20px;
-}
-
-
-/*  */
-@media only screen and (max-width: 800px) {
-    .hamb {
-        display: block;
-    }
-
-
-    .nav {
-        display: none; 
-        position: absolute; 
-        top: 85px; 
-        right: 5px; 
-        width: 100vw;
-        background-color: #ff9310; 
-        border-radius: 20px; 
-        z-index: 1;
-
-        transition: 1s ease-out;
-    }
-
-    .nav2, .logo {
-        margin-left: 50px; 
-    }
-    #side-menu:checked + .hamb + .nav {
-        display: block; 
-    }
-
-    .menu {
-        flex-direction: column; 
-    }
-
-    .menu li {
-        margin: 10px; 
-        font-size: 1em;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .nav2, .logo {
-        margin-left: 20px; 
-    }
-}
 /* Styling for Header SLUTTER HER */
 
 
