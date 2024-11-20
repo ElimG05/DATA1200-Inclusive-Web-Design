@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity</title>
     <link rel ="stylesheet" href="style.css">
+    <!--OsloMet logo i browser tap-->
     <link rel="icon" href="../Images/oslomet-logo-tap.jpeg">
     <!--Ikonene vi har tatt i bruk er hentet fra front-awesome (https://www.w3schools.com/icons/fontawesome5_intro.asp) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -47,17 +48,19 @@
         </a>
     </div>
     </div>
-    </header>    
-      <main>
-        <article class="main-article">
+    </header>
+    <main>
+        <!--Hovedseksjonen: bakgrunnsbilde + Overskrift-->
+        <article class="main-article"> <!--bytt navn på class-->
             <div class="content">
                 <img src="../Images/bakgrunnsbilde-main-article.jpeg" alt="bakgrunnsbilde" class="bakgrunnsbilde">
                 <h1>Studentkjøkkenet</h1>
                 <p>En studentforening for deg som liker å lage mat</p>
             </div>
         </article>
-    <article class="activity-info">
+        <article class="activity-info">
         <img src="../Images/bubbles-background-top.jpeg" alt="Blob Background" class="bubbles-background">
+        <!--Om oss: litt bakgrunnhistorie og info om studentforeningen vår-->
         <div class="about-us">
             <div class="about-us-text">
                 <h2 class="h2-style">Om oss</h2>
@@ -65,22 +68,19 @@
                     Vi startet som fire venninner med en felles lidenskap for matlaging. 
                     Etter mange hyggelige kvelder med matlaging og nye oppskrifter, ønsket vi å dele gleden med andre og gjøre det til en sosial aktivitet for studenter. 
                     Slik ble vår forening til!
-
                 </p>
                 <p> 
                     I dag har vi over 15 medlemmer, og vårt mål er å gjøre det lettere for studenter å lage god og rimelig mat, spesielt for de med stramt budsjett. 
                     Hver uke deler vi rimelige oppskrifter, og annenhver uke møtes vi for å lage mat sammen. 
                     Dette gir en flott mulighet til å være sosial, lære nye retter og ha det gøy.
-
                 </p>
-                <p> Det er helt gratis å være med, og alt du trenger er litt kreativitet og godt humør. Vi ser fram til å møte deg!
-                </p>
+                <p> Det er helt gratis å være med, og alt du trenger er litt kreativitet og godt humør. Vi ser fram til å møte deg!</p>
             </div>
             <img src="../Images/about-us-side-image.jpeg" alt="Simple Dish" class="activity-box-img">
         </div>
     </article>
     <img src="../Images/activitylogo.jpeg" class="activity-logo" alt="Activity Logo">
-    <!--table med plan for arrangement-->
+    <!--Kommende aktiviteter: Plan for arrangementer i tabeller-->
     <h2 class="h2-style">Kommende aktiviteter</h2>
     <article class="activity-events">
       <table class="activity-events-table">
@@ -119,12 +119,11 @@
       </table>
     </article>
   
-<!-- Ukens Oppskrifter (legg til <h2> Ukens Oppskrifter </h2> )-->
+<!--Ukens Oppskrifter: image silder med oppskrifter + tips til studenter-->
 <h2 class="h2-style">Ukens oppskrifter</h2>
 <article class="recipes">   
-    <div class="weekly-recipes"> <!-- kan byttes ut til "article"-->
-  
-    <div class="CSSgal">
+    <div class="weekly-recipes"> 
+        <div class="CSSgal">
         <s id="s1"></s> 
         <s id="s2"></s>
         <s id="s3"></s>
@@ -183,7 +182,7 @@
         </div>
     </div>
   </div>
-    <!-- Aside tips--> 
+    <!--5 gode tips til studentmaten--> 
     <aside class="oppskrift-aside">
         <h2 class="h2-style">5 gode tips til studentmaten:</h2> <!-- https://www.matprat.no/studentmat/-->
         <ol>
