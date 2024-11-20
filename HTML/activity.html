@@ -11,15 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- anker for link-knapp-->
+    <!--Anker for link-knapp-->
     <a id="back-to-top"></a>
-    <!--header felles for alle sider-->
+
+    <!--Header: felles for alle sider-->
     <header>
-        <!--Første delen av headeren som består av oslomet-logoen og navigasjonsbaren-->
+        <!--Første delen av headeren (part 1) som består av oslomet-logoen og navigasjonsbaren-->
         <div class="header-part1">
-        <a href="https://www.oslomet.no/">
-            <img src="../Images/oslometlogo.jpeg" alt="Oslomet-Forside" class="school-logo">
-        </a> 
+            <a href="https://www.oslomet.no/"> <img src="../Images/oslometlogo.jpeg" alt="Oslomet-Forside" class="school-logo"></a> 
          <!--Hamburger Meny. Her er planen at utseende på menyen skal endres når man trykker den, slik at det er enklet å se om den er trykket på eller ikke-->
          <input class="side-menu" type="checkbox" id="side-menu" />
          <div class="menu-display">
@@ -27,27 +26,23 @@
                  <div class="menu-enter">MENY <i class="fa-solid fa-bars"></i></div> 
                  <div class="menu-exit">MENY <i class="fa-solid fa-xmark"></i></div>
              </label>
-         </div>
- 
+         </div> 
          <!--Navigasjonsbar. Her er en oversikt over alle sidene våre-->
-        <nav class="navigation-bar">
+         <nav class="navigation-bar">
             <ul class="menu">
                 <li><a href="index.html">Index</a></li>
                 <li><a class="active" href="activity.html">Activity</a></li><!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
                 <li><a href="github.html">GitHub</a></li>
                 <li><a href="accessibility.html">Accessibility</a></li>
             </ul>
-        </nav>
-    </div>
-    
-    <!--Andre delen av headeren som består av "studieoversikt"-->
-    <div class="header-part2">
-    <div class="study-overview">
-        <a href="https://www.oslomet.no/studier/studieoversikt" class="study-overview-link">
-            <i class="fa-solid fa-less-than"></i>Studieoversikt
-        </a>
-    </div>
-    </div>
+         </nav>
+        </div> 
+       <!--Andre delen av headeren (part 2) som består av "studieoversikt"-->
+        <div class="header-part2"></div>
+        <div class="study-overview">
+            <a href="https://www.oslomet.no/studier/studieoversikt" class="study-overview-link">
+            <i class="fa-solid fa-less-than"></i>Studieoversikt</a>
+        </div>
     </header>
     <main>
         <!--Hovedseksjonen: bakgrunnsbilde + Overskrift-->
@@ -58,203 +53,197 @@
                 <p>En studentforening for deg som liker å lage mat</p>
             </div>
         </article>
-        <article class="activity-info">
-        <img src="../Images/bubbles-background-top.jpeg" alt="Blob Background" class="bubbles-background">
         <!--Om oss: litt bakgrunnhistorie og info om studentforeningen vår-->
-        <div class="about-us">
-            <div class="about-us-text">
-                <h2 class="h2-style">Om oss</h2>
-                <p>
-                    Vi startet som fire venninner med en felles lidenskap for matlaging. 
+        <article class="activity-info">
+            <img src="../Images/bubbles-background-top.jpeg" alt="Blob Background" class="bubbles-background">
+            <div class="about-us">
+                <div class="about-us-text">
+                    <h2 class="h2-style">Om oss</h2>
+                    <p>Vi startet som fire venninner med en felles lidenskap for matlaging.
                     Etter mange hyggelige kvelder med matlaging og nye oppskrifter, ønsket vi å dele gleden med andre og gjøre det til en sosial aktivitet for studenter. 
-                    Slik ble vår forening til!
-                </p>
-                <p> 
-                    I dag har vi over 15 medlemmer, og vårt mål er å gjøre det lettere for studenter å lage god og rimelig mat, spesielt for de med stramt budsjett. 
+                    Slik ble vår forening til!</p>
+                    
+                    <p>I dag har vi over 15 medlemmer, og vårt mål er å gjøre det lettere for studenter å lage god og rimelig mat, spesielt for de med stramt budsjett. 
                     Hver uke deler vi rimelige oppskrifter, og annenhver uke møtes vi for å lage mat sammen. 
-                    Dette gir en flott mulighet til å være sosial, lære nye retter og ha det gøy.
-                </p>
-                <p> Det er helt gratis å være med, og alt du trenger er litt kreativitet og godt humør. Vi ser fram til å møte deg!</p>
-            </div>
-            <img src="../Images/about-us-side-image.jpeg" alt="Simple Dish" class="activity-box-img">
-        </div>
-    </article>
-    <img src="../Images/activitylogo.jpeg" class="activity-logo" alt="Activity Logo">
-    <!--Kommende aktiviteter: Plan for arrangementer i tabeller-->
-    <h2 class="h2-style">Kommende aktiviteter</h2>
-    <article class="activity-events">
-      <table class="activity-events-table">
-        <thead>
-          <tr>
-            <th>Dato</th>
-            <th>Eventer</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><h3>05. Januar</h3></td>
-            <td>Amerikansk gryte</td>
-          </tr>
-          <tr>
-            <td><h3>19. Januar</h3></td>
-            <td>Grønnsakssuppe</td>
-          </tr>
-          <tr>
-            <td><h3>02. Februar</h3></td>
-            <td>Hjemmelaget komle</td>
-          </tr>
-          <tr>
-            <td><h3>16. Februar</h3></td>
-            <td>Spaghetti</td>
-          </tr>
-          <tr>
-            <td><h3>01. Mars</h3></td>
-            <td>Dumpling</td>
-          </tr>
-          <tr>
-            <td><h3>15. Mars</h3></td>
-            <td>Sushi</td>
-          </tr>
-        </tbody>
-      </table>
-    </article>
-  
-<!--Ukens Oppskrifter: image silder med oppskrifter + tips til studenter-->
-<h2 class="h2-style">Ukens oppskrifter</h2>
-<article class="recipes">   
-    <div class="weekly-recipes"> 
-        <div class="CSSgal">
-        <s id="s1"></s> 
-        <s id="s2"></s>
-        <s id="s3"></s>
-        <s id="s4"></s>
-        <s id="s5"></s>
-        <s id="s6"></s>
-        
-        <div class="slider">
-            <div class="slide" id="slide1">
-                <div class="navn"><a href="https://www.tine.no/oppskrifter/middag-og-hovedretter/pizza-og-pai/pizza-med-kj%C3%B8ttdeig">Pizza med kjøttdeig</a></div>
-                <img src="../Images/pizza-med-kjottdeig.jpeg" alt="Pizza med kjøttdeig">
-                <p class="info">45 min | Enkel | 6 porsjoner</p>
-            </div>
-            <div class="slide" id="slide2">
-                <div class="navn"><a href="https://mills.no/mills/oppskrift/tacosalat/">Tacosalat</a></div>
-                <img src="../Images/tacosalat.jpeg" alt="Tacosalat">
-                <p class="info">30 min | Enkel | 4 porsjoner</p>
-            </div>
-            <div class="slide" id="slide3">
-                <div class="navn"><a href="https://www.matprat.no">Bakt potet</a></div>
-                <img src="../Images/bakt-potet.jpeg" alt="Bakt potet">
-                <p class="info">30 min | Middels | 2 porsjoner</p>
-            </div>
-            <div class="slide" id="slide4">
-                <div class="navn"><a href="https://www.matprat.no">Pasta carbonara</a></div>
-                <img src="../Images/pasta-carbonara.jpeg" alt="Pasta carbonara">
-                <p class="info">20 min | Enkel | 4 porsjoner</p>
-            </div>
-            <div class="slide" id="slide5">
-                <div class="navn"><a href="https://www.matprat.no">Spicy kylling med basilikum</a></div>
-                <img src="../Images/spicy-kylling-med-basilikum.jpeg" alt="Spicy kylling med basilikum">
-                <p class="info">20 min | Enkel | 4 porsjoner</p>
-            </div>
-            <div class="slide" id="slide6">
-                <div class="navn"><a href="https://www.rema.no/oppskrifter/grillmat/kylling-pa-grillen/meksikansk-kyllingburger/">Meksikansk kyllingburger</a></div>
-                <img src="../Images/meksikansk-kylling-burger.jpeg" alt="Meksikansk kyllingburger">
-                <p class="info">30 min | Enkel | 2 porsjoner</p>
-            </div>
-        </div>
-        <div class="prev-next">
-            <div><a href="#s6"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s2"> <i class="fa-solid fa-arrow-right"></i> </a></div>
-            <div><a href="#s1"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s3"> <i class="fa-solid fa-arrow-right"></i> </a></div>
-            <div><a href="#s2"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s4"> <i class="fa-solid fa-arrow-right"></i> </a></div>
-            <div><a href="#s3"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s5"> <i class="fa-solid fa-arrow-right"></i> </a></div>
-            <div><a href="#s4"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s6"> <i class="fa-solid fa-arrow-right"></i> </a></div>
-            <div><a href="#s5"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s1"> <i class="fa-solid fa-arrow-right"></i> </a></div>
-        </div>
-        
-        <div class="bullets">
-            <a href="#s1">1</a>
-            <a href="#s2">2</a>
-            <a href="#s3">3</a>
-            <a href="#s4">4</a>
-            <a href="#s5">5</a>
-            <a href="#s6">6</a>
-        </div>
-    </div>
-  </div>
-    <!--5 gode tips til studentmaten--> 
-    <aside class="oppskrift-aside">
-        <h2 class="h2-style">5 gode tips til studentmaten:</h2> <!-- https://www.matprat.no/studentmat/-->
-        <ol>
-          <li>Lag matpakke, så sparer du penger.</li>
-          <li>Lag matpakken kvelden før, så kan du sove lenger.</li>
-          <li>Sjekk kjøleskapet før du handler, og planlegg ukas måltider.</li>
-          <li>Rester kan bli til gode retter!</li>
-          <li>Velg mat som holder deg mett lenge!</li>
-          <!-- <a href="https://www.matprat.no/studentmat/" > Les mer</a> -->
-        </ol>
-    </aside>
-</article>
-</article>
-    <!--kontaktinformasjon-->
-    <article class="activity-info">
-        <img src="../Images/bubbles-background-bottom.jpeg" alt="Blob Background 2" class="bubbles-background">
-        <div class="contact-us">
-            <div id="contact-us-text">
-                <div class="contact-info">
-                    <h2 class="h2-style">Kontakt oss</h2>
-                    <span>+471928393</span><br>
-                    <span>studentkjøkkenet@oslomet.no</span>
+                    Dette gir en flott mulighet til å være sosial, lære nye retter og ha det gøy.</p>
+                    
+                    <p>Det er helt gratis å være med, og alt du trenger er litt kreativitet og godt humør. Vi ser fram til å møte deg!</p>
                 </div>
-                <br>
-                <div class="contact-us-links">
-                        <a href="https://www.facebook.com/oslomet/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
-                        <a href="https://x.com/i/flow/login?redirect_after_login=%2Foslomet" target="_blank"><i class="fa-brands fa-twitter"></i> X (Twitter)</a>
-                        <a href="https://no.linkedin.com/school/oslomet/" target="_blank" ><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://www.instagram.com/oslomet/?hl=nb" target="_blank" ><i class="fa-brands fa-instagram"></i> Instagram</a>
-                </div>           
+                
+                <img src="../Images/about-us-side-image.jpeg" alt="Simple Dish" class="activity-box-img">
             </div>
-           <div class="contact-us-image"> <img src="../Images/contact-us-side-image.jpg" alt="Social cooking" class="activity-box-img"></div>
+        </article>
+        <img src="../Images/activitylogo.jpeg" class="activity-logo" alt="Activity Logo">
+         <!--Kommende aktiviteter: Plan for arrangementer i tabeller-->
+        <h2 class="h2-style">Kommende aktiviteter</h2>
+        <article class="activity-events">
+            <table class="activity-events-table">
+                <thead>
+                    <tr>
+                        <th>Dato</th>
+                        <th>Eventer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><h3>05. Januar</h3></td>
+                        <td>Amerikansk gryte</td>
+                    </tr>
+                    <tr>
+                        <td><h3>19. Januar</h3></td>
+                        <td>Grønnsakssuppe</td>
+                    </tr>
+                    <tr>
+                        <td><h3>02. Februar</h3></td>
+                        <td>Hjemmelaget komle</td>
+                    </tr>
+                    <tr>
+                        <td><h3>16. Februar</h3></td>
+                        <td>Spaghetti</td>
+                    </tr>
+                    <tr>
+                        <td><h3>01. Mars</h3></td>
+                        <td>Dumpling</td>
+                    </tr>
+                    <tr>
+                        <td><h3>15. Mars</h3></td>
+                        <td>Sushi</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <!--Ukens Oppskrifter: image silder med oppskrifter + tips til studenter-->
+        <h2 class="h2-style">Ukens oppskrifter</h2>
+        <article class="weekly-recipes">
+            <div class="recipes">
+                <div class="CSSgal"> <!--Skriv flere kommentarer under her for å forklare-->
+                    <s id="s1"></s> 
+                    <s id="s2"></s>
+                    <s id="s3"></s>
+                    <s id="s4"></s>
+                    <s id="s5"></s>
+                    <s id="s6"></s>
+                    
+                    <div class="slider">
+                        <div class="slide" id="slide1">
+                            <div class="navn"><a href="https://www.tine.no/oppskrifter/middag-og-hovedretter/pizza-og-pai/pizza-med-kj%C3%B8ttdeig">Pizza med kjøttdeig</a></div>
+                            <img src="../Images/pizza-med-kjottdeig.jpeg" alt="Pizza med kjøttdeig">
+                            <p class="info">45 min | Enkel | 6 porsjoner</p>
+                        </div>
+                        <div class="slide" id="slide2">
+                            <div class="navn"><a href="https://mills.no/mills/oppskrift/tacosalat/">Tacosalat</a></div>
+                            <img src="../Images/tacosalat.jpeg" alt="Tacosalat">
+                            <p class="info">30 min | Enkel | 4 porsjoner</p>
+                        </div>
+                        <div class="slide" id="slide3">
+                            <div class="navn"><a href="https://www.matprat.no">Bakt potet</a></div>
+                            <img src="../Images/bakt-potet.jpeg" alt="Bakt potet">
+                            <p class="info">30 min | Middels | 2 porsjoner</p>
+                        </div>
+                        <div class="slide" id="slide4">
+                            <div class="navn"><a href="https://www.matprat.no">Pasta carbonara</a></div>
+                            <img src="../Images/pasta-carbonara.jpeg" alt="Pasta carbonara">
+                            <p class="info">20 min | Enkel | 4 porsjoner</p>
+                        </div>
+                        <div class="slide" id="slide5">
+                            <div class="navn"><a href="https://www.matprat.no">Spicy kylling med basilikum</a></div>
+                            <img src="../Images/spicy-kylling-med-basilikum.jpeg" alt="Spicy kylling med basilikum">
+                            <p class="info">20 min | Enkel | 4 porsjoner</p>
+                        </div>
+                        <div class="slide" id="slide6">
+                            <div class="navn"><a href="https://www.rema.no/oppskrifter/grillmat/kylling-pa-grillen/meksikansk-kyllingburger/">Meksikansk kyllingburger</a></div>
+                            <img src="../Images/meksikansk-kylling-burger.jpeg" alt="Meksikansk kyllingburger">
+                            <p class="info">30 min | Enkel | 2 porsjoner</p>
+                        </div>
+                    </div>
+                    <div class="prev-next"> <!--Skriv flere kommentarer under her for å forklare-->
+                        <div><a href="#s6"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s2"> <i class="fa-solid fa-arrow-right"></i> </a></div>
+                        <div><a href="#s1"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s3"> <i class="fa-solid fa-arrow-right"></i> </a></div>
+                        <div><a href="#s2"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s4"> <i class="fa-solid fa-arrow-right"></i> </a></div>
+                        <div><a href="#s3"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s5"> <i class="fa-solid fa-arrow-right"></i> </a></div>
+                        <div><a href="#s4"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s6"> <i class="fa-solid fa-arrow-right"></i> </a></div>
+                        <div><a href="#s5"> <i class="fa-solid fa-arrow-left"></i> </a><a href="#s1"> <i class="fa-solid fa-arrow-right"></i> </a></div>
+                    </div>
+                    <div class="bullets"> <!--Skriv flere kommentarer under her for å forklare-->
+                        <a href="#s1">1</a>
+                        <a href="#s2">2</a>
+                        <a href="#s3">3</a>
+                        <a href="#s4">4</a>
+                        <a href="#s5">5</a>
+                        <a href="#s6">6</a>
+                    </div>
+                </div>
+            </div>    
+            <!--5 gode tips til studentmaten--> 
+            <aside class="oppskrift-aside">
+                <h2 class="h2-style">5 gode tips til studentmaten:</h2>
+                <ol>
+                    <!-- tipene hentet fra: https://www.matprat.no/studentmat/ -->
+                    <li>Lag matpakke, så sparer du penger.</li>
+                    <li>Lag matpakken kvelden før, så kan du sove lenger.</li>
+                    <li>Sjekk kjøleskapet før du handler, og planlegg ukas måltider.</li>
+                    <li>Rester kan bli til gode retter!</li>
+                    <li>Velg mat som holder deg mett lenge!</li>
+                </ol>
+            </aside>
+        </article>
+        <!--Kontaktinformasjon-->
+        <article class="activity-info">
+            <img src="../Images/bubbles-background-bottom.jpeg" alt="Blob Background 2" class="bubbles-background">
+            <div class="contact-us"> 
+                <div class="contact-us-text">
+                    <div class="contact-info">
+                        <h2 class="h2-style">Kontakt oss</h2> 
+                        <span>+471928393</span><br> <!--kanskje fjern "br" og "span"-->
+                        <span>studentkjøkkenet@oslomet.no</span> <!--kanskje fjern "span"-->
+                    </div>
+                    <br><!--kanskje fjern "br"-->
+                    <div class="contact-us-links"> <!-- linkene til sosiale medier er hentet fra: https://www.sio.no/-->
+                        <a href="https://www.facebook.com/SiOStudentliv/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                        <a href="https://no.linkedin.com/school/oslomet/" target="_blank" ><i class="fa-brands fa-tiktok"></i> Tikok</a>
+                        <a href="https://www.instagram.com/siostudentliv/#" target="_blank" ><i class="fa-brands fa-instagram"></i> Instagram</a>
+                        <a href="https://www.youtube.com/c/SiOStudentliv" target="_blank" ><i class="fa-brands fa-youtube"></i> Youtube</a>
+                    </div>
+                </div>
+                <div class="contact-us-image"> <img src="../Images/contact-us-side-image.jpg" alt="Social cooking" class="activity-box-img"></div>
+            </div>
+        </article>
+    </main>
+    <!--Footer: felles for alle sidene våre-->
+    <footer>
+        <div class="footer">
+            <div class="footer-col col-1">
+                <h3>OSLO METROPOLITAN UNIVERSITY</h3>
+                <h4>STORBYUNIVERSITET<h4>
+                    <p>Postboks 4, St. Olavs plass</p>
+                    <p>0130 Oslo</p>
+                    <p>Tlf.: 67 23 50 00 </p>
+                    <a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a>
+                </div>
+                <div class="footer-col col-2">
+                    <h3>Nyttige lenker</h3>
+                    <ul>
+                        <li> <a href="https://www.oslomet.no/en">English</a> </li>
+                        <li> <a href="https://www.oslomet.no/studier/soknad-og-opptak">Søknad og opptak</a> </li>
+                        <li> <a href="https://www.oslomet.no/ub/bibliotekene">Bibliotekene</a> </li>
+                        <li> <a href="https://www.oslomet.no/om/for-studenter">For studenter</a> </li>
+                        <li> <a href="https://www.oslomet.no/om/for-ansatte">For ansatte</a> </li>
+                        <li> <a href="https://www.oslomet.no/nyhetsbrev">Nyhetsbrev</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col col-3">
+                    <h3>Sosiale medier</h3>
+                    <ul class="social-links">
+                        <li> <a href="https://www.facebook.com/oslomet/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a> </li>
+                        <li> <a href="https://x.com/i/flow/login?redirect_after_login=%2Foslomet" target="_blank"><i class="fa-brands fa-twitter"></i> X (Twitter)</a> </li>
+                        <li> <a href="https://no.linkedin.com/school/oslomet/" target="_blank" ><i class="fa-brands fa-linkedin"></i> LinkedIn</a> </li>
+                        <li> <a href="https://www.instagram.com/oslomet/?hl=nb" target="_blank" ><i class="fa-brands fa-instagram"></i> Instagram</a> </li>
+                    </ul>
+                </div>
         </div>
-    </article>
-</main>
-<!--footer - felles for alle sider-->
-<footer>
-    <div class="footer">
-        <div class="footer-col col-1">
-            <h3>OSLO METROPOLITAN UNIVERSITY</h3>
-            <h4>STORBYUNIVERSITET<h4>
-            <p>Postboks 4, St. Olavs plass</p>
-            <p>0130 Oslo</p>
-            <p>Tlf.: 67 23 50 00 </p>
-            <a href = "https://www.oslomet.no/om/kontakt">   Kontakt oss </a>
-        </div>
-        <div class="footer-col col-2">
-            <h3>Nyttige lenker</h3>
-            <ul>
-              <li> <a href = "https://www.oslomet.no/en">English </a> </li>
-              <li> <a href = "https://www.oslomet.no/studier/soknad-og-opptak">Søknad og opptak </a> </li>
-              <li> <a href = "https://www.oslomet.no/ub/bibliotekene">Bibliotekene </a> </li>
-              <li> <a href = "https://www.oslomet.no/om/for-studenter">For studenter </a></li>
-              <li> <a href = "https://www.oslomet.no/om/for-ansatte">For ansatte </a></li>
-              <li> <a href = "https://www.oslomet.no/nyhetsbrev">Nyhetsbrev </a> </li>
-      
-          </ul>
-      
-        </div>
-        <div class="footer-col col-3">
-            <h3>Sosiale medier</h3>
-            <ul class="social-links">
-                <li><a href="https://www.facebook.com/oslomet/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-                <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Foslomet" target="_blank"><i class="fa-brands fa-twitter"></i> X (Twitter)</a></li>
-                <li><a href="https://no.linkedin.com/school/oslomet/" target="_blank" ><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/oslomet/?hl=nb" target="_blank" ><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>  
-<!--linker til anker på topp av siden-->
-<!--https://stackoverflow.com/questions/32102747/how-to-make-a-back-to-top-button-using-css-and-html-only-->
+    </footer>
+    <!--linker til anker på topp av siden-->
+    <!--https://stackoverflow.com/questions/32102747/how-to-make-a-back-to-top-button-using-css-and-html-only-->
     <a href="#back-to-top" id="btn-to-top">Til toppen</a>
 </body>
 </html>

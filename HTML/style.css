@@ -1,3 +1,8 @@
+/*
+*{
+    border:1px solid red;
+}
+*/
 
 /* Generelt */
 body {
@@ -35,7 +40,7 @@ body {
     color: black;
 }
 /*felles plassering */ 
-.h2-style, .main-article, .activity-events, .recipes, .oppskrift-aside, .footer {
+.h2-style, .main-article, .activity-events, .weekly-recipes, .oppskrift-aside, .footer {
     justify-content: center;
 }
 
@@ -312,6 +317,12 @@ padding-top: 50px;}
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.contact-us-links a:hover {
+    background-color: #484545;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
 .contact-us-image img {
     height: 300px
 }
@@ -361,11 +372,11 @@ http://stackoverflow.com/a/34696029/383904 */
 
 /* */
 
-.weekly-recipes {
+.recipes {
     padding-bottom: 100px;
 
 }
-.recipes {
+.weekly-recipes {
     display: flex;
     flex-direction: row;
     padding: 45px;
@@ -610,7 +621,7 @@ http://stackoverflow.com/a/34696029/383904 */
 
 /* Media query for... */
 @media only screen and (max-width: 1049px) {
-    .recipes {
+    .weekly-recipes {
         flex-direction: column;
         align-items: center;
     }
@@ -640,7 +651,7 @@ http://stackoverflow.com/a/34696029/383904 */
 }
 
 @media only screen and (max-width: 799px) {
-    .recipes {
+    .weekly-recipes {
         flex-direction: column; /* Stack items vertically */
         align-items: center;
     }
@@ -675,7 +686,7 @@ http://stackoverflow.com/a/34696029/383904 */
 }
 
 @media only screen and (max-width: 550px) {
-    .recipes {
+    .weekly-recipes {
         flex-direction: column; /* Stack items vertically */
         align-items: center;
     }
