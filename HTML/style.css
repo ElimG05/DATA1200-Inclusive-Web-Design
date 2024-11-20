@@ -5,7 +5,35 @@ body {
     /* background-color: rgb(107, 32, 32); */
 }
 
+.background-index {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 60vh;
+    max-width: 100%;
+    text-align: center;
+}
 
+.bakgrunnsbilde-index {
+    position: absolute;
+    top: 0;
+    left: 330px;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+.text-container {
+    position: relative;
+    z-index: 1; 
+    padding: 20px; 
+}
+
+.main-title {
+    font-size: 3rem; 
+    color: white; 
+}
 
 
 h1, p {
