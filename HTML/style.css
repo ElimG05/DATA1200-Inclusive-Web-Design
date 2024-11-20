@@ -68,9 +68,10 @@ nav {
 
 /* Vanessa */
 .fa-solid, .fa-regular{
-    font-size: 1.9em;
-    padding-right: 10px;
+    font-size: 1.2em;
+    padding: 5px;
 }
+
 :root{
     --brand-color: #ffd404
 }
@@ -100,7 +101,8 @@ main {
 
 .link-style{ /*brand-link*/
     font-weight: 800;
-    border-bottom: 2px var(--brand-color) solid;
+    text-decoration:underline 2.5px solid #ffd404;
+	text-decoration-skip-ink:none;
 }
 
 /*{
@@ -108,7 +110,7 @@ main {
 }*/
 
 .link-style:hover{ /*brand-link*/
-    color: var(--brand-color);
+    text-decoration:underline;
 }
 
 .footer {
@@ -384,10 +386,8 @@ change to solid icon
     margin-block: 14px;
 }
 
-
-.course-content .semester[open] summary,
 .semester h4 {
-	background-color: #ff9310
+	background-color: #ff9310;
 }
 /*introduction istedenfor course-content helt til hit*/
 
@@ -395,19 +395,20 @@ change to solid icon
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-top: 16px;
-    column-gap: 36px;
-    row-gap: 20px;
+    column-gap: 25px;
+    row-gap: 30px;
   }
   
   .curriculum-box {
-    background: #f9f9f9;
+    background: #e9e4df;
     padding: 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #a8a8a8;
     border-radius: 8px;
   }
   
   .curriculum-box .single-box {
     grid-column: span 1;
+    margin-top: 20px;
   }
   
   .group-subject {
@@ -415,7 +416,8 @@ change to solid icon
     background: #ffd404;
     padding: 8px;
     text-align: left;
-    font-weight: bold;
+    font-size: 0.9em;
+
 }
   
 
@@ -432,14 +434,15 @@ change to solid icon
     width: 100px;
 }
 
-.professor .contact,
-.semester h4 {
-	margin-top: 10px
+.professor .contact{
+margin-top: 10px;
+margin-bottom: 10px;
 }
 
 .semester h4 {
-	padding: 13px;
+	padding: 10px;
     font-size: 1em;
+    margin-top: 10px
 }
 
 .professor .professor-info{
