@@ -98,7 +98,7 @@ main {
 
 }
 
-.link-style{
+.link-style{ /*brand-link*/
     font-weight: 800;
     border-bottom: 2px var(--brand-color) solid;
 }
@@ -107,7 +107,7 @@ main {
     border:1px solid red;
 }*/
 
-.link-style:hover{
+.link-style:hover{ /*brand-link*/
     color: var(--brand-color);
 }
 
@@ -233,27 +233,28 @@ font-xsmall = subjects
 /* 
 course-information = intro-information
 */
-.course-information{ 
+.course-information{ /* container*/
     max-width: 80%;
     margin-right: auto;
     margin-left: auto;
 }
 
-.course-information-boxstory{
+.course-information-boxstory{ /*container-boxstroty*/
     background-color: #ffd404;
     padding: 30px;
     border: 15px double black;
 }
 
 
-.course-information-lg{
+.course-information-lg{ /* container-lg*/
     max-width: 90%;
 }
 
-.course-information-sm{
+.course-information-sm{ /* container-sm*/
     max-width: 70%;
 }
 
+/*fjernet flex*/
 
 .m-lg{
     margin: 1.25rem;
@@ -268,11 +269,11 @@ iframe{
     margin-top: 4rem;
 }
 
-.large-margin {
-    margin: 2.5rem 0;
+.large-margin { /* section*/
+    margin: 4.5rem 0;
 }
 
-.large-margin h3{
+.large-margin h3{ /* section-h3*/
     margin-bottom: 1rem;
 }
 
@@ -286,14 +287,14 @@ iframe{
     margin-top: 0.5rem;
 }
 
-.bachelorprogram-details{
+.bachelorprogram-details{ /* info*/
     margin-top: 2.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 2rem;
 }
 
-.bachelorprogram-details-box{
+.bachelorprogram-details-box{ /* info-box*/
     border-top: 1px solid #000;
     padding: 1rem 0;
     display: flex;
@@ -301,20 +302,20 @@ iframe{
     column-gap: 10px;
 }
 
-.bachelorprogram-details-box h3{
+.bachelorprogram-details-box h3{ /* info-box h3*/
     margin-bottom: 0;
     font-size: 1rem;
     font-weight: 600;
 }
 
-.bachelorprogram-details-box p, li{
+.bachelorprogram-details-box p, li{ /* info-p*/
     margin-top: 0px;
     font-weight: 800;
     margin-left: 40px;
 }
 
 
-.course-content{
+.course-content{ /* introduction*/
     display: flex;
     align-items: flex-start;
     column-gap: 20px;
@@ -388,6 +389,7 @@ change to solid icon
 .semester h4 {
 	background-color: #ff9310
 }
+/*introduction istedenfor course-content helt til hit*/
 
 .curriculum {
     display: grid;
@@ -417,7 +419,7 @@ change to solid icon
 }
   
 
-.professor{
+.professor{ /*person*/
     display: flex;
     align-items: center;
     border-top: 1px #2e2e2e solid;
@@ -426,7 +428,7 @@ change to solid icon
     height: 100%;
 }
 
-.professor img{
+.professor img{ 
     width: 100px;
 }
 
@@ -451,7 +453,7 @@ change to solid icon
     align-items: stretch;
 }
 
-.qna-education{
+.qna-education{ /*.leder, qa*/
     flex: 1;
 }
 
@@ -506,7 +508,7 @@ change to solid icon
     padding: 0 20px 0 0;
 }
 
-.studenthistory{
+.studenthistory{ /*studenthistori*/
     margin-bottom: 20px;
 }
 
@@ -543,7 +545,7 @@ change to solid icon
     object-fit: cover;
 }
 
-.studenthistories-more{
+.studenthistories-more{ /*studenthistorier*/
     display: flex;
     background-color: var(--brand-color);
     padding: 1.5rem 1.5rem;
