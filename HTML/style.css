@@ -36,7 +36,7 @@ body {
     text-decoration-line: none;
 }
 /*felles farger*/
-.h2-style, .study-overview a, .menu li a, .contact-us-links a, .navn, .navn a, .info, .col-1 a, .footer-col a, .col-2 a, #btn-to-top {
+.h2-style, .study-overview a, .menu li a, .contact-us-links a, .navn, .navn a, .info, .col-1 a, .footer-col a, .col-2 a, #btn-to-top, .contact-info ul li {
     color: black;
 }
 /*felles plassering */ 
@@ -772,9 +772,9 @@ http://stackoverflow.com/a/34696029/383904 */
 }
 
 /* Fjerner punkttegn fra lister */
-.footer-col ul {
+.footer-col ul, .contact-info ul li{
     list-style-type: none;
-    padding: 0;
+    padding: 0.1em;
 }
 
 .footer-col a {
