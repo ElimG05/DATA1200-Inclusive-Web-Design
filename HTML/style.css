@@ -19,7 +19,7 @@ body {
     margin-bottom: 0;
 }
 /* felles font størrelser*/ 
-.fa-bars, .fa-square-xmark, .navn, .content p {
+.fa-bars, .fa-xmark, .navn, .content p {
     font-size: 1.6em;
 }
 /*100% av bilde/boks*/
