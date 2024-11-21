@@ -100,6 +100,15 @@ nav {
     padding: 5px;
 }
 
+.fa-arrow-right {
+    padding-left: 220px;
+}
+
+.fa-arrow-right:hover {
+    transition:scale(1.1);
+}
+
+
 :root{
     --brand-color: #ffd404
 }
@@ -132,8 +141,8 @@ main {
     text-decoration:underline 2.5px solid #ffd404;
 	text-decoration-skip-ink:none;
 }
-
-/*{
+/*
+*{
     border:1px solid red;
 }*/
 
@@ -276,7 +285,7 @@ course-information = intro-information
     border: 15px double black;
 }
 
-.course-information summary {
+.course-content summary {
     border-bottom: 2px solid #ccc;
     margin: 5px;
 }
@@ -530,12 +539,22 @@ margin-bottom: 10px;
     color: white;
 }
 
+.more-courses {
+    display: grid;
+    gap:15px;
+}
+
 .program{
     display: flex;
     justify-content: space-between;
     border-bottom: #2e2e2e solid 1px;
     margin-bottom: 15px;
     padding-bottom: 15px;
+}
+
+.more-programs {
+    padding-left: 500px;
+
 }
 /* .courses:last-child{
     border-bottom: 1px #2e2e2e solid; */
