@@ -264,6 +264,7 @@ font-xsmall = subjects
 course-information = intro-information
 */
 .course-information{ /* container*/
+    margin-top: 100px;
     max-width: 80%;
     margin-right: auto;
     margin-left: auto;
@@ -275,20 +276,22 @@ course-information = intro-information
     border: 15px double black;
 }
 
+.course-information summary {
+    border-bottom: 2px solid #ccc;
+    margin: 5px;
+}
 
-.course-information-lg{ /* container-lg*/
+
+.course-information-large{ /* container-lg*/
     max-width: 90%;
 }
 
-.course-information-sm{ /* container-sm*/
+.course-information-small{ /* container-sm*/
     max-width: 70%;
 }
 
 /*fjernet flex*/
 
-.m-lg{
-    margin: 1.25rem;
-}
 
 
 iframe{
@@ -342,6 +345,11 @@ iframe{
     margin-top: 0px;
     font-weight: 800;
     margin-left: 40px;
+}
+
+.bachelorprogram-details-box.border-bottom-section { /*Nytt siden 21.11*/
+    border-bottom: 1px solid #444242; 
+
 }
 
 
@@ -427,7 +435,7 @@ change to solid icon
     row-gap: 30px;
   }
   
-  .curriculum-box {
+.curriculum-box {
     background: #e9e4df;
     padding: 16px;
     border: 1px solid #a8a8a8;
