@@ -173,7 +173,7 @@ nav {
 }
 
 .fa-arrow-right {
-    padding-left: 210px;
+    padding-left: 180px;
 }
 
 .fa-greater-than {
@@ -181,7 +181,7 @@ nav {
 }
 
 .fa-greater-than:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
 
 }
 
@@ -361,7 +361,6 @@ course-information = intro-information
     max-width: 80%;
     margin-right: auto;
     margin-left: auto;
-    border-top:#ccc 2px solid
 }
 
 .course-information-boxstory{ /*container-boxstroty*/
@@ -762,6 +761,7 @@ course i{
     display: flex;
     align-items: center;
     height: 400px;
+    padding: 80px;
 }
 
 
@@ -786,9 +786,8 @@ course i{
 }
 
 .bottom-card .card-img img{ /*fiks størrelse på bilde*/
-    margin-left: 40px;
     height: 300px;
-    max-width: 500px;
+    max-width: 400px;
     object-fit: cover;
 }
 
