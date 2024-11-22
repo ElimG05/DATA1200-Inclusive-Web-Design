@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub</title>
-    <link rel ="stylesheet" href="style.css">
+    <link rel ="stylesheet" href="./CSS/style.css">
     <!--OsloMet logo i browser tap (https://www.geeksforgeeks.org/how-to-add-a-browser-tab-icon-favicon-for-a-website/)-->
     <link rel="icon" href=""  type="image/x-icon"> 
     <!--Ikonene vi har tatt i bruk er hentet fra front-awesome (https://www.w3schools.com/icons/fontawesome5_intro.asp)-->
@@ -28,8 +28,8 @@
          <nav class="navigation-bar">
             <ul class="menu">
                 <li><a href="index.html">Index</a></li>
-                <li><a href="activity.html">Activity</a></li><!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
-                <li><a class="active" href="github.html">GitHub</a></li>
+                <li><a href="activity.html">Activity</a></li>
+                <li><a class="active" href="github.html">GitHub</a></li><!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
                 <li><a href="accessibility.html">Accessibility</a></li>
             </ul>
          </nav>
@@ -41,20 +41,73 @@
             <i class="fa-solid fa-less-than"></i>Studieoversikt</a>
         </div>
     </header>
-    <main>
-      <article> 
-          <h1>GitHub </h1>
-          <p> HEIHEI </p>
-          <h3> </h3>
-          <p> </p>
+    <main class="github-page">
+      <!--En kort introduksjon om samarbeidet i GitHub-->
+      <article class="introduction">
+          <h1>GitHub<i class="fa-brands fa-square-github"></i></h1>
+          <h2 class="h2-style">Samarbeidet på GitHub</h2>
+          <p>
+              I løpet av denne perioden har vi brukt GitHub aktivt for å strukturere, dele og utvikle prosjektet vårt.
+              Vi opprettet et eget repository, der vi har jobbet sammen ved hjelp av GitHubs mange funksjoner som commits,
+              branches og mye annet. Branches har vært en av de mest nyttige funksjonene i GitHub. De har lagt oss jobbe med
+              forskjellige deler av prosjektet uten å påvirke hovedkodebasen. Vi opprettet egne branches for ulike deler, blant annet
+              header, activity og footer, noe som ga oss frihet til å eksperimentere og forbedre koden. Når vi var ferdige med å
+              jobbe i branchen, var det bare å merge det inn i hovedkodebasen.
+          </p>
       </article>
-      <article> 
-          <h3> </h3>
+
+      <!--Commit-historikk fra repositoryen inkludert to bilder-->
+      <article class="code-commit">
+          <h2 class="h2-style">Commit historikk</h2>
+          <p>
+              Commit-historikken på GitHub har vært en viktig funksjon for oss. Det har gitt oss en detaljert logg over alle
+              endringer. Denne loggen gir en oversikt over hva som ble gjort, når og av hvem. Ved å legge til kommentarer til
+              commits kan vi forklare endringene våre, noe som har hjulpet mye med forståelse i gruppen.
+          </p>
+          <div class="image-grid">
+              <figure>
+                  <img src="./images/commit-image-1.png" alt="Commit-historikk fra activity-siden">
+                  <figcaption>Commit-historikk fra activity-siden.</figcaption>
+              </figure>
+              <figure>
+                  <img src="./images/commit-image-2.png" alt="Commit-historikk fra index-siden">
+                  <figcaption>Commit-historikk fra index-siden.</figcaption>
+              </figure>
+          </div>
       </article>
-      <aside>
-          <h4> </h4>
-      </aside>
-  </main>
+
+      <!--Spesifikke endringer i repositoryen inkludert to bilder-->
+      <article class="specific-code-changes">
+          <h2 class="h2-style">Visuell sporing av endringer</i></h2>
+          <p>
+              En annen viktig funksjon GitHub har er å kartlegge alle endringene man gjør etter hvert som man committer. Dette
+              gjør det enkelt å spore og analysere endringer gjennom en visuell oversikt. Når man klikker på en commit, får man
+              opp en detaljert visning av hvilke linjer som er lagt til, endret eller slettet.
+          </p>
+          <div class="image-grid">
+              <figure>
+                  <img src="./images/specific-code-changes-image-1.png" alt="Spesifikke endringer fra activity-siden">
+                  <figcaption>Spesifikke endringer fra activity-siden.</figcaption>
+              </figure>
+              <figure>
+                  <img src="./images/specific-code-changes-image-2.png" alt="Spesifikke endringer fra index-siden">
+                  <figcaption>Spesifikke endringer fra index-siden.</figcaption>
+              </figure>
+          </div>
+      </article>
+
+      <!--En liste med fordeler ved GitHub-->
+      <article class="benefits">
+          <h2 class="h2-style">Fordeler med GitHub</h2>
+          <ul>
+              <li>Branches: Gir muligheten for å kunne jobbe med separate deler av prosjektet uten å påvirke hovedkoden.</li>
+              <li>Effektiv sporing av kodeendringer: GitHub holder oversikt over alle endringer med versjonshistorikk, slik at vi
+                  kan gå tilbake til tidligere versjoner ved behov og ingenting går tapt.</li>
+              <li>Skriv noe her...</li>
+              <li>Skriv noe her...</li>
+          </ul>
+      </article>
+    </main>
   <!--Footer: felles for alle sidene våre-->
   <footer>
   <div class="footer">
