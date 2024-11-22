@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matematisk modellering og datavitenskap – ingeniør</title>
-  <link rel="stylesheet" href="./CSS/style.css">
-  <link rel="icon" href="Images/icon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematisk modellering og datavitenskap - ingeniør</title>
+    <link rel ="stylesheet" href="style.css">
+    <!--OsloMet logo i browser tap (https://www.geeksforgeeks.org/how-to-add-a-browser-tab-icon-favicon-for-a-website/)-->
+    <link rel="icon" href=""  type="image/x-icon"> 
+    <!--Ikonene vi har tatt i bruk er hentet fra front-awesome (https://www.w3schools.com/icons/fontawesome5_intro.asp)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <header>
-    <nav>
-      <a href="https://www.oslomet.no/"><img src="oslomet.png" alt="Oslomet - Forside" class="logo"></a>
-      <ul id="oversikt">
-        <li>
-          <div id="sok"><b>SØK⌕</b></div>
-        </li>
-        <li>
-          <div class="meny">
-            <button class="dropbtn"><b>MENY≡</b></button>
-            <div class="dropdown-meny">
-              <a href="index.html">index</a>
-              <a href="accessibility.html">accessibility</a>
-              <a href="github.html">github</a>
-              <a href="activity.html">activity</a>
-            </div>
-          </div>
-        </li>
-
-      </ul>
-      <a href="https://www.oslomet.no/studier/studieoversikt" id="studieoversikt">Studieoversikt</a>
-      <ul id="oversikt-sm">
-        <a href="index.html">index</a>
-        <a href="accessibility.html">accessibility</a>
-        <a href="github.html">github</a>
-        <a href="activity.html">activity</a>
-      </ul>
-    </nav>
-
-  </header>
+    <!--Header: felles for alle sider-->
+    <header>
+        <!--Første delen av headeren (part 1) som består av oslomet-logoen og navigasjonsbaren-->
+        <div class="header-part1">
+            <a href="https://www.oslomet.no/"> <img src="../Images/oslometlogo.jpeg" alt="Oslomet-Forside" class="school-logo"></a> 
+         <!--Hamburger Meny. Her er planen at utseende på menyen skal endres når man trykker den, slik at det er enklet å se om den er trykket på eller ikke-->
+         <input class="side-menu" type="checkbox" id="side-menu" />
+         <div class="menu-display">
+             <label for="side-menu" class="dropbtn">
+                 <div class="menu-enter">MENY <i class="fa-solid fa-bars"></i></div> 
+                 <div class="menu-exit">MENY <i class="fa-solid fa-xmark"></i></div>
+             </label>
+         </div> 
+         <!--Navigasjonsbar. Her er en oversikt over alle sidene våre-->
+         <nav class="navigation-bar">
+            <ul class="menu">
+                <li><a class="active" href="index.html">Index</a></li>
+                <li><a href="activity.html">Activity</a></li><!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
+                <li><a href="github.html">GitHub</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+            </ul>
+         </nav>
+        </div> 
+       <!--Andre delen av headeren (part 2) som består av "studieoversikt"-->
+        <div class="header-part2"></div>
+        <div class="study-overview">
+            <a href="https://www.oslomet.no/studier/studieoversikt" class="study-overview-link">
+            <i class="fa-solid fa-less-than"></i>Studieoversikt</a>
+        </div>
+    </header>
     <main>
       <article class="background-index">
         <img src="../HTML/multimedia/background-img-index.png" alt="background-img" class="bakgrunnsbilde-index">
@@ -1049,44 +1049,43 @@
   </div>
 </div>
 
-
-
-
-
     </article>
   </main>
+    <!--Footer: felles for alle sidene våre-->
   <footer>
     <div class="footer">
-      <div class="col-1">
-        <h3>OSLO METROPOLITAN UNIVERSITY</h3>
-        <p>STORBYUNIVERSITET</p>
-        <p>Postboks 4, St. Olavs plass</p>
-        <p>0130 Oslo</p>
-        <p>Tlf.: 67 23 50 00 </p>
-        <a href="https://www.oslomet.no/om/kontakt"> Kontakt oss </a>
-      </div>
-
-      <div class="col-2">
-        <ul>
-          <il> <a href="https://www.oslomet.no/en"> English </a> </il>
-          <il> <a href="https://www.oslomet.no/om/for-studenter"> For studenter </a></il>
-          <il> <a href="https://www.oslomet.no/om/for-ansatte"> For ansatte </a></il>
-          <il> <a href="#"> Admin </a></il>
-
-        </ul>
-
-      </div>
-      <div class="col-3">
-        <ul>
-          <il> <a href="#"> Facebook </a> </il>
-          <il> <a href="#"> X (Twitter) </a></il>
-          <il> <a href="#"> Linkedln </a></il>
-          <il> <a href="#"> Instagram </a></il>
-
-        </ul>
-
-
-      </div>
+      <!--første del av footeren: kort info om skolen-->
+        <div class="footer-col col-1">
+            <h3>OSLO METROPOLITAN UNIVERSITY</h3>
+            <h4>STORBYUNIVERSITET<h4>
+                <p>Postboks 4, St. Olavs plass</p>
+                <p>0130 Oslo</p>
+                <p>Tlf.: 67 23 50 00 </p>
+                <a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a>
+            </div>
+            <!--andre delen av footeren: en liste med nyttig lenker fra OsloMet-->
+            <div class="footer-col col-2">
+                <h3>Nyttige lenker</h3>
+                <ul>
+                    <li> <a href="https://www.oslomet.no/en">English</a> </li>
+                    <li> <a href="https://www.oslomet.no/studier/soknad-og-opptak">Søknad og opptak</a> </li>
+                    <li> <a href="https://www.oslomet.no/ub/bibliotekene">Bibliotekene</a> </li>
+                    <li> <a href="https://www.oslomet.no/om/for-studenter">For studenter</a> </li>
+                    <li> <a href="https://www.oslomet.no/om/for-ansatte">For ansatte</a> </li>
+                    <li> <a href="https://www.oslomet.no/nyhetsbrev">Nyhetsbrev</a> </li>
+                </ul>
+            </div>
+            <!--tredje del av footeren: en oversikt over skolen sosiale medier-->
+            <div class="footer-col col-3">
+                <h3>Sosiale medier</h3>
+                <ul class="social-links">
+                    <li> <a href="https://www.facebook.com/oslomet/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a> </li>
+                    <li> <a href="https://x.com/i/flow/login?redirect_after_login=%2Foslomet" target="_blank"><i class="fa-brands fa-twitter"></i> X (Twitter)</a> </li>
+                    <li> <a href="https://no.linkedin.com/school/oslomet/" target="_blank" ><i class="fa-brands fa-linkedin"></i> LinkedIn</a> </li>
+                    <li> <a href="https://www.instagram.com/oslomet/?hl=nb" target="_blank" ><i class="fa-brands fa-instagram"></i> Instagram</a> </li>
+                </ul>
+            </div>
+    </div>
   </footer>
 </body>
 </html>
