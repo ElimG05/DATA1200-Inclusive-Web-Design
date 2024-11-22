@@ -554,6 +554,25 @@ margin-bottom: 10px;
     justify-content: space-between;
 }
 
+course i{
+    transition: transform 100ms;
+}
+
+
+.course i:hover{
+    transform: translateX(30px);
+}
+
+.see-more{
+    margin-top: 40px;
+}
+
+.see-more summary{
+    text-align: center;
+    margin: 0;
+}
+
+
 .bold:hover{
     font-size: 1.7em;
     transition: 0.2s ease-in-out;
