@@ -459,35 +459,105 @@ change to solid icon
 	background-color: #ff9310;
 }
 /*introduction istedenfor course-content helt til hit*/
-
 .curriculum {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
     padding-top: 16px;
     column-gap: 25px;
-    row-gap: 30px;
-  }
-  
+    row-gap: 12px;
+}
+
 .curriculum-box {
+    position: relative;
+    background: #e5e1de;
+    padding: 21px;
+    border: 1px solid #a8a8a8;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Nytt siden 22.11*/
+.font-xsmall p {
+    padding-top: 8px;
+    margin: 0; 
+}
+
+/* Ikonet for "valgfritt emne" */
+.curriculum-box h5 i.fa-star {
+    position: absolute; 
+    top: 8px;
+    right: 8px;
+    font-size: 1em;
+}
+
+/* For de obligatoriske fagene */
+.curriculum-box.single {
     background: #e9e4df;
     padding: 16px;
     border: 1px solid #a8a8a8;
     border-radius: 8px;
-  }
-  
-  .curriculum-box .single-box {
-    grid-column: span 1;
-    margin-top: 20px;
-  }
-  
-  .group-subject {
-    grid-column: span 4;
+}
+
+/* Emnegruppe */
+.group-subject {
+    grid-column: span 4; /*den vil ende på den tredje grid linjen fra startposisjonen (hentet fra: https://www.frontendreference.com/css/grid-column-end.html) */ 
     background: #ffd404;
     padding: 8px;
     text-align: left;
     font-size: 0.9em;
-
 }
+
+@media (max-width: 1200px) {
+    .curriculum {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 15px;
+        row-gap: 10px;
+    }
+
+    .curriculum-box {
+        padding: 16px;
+    }
+
+    .group-subject {
+        grid-column: span 3;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 850px) {
+    .curriculum {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+        row-gap: 10px;
+    }
+
+    .curriculum-box {
+        padding: 16px;
+    }
+
+    .group-subject {
+        grid-column: span 2;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .curriculum {
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        row-gap: 8px;
+    }
+
+    .curriculum-box {
+        padding: 12px;
+    }
+
+    .group-subject {
+        grid-column: span 1;
+        padding: 8px;
+    }
+}
+
   
 /*Nytt siden 21/11*/
 .professor{ /*person*/
@@ -664,12 +734,21 @@ course i{
     
 }
 
+
+.studenthistories-more i{
+    font-size: 18px;
+}
+
 .studenthistories-more:hover{
     background-color: hsl(50, 100%, 45%);
 }
 
 .studenthistories-more:hover svg{
     translate: -5px 0;
+}
+
+.studenthistories-more:hover a{
+    color: rgb(255, 61, 61);
 }
 
 @media only screen and (max-width: 784px) {
