@@ -187,10 +187,6 @@ nav {
     font-size: 1em;
 }
 
-.fa-greater-than:hover {
-    transform: scale(1.1);
-
-}
 
 
 
@@ -215,7 +211,7 @@ h1, p {
 }
 
 
-main {
+article {
     margin-top: 2%;
     margin-left: 50px;
     margin-right: 50px;
@@ -227,10 +223,10 @@ main {
     text-decoration:underline 2.5px solid #ffd404;
 	text-decoration-skip-ink:none;
 }
-/*
+/**/
 *{
     border:1px solid red;
-}*/
+}
 
 .link-style:hover{ /*brand-link*/
     text-decoration:underline;
@@ -355,13 +351,6 @@ course-information = intro-information
 */
 
 
-/*
-.course a:hover{
-    transform: scale(1.1);
-    transition: 0.2s ease-in-out;
-}
-*/
-
 
 .course-information{ /* container*/
     margin-top: 100px;
@@ -454,6 +443,9 @@ iframe{
 
 }
 
+.mamo-video {
+    max-width: 500px;
+}
 
 .course-content{ /* introduction*/
     display: flex;
@@ -629,61 +621,62 @@ change to solid icon
     }
 }
 
-.master-program{
+.master-program-box{
     margin-top: 10px;
     background-color: #ffd404;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     border: 1px solid #a8a8a8;
 }
 
-
-.professor {
+/*Nytt siden 21/11*/
+.professor{ /*person*/
     display: flex;
     align-items: center;
     border-top: 1px #2e2e2e solid;
     border-bottom: 1px #2e2e2e solid;
-    padding: 0.5rem 0;
+    padding: 2rem 0;
     height: 150px;
 }
 
-.professor img {
+.professor img{ 
     width: 100px;
 }
 
-.professor .contact {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.semester h3 {
-    padding: 10px;
-    font-size: 1em;
-    margin-top: 10px;
+.professor .contact{
+margin-top: 10px;
+margin-bottom: 10px;
 }
 
 .semester h4 {
-    margin-bottom: 0;
+	padding: 10px;
+    font-size: 1em;
+    margin-top: 10px
+}
+.person .contact,.semester h4{
+	margin-top:10px
 }
 
-.person .contact {
-    margin-top: 10px;
-}
-
-.professor .professor-info {
+.professor .professor-info{
     flex: 1;
     padding: 0 2rem;
 }
 
-.contact-leader {
+.contact-leader{
     display: flex;
     column-gap: 40px;
     align-items: stretch;
 }
 
-.qna-education {
+.qna-education{ /*.leder, qa*/
     flex: 1;
 }
+
+
+
+
+
+
 
 
 
@@ -707,7 +700,7 @@ change to solid icon
     justify-content: space-between;
 }
 
-course i{
+.course i{
     transition: transform 100ms;
 }
 
@@ -726,8 +719,13 @@ course i{
 }
 
 
-.bold:hover{
-    font-size: 1.7em;
+.professor-info .bold:hover{
+    font-size: 1.3em;
+    transition: 0.2s ease-in-out;
+}
+
+.scale-hover:hover{
+    transform: scale(1.1);
     transition: 0.2s ease-in-out;
 }
 
