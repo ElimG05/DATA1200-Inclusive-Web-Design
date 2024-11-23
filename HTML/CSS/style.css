@@ -790,7 +790,7 @@ margin-bottom: 10px;
 
 
 .bottom-card .card-img img {
-    width: 400px;
+    width: 400px; /* ble endret størrelse*/
     height: 330px;
     object-fit: cover;
     border-radius: 5px; 
