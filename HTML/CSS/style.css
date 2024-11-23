@@ -220,11 +220,11 @@ article {
     text-decoration:underline 2.5px solid #ffd404;
 	text-decoration-skip-ink:none;
 }
-/**/
+/*
 *{
     border:1px solid red;
 }
-
+*/
 .link-style:hover{ /*brand-link*/
     text-decoration:underline;
 }
@@ -514,6 +514,8 @@ change to solid icon
 
 .semester h3 {
 	background-color: #ff9310;
+    padding: 8px; /*Nytt*/
+    margin-top: 12px; /*Nytt*/
     border-radius: 5px;
 }
 /*introduction istedenfor course-content helt til hit*/
@@ -644,7 +646,7 @@ margin-bottom: 10px;
 }
 
 .semester h4 {
-	padding: 10px;
+    /*har fjernet padding*/
     font-size: 1em;
     margin-top: 10px
 }
