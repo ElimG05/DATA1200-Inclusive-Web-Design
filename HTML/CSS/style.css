@@ -172,7 +172,7 @@ nav {
 
 
 
-/* Vanessa */
+/* Syifa Aulia . INDEX*/
 /*ikoner for studiets oppbygging*/
 .fa-solid, .fa-regular{
     font-size: 1.2em;
@@ -186,9 +186,6 @@ nav {
 .fa-greater-than {
     font-size: 1em;
 }
-
-
-
 
 
 :root{
@@ -349,8 +346,6 @@ font-xsmall = subjects
 /* 
 course-information = intro-information
 */
-
-
 
 .course-information{ /* container*/
     margin-top: 100px;
@@ -673,13 +668,6 @@ margin-bottom: 10px;
 }
 
 
-
-
-
-
-
-
-
 .courses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -802,7 +790,7 @@ margin-bottom: 10px;
 
 
 .bottom-card .card-img img {
-    width: 530px;
+    width: 400px;
     height: 330px;
     object-fit: cover;
     border-radius: 5px; 
@@ -845,7 +833,7 @@ margin-bottom: 10px;
     .bachelorprogram-details{
         grid-template-columns: repeat(1, 1fr);
     }
-    .course-information, .course-information-sm, .course-information-lg{
+    .course-information, .course-information-small, .course-information-large{
         width: 100%;
     }
 
@@ -896,3 +884,4 @@ margin-bottom: 10px;
         display: none;
     }
 }
+/*index slutt*/
