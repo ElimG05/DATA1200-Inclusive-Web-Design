@@ -96,7 +96,7 @@ a {
 .bakgrunnsbilde-index {
     position: absolute;
     top: 0;
-    left: 330px;
+    left: 260px;
     height: 100%;
     object-fit: cover; 
     z-index: -1; 
@@ -413,7 +413,7 @@ iframe{
 }
 
 .main-title{
-    font-size: 2.5rem;
+    font-size: 2em;
     margin-bottom: 0px;
 }
 
