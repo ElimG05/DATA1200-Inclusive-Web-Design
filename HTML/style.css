@@ -365,13 +365,8 @@ padding-top: 50px;}
 }
 
 
-/* Ukens Oppskrifter 
-
-RESPONSIVE CSS3 SLIDE CAROUSEL GALLERY
-http://stackoverflow.com/a/34696029/383904 */
-
-/* */
-
+/* Styling for Ukens Oppskrifter*/
+/*Styling for image-silder. Store deler av koden er hentet fra RESPONSIVE CSS3 SLIDE CAROUSEL GALLERY: http://stackoverflow.com/a/34696029/383904*/
 .recipes {
     padding-bottom: 100px;
 
@@ -387,14 +382,17 @@ http://stackoverflow.com/a/34696029/383904 */
     background-color: #a14c99;
     border: 6px double #000000;
     position: relative;
-    overflow: hidden;
+    overflow: hidden;/* For å skjule innhold som går utenfor silderen-siden man er på */
     height: 100%;
     max-width: 800px; 
 }
 
+.CSSgal s{
+    display: none; /*for å unngå at man blir scrollet nedover når man prøver å prøve slideren*/
+}
+
 .CSSgal .slider {
-    white-space: nowrap;
-    font-size: 0;
+    white-space: nowrap; /*for å unngå at inneholdet brytes i deler*/
     transition: 0.7s ease-in-out;
 }
 
@@ -421,8 +419,8 @@ http://stackoverflow.com/a/34696029/383904 */
     font-style: italic;
 }
 
+/* Hvert enkelt side i slideren*/
 .CSSgal .slider > * {
-    font-size: 1rem;
     display: inline-block;
     vertical-align: top;
     height: 100%;
@@ -440,7 +438,7 @@ http://stackoverflow.com/a/34696029/383904 */
 
 .CSSgal .prev-next {
     position: absolute;
-    z-index: 1;
+    z-index: 1; /*for at knappene skal kunne ligge over de andre elementene*/
     top: 50%;
     height: 0;
 }
@@ -457,11 +455,7 @@ http://stackoverflow.com/a/34696029/383904 */
     line-height: 40px;
     text-align: center;
     opacity: 0.7;
-    transform: translateY(-50%);
-}
-
-.CSSgal .prev-next a:hover {
-    opacity: 1;
+    transform: translateY(-50%); /* Flytter knappen opp halvparten av høyden */
 }
 
 .CSSgal .prev-next a + a {
@@ -470,7 +464,7 @@ http://stackoverflow.com/a/34696029/383904 */
 
 .CSSgal .bullets {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     bottom: 0;
     padding: 10px 0;
     text-align: center;
@@ -483,21 +477,17 @@ http://stackoverflow.com/a/34696029/383904 */
     line-height: 20px;
     text-decoration: none;
     text-align: center;
-    border-radius: 30%;
-    background: rgba(255, 255, 255, 1);
-}
-
-.CSSgal .bullets > a + a {
-    background: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    background:#fff
 }
 
 .CSSgal .bullets > a:hover {
     transform: scale(1.2);
 }
 
-/**/
+/*Vise hvilken silder-side er aktiv*/
 .CSSgal > s:target ~ .bullets > * {
-    background: rgba(255, 255, 255, 0.5);
+    background:#dcdada;
 }
 #s1:target ~ .bullets > *:nth-child(1) {
     background: rgba(98, 75, 226, 0.5);
@@ -518,9 +508,9 @@ http://stackoverflow.com/a/34696029/383904 */
     background: rgba(98, 75, 226, 0.5);
 }
 
-/* Prev/Next containers visibility */
+/* Skjuling og visning av prev/next-knappene */
 .CSSgal > s:target ~ .prev-next > * {
-    visibility: hidden;
+    visibility: hidden; 
 }
 #s1:target ~ .prev-next > *:nth-child(1) {
     visibility: visible;
@@ -537,11 +527,12 @@ http://stackoverflow.com/a/34696029/383904 */
 #s5:target ~ .prev-next > *:nth-child(5) {
     visibility: visible;
 }
-#s6:target ~ .prev.next > *:nth-child(6) {
+#s6:target ~ .prev-next > *:nth-child(6) {
     visibility: visible;
 }
 
-/* Slider animation */
+/* Slider animasjon. Når knappene blir tatt i bruk endres posisjonen til slider-sidene ved å bruke 
+transformering langs X-aksen, slik at innholdet sklir horisontalt. */
 #s1:target ~ .slider {
     transform: translateX(0%);
 }
@@ -561,6 +552,7 @@ http://stackoverflow.com/a/34696029/383904 */
     transform: translateX(-500%);
 }
 
+/*Styling for "5 gode tips til studentmaten"*/
 .oppskrift-aside {
     padding: 15px;
     padding-left: 30px;
