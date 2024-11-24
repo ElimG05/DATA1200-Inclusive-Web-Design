@@ -793,7 +793,6 @@ iframe {
 }
 
 .contact-us {
-    width: 45vw;
     display: flex;
     flex-direction: row; 
     align-items: center;
@@ -1074,19 +1073,19 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
     z-index: 1000;
 }
 
-/* Media query*/
-
-/* Under 450px */
-@media (max-width: 479px) {
- 
-    
-    .activity-content h1 {
-        font-size: 2.2rem;
+@media only screen and (max-width: 550px) {
+    .school-logo {
+        max-width: 130px;
+    }
+    .main-activity {
+        font-size: 0.9rem;
     }
     
-    .activity-content p {
-        font-size: 0.8rem;
-        max-width: 90%;
+    .bubbles-background {
+        height: 50%;
+    }
+    .about-us-text {
+        min-width: 300px;
     }
 
     .curriculum {
@@ -1103,183 +1102,12 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
         grid-column: span 1;
         padding: 8px;
     }
-}
-
-/* Under 995px og over 450px */
-@media (min-width: 480px) and (max-width: 750px) {
-
-    
-    .activity-content h1 {
-        font-size: 3rem;
+    .oppskrift-aside, .oppskrift-aside li {
+        max-height: 655px;
     }
     
-    .activity-content p {
-        font-size: 1rem;
-    }
 }
-
-/* Under 550px */
-@media only screen and (max-width: 550px) {
-    .weekly-recipes {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .CSSgal {
-        max-width: 500px;
-    }
-
-    .CSSgal .slide img {
-        width: 400px;
-        height: 350px;
-    }
-
-    .bubbles-background {
-        height: 50%;
-    }
-
-    .about-us img {
-        display: flex;
-        flex-grow: 1;
-        margin-right: 3rem;
-        margin-left: 3rem;
-    }
-    .oppskrift-aside {
-        font-size: 0.8em;
-    }
-}
-
-/* Under 784px */
-@media only screen and (max-width: 784px) {
-    .bachelorprogram-details {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .course-information, .course-information-small, .course-information-large {
-        width: 100%;
-    }
-
-    .main-index {
-        width: 100%;
-    }
-
-    .bottom-card {
-        height: auto;
-        flex-direction: column;
-        row-gap: 30px;
-    }
-
-    .bottom-card .card-img {
-        width: 100%;
-    }
-
-    .bottom-card .card-text {
-        padding: 2rem 0 0 50px;
-    }
-
-    .courses {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-leader {
-        flex-direction: column;
-        row-gap: 20px;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    #oversikt-sm {
-        display: flex;
-        flex-direction: column;
-        row-gap: 12px;
-    }
-
-    #oversikt, #studieoversikt {
-        display: none;
-    }
-    .main-article {
-        height: 45vh; 
-        padding: 10vh 5vw; 
-    }
-}
-
-/* Under 799px */
-@media only screen and (max-width: 799px) {
-        #side-menu:checked+.menu-display+.navigation-bar, .menu-display{
-            display:block
-    }
-
-    .menu-exit {
-        display: none;
-    }
-
-    .navigation-bar{
-        display:none;
-        position:absolute;
-        top:100px;
-        right:0px;
-        width:100vw;
-        background-color:#ff9310;
-        border-radius:20px;
-        z-index:1;
-        padding: 0 0 0 0;
-    }
-    .navigation-bar .menu{ 
-        flex-direction: column; /**/
-        align-items:end;
-        justify-content: end;
-
-    }
-    .menu a:hover {
-        color: #fff7f7;
-        transition: 0.4s;
-    }
-    .school-logo,.study-overview{
-        padding-left:35px
-
-    }
-    
-    .weekly-recipes {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .CSSgal {
-        max-width: 600px;
-    }
-
-    .CSSgal .slide img {
-        width: 450px;
-        height: 280px;
-    }
-
-    .bubbles-background {
-        height: 65%;
-    }
-
-    .contact-us {
-        flex-direction: column; /* Stable vertikalt for mindre skjermer */
-        align-items: center; /* Sentrer innholdet horisontalt */
-        text-align: center; /* Sentrere teksten for bedre visning */
-    }
-
-    .contact-us-image {
-        max-width: 80%; /* Justere størrelsen på bildet for å passe skjermbredden */
-    }
-
-    .contact-us-text {
-        max-width: 90%; /* Sette en bredde for å passe innholdet bedre på små skjermer */
-    }
-
-}
-
-/* Under 850px */
-@media (max-width: 850px) {
+@media only screen and (max-width: 850px) {
     .curriculum {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 15px;
@@ -1294,47 +1122,136 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
         grid-column: span 2;
         padding: 8px;
     }
+    #side-menu:checked+.menu-display+.navigation-bar, .menu-display{
+        display:block
 }
 
-/* Under 1049px */
-@media only screen and (max-width: 1049px) {
+.menu-exit {
+    display: none;
+}
+
+.navigation-bar{
+    display:none;
+    position:absolute;
+    top:100px;
+    right:0px;
+    width:100vw;
+    background-color:#ff9310;
+    border-radius:20px;
+    z-index:1;
+    padding: 0 0 0 0;
+}
+.navigation-bar .menu{ 
+    flex-direction: column; /**/
+    align-items:end;
+    justify-content: end;
+
+}
+.menu a:hover {
+    color: #fff7f7;
+    transition: 0.4s;
+}
+.school-logo,.study-overview{
+    padding-left:35px
+
+}
+
+.bubbles-background {
+    height: 65%;
+}
+.activity-info {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.contact-us-image img {
+    margin-bottom: 1em;
+}
+
+.bachelorprogram-details {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.course-information, .course-information-small, .course-information-large {
+    width: 100%;
+}
+
+.main-index {
+    width: 100%;
+}
+
+.bottom-card {
+    height: auto;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.bottom-card .card-img {
+    width: 100%;
+}
+
+.bottom-card .card-text {
+    padding: 2rem 0 0 50px;
+}
+
+.courses {
+    grid-template-columns: 1fr;
+}
+
+.contact-leader {
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#oversikt-sm {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+#oversikt, #studieoversikt {
+    display: none;
+}
+.main-article {
+    height: 45vh; 
+    padding: 10vh 5vw; 
+}
+.activity-content h1 {
+    font-size: 2.2rem;
+}
+.activity-content p {
+    font-size: 0.9rem;
+    -webkit-text-stroke: 0;
+}
+.navn {
+    font-size: 1.3em;
+}
+.CSSgal {
+    max-width: 295px;
+}
+
+.CSSgal .slide img {
+    width: 245px;
+    height: 150px;
+}
+}
+
+@media only screen and (max-width: 1050px) {
     .weekly-recipes {
         flex-direction: column;
         align-items: center;
     }
-
-    .CSSgal {
-        max-width: 750px;
-    }
-
-    .CSSgal .slide img {
-        width: 600px;
-        height: 400px;
-    }
-
     .contact-us-links {
         grid-template-columns: 1fr 1fr;
     }
-
-    .contact-us-image img {
-        height: 200px;
-    }
 }
-
-/* Between 1050px and 1220px */
-@media (max-width: 1220px) and (min-width: 1050px) {
-    .CSSgal {
-        max-width: 590px;
-    }
-
-    .CSSgal .slide img {
-        width: 490px;
-        height: 300px;
-    }
-}
-
-/* Under 1200px */
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     .curriculum {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 15px;
@@ -1349,13 +1266,11 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
         grid-column: span 3;
         padding: 8px;
     }
-}
-
-/* Under 1320px */
-@media only screen and (max-width: 1320px) {
-    .CSSgal {
-        max-width: 710px;
+    .oppskrift-aside, .oppskrift-aside li {
+        font-size: 0.9em;
+        padding-left: 0%;
     }
+    
 }
 
 
