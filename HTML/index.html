@@ -15,7 +15,7 @@
     <header>
         <!--Første delen av headeren (part 1) som består av oslomet-logoen og navigasjonsbaren-->
         <div class="header-part1">
-            <a href="https://www.oslomet.no/"> <img src="../HTML/multimedia/oslomet_logo.jpeg" alt="Oslomet Logo" class="school-logo" loading="lazy"></a> <!--Bildekilde: Fotograf: Oslomet, Kilde: https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap , men justert bakgrunnsfarge, -->
+            <a href="https://www.oslomet.no/"> <img src="../HTML/multimedia/oslometlogo.jpeg" alt="Oslomet Logo" class="school-logo" loading="lazy"></a> <!--Bildekilde: Fotograf: Oslomet, Kilde: https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap , men justert bakgrunnsfarge, -->
          <!--Hamburger Meny. Her er planen at utseende på menyen skal endres når man trykker den, slik at det er enklet å se om den er trykket på eller ikke-->
          <input class="side-menu" type="checkbox" id="side-menu" />
          <div class="menu-display">
@@ -41,9 +41,9 @@
             <i class="fa-solid fa-less-than"></i>Studieoversikt</a>
         </div>
     </header>
-    <main class="index">
+    <main class="main-index">
       <article class="background-index flex-center">
-        <img src="../HTML/multimedia/bakgrunnsbilde-index.jpeg" alt="background-img">
+        <img src="../HTML/multimedia/background-img-index.png" alt="background-img" class="bakgrunnsbilde-index">
           <h1 class="main-title text-container">Matematisk modellering <br> og <br> datavitenskap – ingeniør </h1>
       </article>
       <article class="course-information">
@@ -122,6 +122,7 @@
               <div>
                 <p>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.</p>
                 <video controls class="mamo-video">
+                  <!-- skriv navn på class -->
                   <source src="../HTML/video/matematisk-modellering-og-video.mp4" type="video/mp4"> Your browser does not support the video tag.
                   <!--https://www.w3schools.com/html/html5_video.asp-->
                 </video>
@@ -836,7 +837,7 @@
           </div>
           <div class="course-content">
             <details class="course-content-text">
-              <summary class="font-larg bolde">Utveksling</summary>
+              <summary class="font-larg bold">Utveksling</summary>
               <div>
                 <ul>
                   <p>Du kan dra på utveksling i femte semester.</p>
@@ -868,18 +869,19 @@
             <!-- Faglig leder -->
             <h3 class="font-xlarge">Faglig leder</h3>
             <div class="professor flex-center">
-              <img src="../HTML/multimedia/fagleder-img.jpeg" alt="Kristoffer Herland Hellton" class="width-100"> <!--Bildekilde: Fotograf: Oslomet, Kilde: https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap -->
+              <img src="../HTML/multimedia/fagleder.png" alt="Kristoffer Herland Hellton"> <!--Bildekilde: Fotograf: Oslomet, Kilde: https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap -->
               <div class="professor-info">
                 <a class="bold" href="https://www.oslomet.no/om/ansatt/krhel3944/">Kristoffer Herland Hellton</a>
                 <p class="status">førsteamanuensis</p>
                 <div class="contact space-top-xsmall">
                   <span class="phone">+47 672 37 240 </span>
-                  <span> kristoffer.hellton@oslomet.no</span>
+                  <span>| kristoffer.hellton@oslomet.no</span>
                 </div>
               </div>
               <a class="link" href="https://www.oslomet.no/om/ansatt/krhel3944/">
                 <i class="scale-hover fa-solid fa-greater-than"></i>
               </a>
+              <!-- bytt navn på class-->
             </div>
           </div>
           <div class="large-margin qna-education">
@@ -1022,17 +1024,19 @@
         <article class="course-information course-information-large">
           <h2 class="font-3xlarge studenthistory">Studenthistorier</h2>
           <div class="course-information-boxstory">
-            <div class="bottom-card flex-center padding-1">
+            <div class="bottom-card flex-center padding-1-25">
               <div class="card-img flex-center">
-                <img src="../HTML/multimedia/studenthistorier-img.jpeg" alt="Bilde av to ansatte" loading="lazy"><!--Bildekilde: Fotograf: Oslomet, Kilde: https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap -->
+                <img src="../HTML/multimedia/picture 2 person.jpg" alt="Bilde av to ansatte" loading="lazy"><!--Bildekilde: Fotograf: Oslomet, Kilde: https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap -->
               </div>
               <div class="card-text">
                 <p class="font-large">Teknologi og design</p>
                 <div>
-                  <h3 class="font-xlarge">
+                  <h3 class="font-2xlarge">
                     <a class="hover-underline" href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap">Spå fremtiden med matematikk og datavitenskap</a>
                   </h3>
+                  <!--bytt navn på class-->
                   <p>Har du lyst til å finne ut hva som vil skje i fremtiden? Lær å bruke verktøy for å forutsi alt fra været og strømprisene til utviklingen i boligmarkedet.</p>
+                  <!--finn navn på class-->
                 </div>
               </div>
             </div>

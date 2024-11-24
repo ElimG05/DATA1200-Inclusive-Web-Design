@@ -1,4 +1,4 @@
-/* 1. Globale innstillinger */
+/* Globale innstillinger */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,18 +10,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
-    background-color: #f0f0f0;
     color: #1f1e1e;
     font-size: 1.2em;
 }
 
-/* 2. Variable innstillinger */
 :root {
     --brand-color: #ffd404;
     --bgcolor: #ff9310;
 }
 
-/* 3. Typografi og felles tekststiler */
+/* Tekststiler */
 h1, p {
     text-align: center;
 }
@@ -34,10 +32,6 @@ h1, p {
 .fa-solid, .fa-regular {
     font-size: 1.2em;
     padding: 6px;
-}
-
-.fa-arrow-right {
-    padding-left: 180px;
 }
 
 .fa-greater-than {
@@ -98,7 +92,7 @@ p {
     border-top: #000;
 }
 
-/* 4. Felles komponenter */
+/* Felles komponenter */
 a {
     text-decoration: none;
     color: #000;
@@ -121,10 +115,6 @@ a {
 
 .padding-1-25 {
     padding: 1.25rem;
-}
-
-.padding-1 {
-    padding: 1rem;
 }
 
 .space-top-xsmall {
@@ -165,11 +155,12 @@ a {
     border-radius: 10px;
 }
 
+/*Felles klasse for full bredde*/
 .width-100, .body, .card-img img {
     width: 100%;
 }
 
-/* 5. Styling for Header */
+/* Styling for Header */
 header {
     background-color: var(--bgcolor);
     padding: 0 0 20px 0;
@@ -209,7 +200,7 @@ header {
     height: 100px;
 }
 
-/* Meny-relaterte stiler */
+/* Meny-relatert styling */
 #side-menu, .menu-display {
     display: none;
 }
@@ -261,7 +252,7 @@ header {
     font-size: 1em;
 }
 
-/* 6. Styling for Footer */
+/* Styling for Footer */
 .footer {
     padding: 80px 50px;
     background-color: var(--bgcolor);
@@ -297,7 +288,7 @@ header {
     font-weight: normal;
 }
 
-.footer-col ul, .contact-info ul li {
+.footer-col ul, .contact-info ul li, .contact-us-text ul li {
     list-style-type: none;
     padding: 0.1em;
 }
@@ -319,7 +310,9 @@ header {
     margin-bottom: 10px;
 }
 
-/* 7. Hovedinnhold - Main Content */
+
+/* Hovedinnhold*/
+
 .background-index {
     position: relative;
     height: 60vh;
@@ -329,7 +322,7 @@ header {
 
 .background-index img {
     position: absolute;
-    width: 80%;
+    width: 100;
     height: 100%;
     object-fit: cover;
     z-index: -1;
@@ -417,7 +410,7 @@ header {
     overflow: hidden;
 }
 
-/* 8. Spesifikke sider */
+/* Spesielt for Github */
 .github-page article {
     margin: 40px;
     background: #dfdcdc;
@@ -451,50 +444,9 @@ figcaption {
     font-size: 1.4em;
 }
 
-/* 9. Media Queries */
-@media (max-width: 479px) {
-    .main-article {
-        height: 20vh;
-        padding: 5vh 3vw;
-    }
-    .content h1 {
-        font-size: 2.2rem;
-    }
-    .curriculum {
-        grid-template-columns: 1fr;
-        column-gap: 10px;
-        row-gap: 8px;
-    }
-}
-
-@media (max-width: 799px) {
-    .weekly-recipes {
-        flex-direction: column;
-        align-items: center;
-    }
-    .CSSgal {
-        max-width: 600px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .curriculum {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 15px;
-        row-gap: 10px;
-    }
-}
-
-@media only screen and (max-width: 1049px) {
-    .weekly-recipes {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Additional CSS for INDEX Section */
+/* Spesielt for Index */
 .course-information-large {
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .course-information-small {
@@ -624,6 +576,10 @@ iframe {
     flex: 1;
 }
 
+.semester h4 {
+    font-size: 1em;
+}
+
 .courses {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -693,7 +649,7 @@ iframe {
 }
 
 .bottom-card .card-text {
-    padding-left: 20px;
+    padding-left: 50px;
     flex: 1;
 }
 
@@ -712,7 +668,7 @@ iframe {
 
 .bottom-card .card-img img {
     width: 400px;
-    height: 250px;
+    height: 330px;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -740,7 +696,7 @@ iframe {
     color: #ff3d3d;
 }
 
-/* 10. Activity Styling */
+/* Spesielt for Activity */
 .footer-col h3, .activity-events-table td h3, .col-1 h3 {
     font-weight: bold;
     margin-bottom: 2px;
@@ -751,15 +707,12 @@ iframe {
 }
 
 .h2-style, .info {
+    text-align: center;
     color: #000000;
 }
 
-.content-center, .h2-style, .footer {
+.content-center, .footer {
     justify-content: center;
-}
-
-.main-activity {
-    background-color: transparent;
 }
 
 .main-article {
@@ -783,14 +736,20 @@ iframe {
 }
 
 .activity-info {
-    position: relative;
-    display: flex; gap: 2em; /*endret*/
+    gap: 2em;
 }
 
 .bubbles-background {
-    position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.8; /*endret*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    height: auto; 
     z-index: -1;
-    object-fit: cover;
+   
+}
+.bubbles2 {
+    height: 80%;
 }
 
 .about-us {
@@ -804,7 +763,7 @@ iframe {
 
 .activity-text-img {
     border-radius: 16px;
-    max-width: 45%;
+    width: 300px;
     z-index: 1;
 }
 
@@ -814,23 +773,27 @@ iframe {
     border-radius: 16px;
     text-align: left;
     z-index: 2;
+    background-color: white;
 }
 
 .contact-us {
-    display: flex; flex-direction: row; align-items: center; gap: 1em; /*endret*/
+    gap: 1em; 
+    justify-content: center;
     border-top: 1px #2e2e2e solid;
     border-bottom: 1px #2e2e2e solid;
     position: relative;
+    margin-bottom: 3em;
 }
 
 .contact-us-links a {
     border: 2px solid #000000;
     padding: 0.5em;
     border-radius: 20px;
+    text-decoration: none; 
 }
 .contact-us-links {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 }
 .contact-us-links a:hover {
     background-color: #484545;
@@ -839,13 +802,8 @@ iframe {
 }
 
 .contact-us-image {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    max-width: 50%;
-    z-index: 2; /* Ensure it's above the bubble background */
+    z-index: 2; 
 }
-/* Kommende aktiviteter */
 .activity-logo {
     height: 100px;
     display: block;
@@ -853,7 +811,6 @@ iframe {
 }
 
 /* Kommende aktiviteter som en tabell */
-
 .activity-events {
     display: flex;
     margin-top: 2em;
@@ -1006,22 +963,22 @@ iframe {
     background:#dcdada;
 }
 #s1:target ~ .bullets > *:nth-child(1) {
-    background: rgba(98, 75, 226, 0.5);
+    background: #624be2;
 }
 #s2:target ~ .bullets > *:nth-child(2) {
-    background: rgba(98, 75, 226, 0.5);
+    background: #624be2;
 }
 #s3:target ~ .bullets > *:nth-child(3) {
-    background: rgba(98, 75, 226, 0.5);
+    background: #624be2;
 }
 #s4:target ~ .bullets > *:nth-child(4) {
-    background: rgba(98, 75, 226, 0.5);
+    background: #624be2;
 }
 #s5:target ~ .bullets > *:nth-child(5) {
-    background: rgba(98, 75, 226, 0.5);
+    background: #624be2;
 }
 #s6:target ~ .bullets > *:nth-child(6) {
-    background: rgba(98, 75, 226, 0.5);
+    background: #624be2;
 }
 
 /* Skjuling og visning av prev/next-knappene */
@@ -1086,7 +1043,7 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
     font-style: italic;
 }
 
-/* style et knappe-utseende på link opp til anker*/
+/* styling for knappe-link opp til anker*/
 #btn-to-top { 
     background: #ef5800;
     position: fixed;
@@ -1097,14 +1054,11 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
     z-index: 1000;
 }
 
-/* Media query for.... */
+/* Media query*/
 
 /* Under 450px */
 @media (max-width: 479px) {
-    .main-article {
-        height: 20vh;
-        padding: 5vh 3vw;
-    }
+ 
     
     .content h1 {
         font-size: 2.2rem;
@@ -1114,6 +1068,7 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
         font-size: 0.8rem;
         max-width: 90%;
     }
+
     .curriculum {
         grid-template-columns: 1fr;
         column-gap: 10px;
@@ -1129,12 +1084,10 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
         padding: 8px;
     }
 }
-/*Under 995px og over 450px*/
+
+/* Under 995px og over 450px */
 @media (min-width: 480px) and (max-width: 750px) {
-    .main-article {
-        height: 30vh; 
-        padding: 10vh 5vw;
-    }
+
     
     .content h1 {
         font-size: 3rem;
@@ -1144,69 +1097,73 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
         font-size: 1rem;
     }
 }
+
+/* Under 550px */
 @media only screen and (max-width: 550px) {
     .weekly-recipes {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
         align-items: center;
     }
 
     .CSSgal {
-        max-width: 500px
+        max-width: 500px;
     }
 
     .CSSgal .slide img {
         width: 400px;
-        height:350px
+        height: 350px;
     }
-
 
     .bubbles-background {
         height: 50%;
     }
+
     .about-us img {
         display: flex;
         flex-grow: 1;
-        margin-right:3rem;
+        margin-right: 3rem;
         margin-left: 3rem;
-        }
+    }
 }
+
+/* Under 784px */
 @media only screen and (max-width: 784px) {
-    .bachelorprogram-details{
+    .bachelorprogram-details {
         grid-template-columns: repeat(1, 1fr);
     }
-    .course-information, .course-information-small, .course-information-large{
+
+    .course-information, .course-information-small, .course-information-large {
         width: 100%;
     }
 
-    .main-index{
-        width: 100%
+    .main-index {
+        width: 100%;
     }
 
-    .bottom-card{
+    .bottom-card {
         height: auto;
         flex-direction: column;
         row-gap: 30px;
     }
 
-    .bottom-card .card-img{
+    .bottom-card .card-img {
         width: 100%;
-        /* height: 400px; */
     }
 
-    .bottom-card .card-text{
+    .bottom-card .card-text {
         padding: 2rem 0 0 50px;
     }
 
-    .courses{
+    .courses {
         grid-template-columns: 1fr;
     }
 
-    .contact-leader{
+    .contact-leader {
         flex-direction: column;
         row-gap: 20px;
     }
 
-    nav{
+    nav {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1219,40 +1176,83 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
         row-gap: 12px;
     }
 
-    #oversikt, #studieoversikt{
+    #oversikt, #studieoversikt {
         display: none;
     }
+    .main-article {
+        height: 45vh; 
+        padding: 10vh 5vw; 
+    }
 }
+
+/* Under 799px */
 @media only screen and (max-width: 799px) {
+        #side-menu:checked+.menu-display+.navigation-bar, .menu-display{
+            display:block
+    }
+
+    .menu-exit {
+        display: none;
+    }
+
+    .navigation-bar{
+        display:none;
+        position:absolute;
+        top:100px;
+        right:0px;
+        width:100vw;
+        background-color:#ff9310;
+        border-radius:20px;
+        z-index:1;
+        padding: 0 0 0 0;
+    }
+    .navigation-bar .menu{ 
+        flex-direction: column; /**/
+        align-items:end;
+        justify-content: end;
+
+    }
+    .menu a:hover {
+        color: #fff7f7;
+        transition: 0.4s;
+    }
+    .school-logo,.study-overview{
+        padding-left:35px
+
+    }
+    
     .weekly-recipes {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
         align-items: center;
     }
 
     .CSSgal {
-        max-width: 600px
+        max-width: 600px;
     }
 
     .CSSgal .slide img {
         width: 450px;
-        height:280px
+        height: 280px;
     }
 
-   
     .bubbles-background {
         height: 65%;
     }
+
     .about-us {
         display: flex;
         flex-wrap: wrap;
     }
+
     .about-us img {
-    display: flex;
-    flex-grow: 1;
-    margin-right: 7rem;
-    margin-left: 7rem;
+        display: flex;
+        flex-grow: 1;
+        margin-right: 7rem;
+        margin-left: 7rem;
     }
 }
+
+/* Under 850px */
 @media (max-width: 850px) {
     .curriculum {
         grid-template-columns: repeat(2, 1fr);
@@ -1269,7 +1269,8 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
         padding: 8px;
     }
 }
-/* Media query for... */
+
+/* Under 1049px */
 @media only screen and (max-width: 1049px) {
     .weekly-recipes {
         flex-direction: column;
@@ -1277,45 +1278,48 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
     }
 
     .CSSgal {
-        max-width: 750px
+        max-width: 750px;
     }
 
     .CSSgal .slide img {
         width: 600px;
-        height:400px
+        height: 400px;
     }
 
     .contact-us-links {
         grid-template-columns: 1fr 1fr;
     }
+
     .contact-us-image img {
-        height: 200px
+        height: 200px;
     }
+
     .oppskrift-aside, .oppskrift-aside li {
         font-size: 2.5vmin;
         max-height: 700px;
     }
-
 }
-/* Media query for....*/
-@media (max-width: 1220px) and (min-width: 1050px) {
 
+/* Between 1050px and 1220px */
+@media (max-width: 1220px) and (min-width: 1050px) {
     .CSSgal {
         max-width: 590px;
     }
 
     .CSSgal .slide img {
         width: 490px;
-        height:300px
+        height: 300px;
     }
 }
+
+/* Under 1200px */
 @media (max-width: 1200px) {
     .curriculum {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 15px;
         row-gap: 10px;
     }
-    
+
     .curriculum-box {
         padding: 16px;
     }
@@ -1325,26 +1329,13 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
         padding: 8px;
     }
 }
-    
 
-
-@media only screen and (max-width:  1320px) {
+/* Under 1320px */
+@media only screen and (max-width: 1320px) {
     .CSSgal {
-        max-width: 710px; 
+        max-width: 710px;
     }
-/*
-    .CSSgal .slide img {
-        width: 500px;
-    }
-
-    .oppskrift-aside {
-        width: 100%;
-        margin-top: 20px;
-    }
-        */
 }
-
-
 
 
 
