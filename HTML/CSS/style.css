@@ -494,7 +494,7 @@ figcaption {
 
 /* Additional CSS for INDEX Section */
 .course-information-large {
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .course-information-small {
@@ -693,7 +693,7 @@ iframe {
 }
 
 .bottom-card .card-text {
-    padding-left: 50px;
+    padding-left: 20px;
     flex: 1;
 }
 
