@@ -543,10 +543,12 @@ iframe {
 
 
 .master-program-box {
+    padding: 25px 0 25px 0;
     background-color: var(--brand-color);
     border-radius: 10px;
     border: 1px solid #a8a8a8;
 }
+
 .contact-leader {
     display: flex;
     column-gap: 40px;
@@ -621,15 +623,19 @@ iframe {
 }
 
 .professor-info .bold:hover {
-    font-size: 1.3em;
+    font-size: 1.1em;
     transition: 0.2s ease-in-out;
 }
-/*
-.text-hover:hover {
-    transform: scale(1.1);
-    transition: 0.2s ease-in-out;
+
+.font-hover:hover {
+    transform: scale(1.05);  /* Øker størrelsen med 5% */
+    transition: transform 0.2s ease-in-out;
 }
-*/
+
+.scale-hover:hover i {
+    transform: translateX(50px); /* Moves the arrow 10px to the right */
+  }
+  
 
 .course p {
     text-align: left;
