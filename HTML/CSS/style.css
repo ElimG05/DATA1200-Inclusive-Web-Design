@@ -1,84 +1,37 @@
-/* Generell styling for alle sidene */
-*{
+/* 1. Globale innstillinger */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
 body {
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    overflow-x: hidden; /*unngå scrolling sidelengs*/
-    background-color: rgb(240, 240, 240);
-    color: rgb(31, 30, 30);
+    overflow-x: hidden;
+    background-color: #f0f0f0;
+    color: #1f1e1e;
     font-size: 1.2em;
 }
 
-:root{
+/* 2. Variable innstillinger */
+:root {
     --brand-color: #ffd404;
     --bgcolor: #ff9310;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
+/* 3. Typografi og felles tekststiler */
+h1, p {
+    text-align: center;
 }
-
-.hover-underline:hover {
-    text-decoration: underline;
-    text-decoration-skip-ink:none;
-}
-
-.text-in-front {
-    position: relative;
-    z-index: 1; 
-}
-
-/*felles padding og margin*/
-.padding-0-3 {
-    padding: 0.3rem;
-}
-
-.padding-1-25 {
-    padding: 1.25rem;
-}
-
-.space-top-xsmall {
-    margin-top: 0.65rem;
-}
-
-
-.space-top-small {
-    margin-top: 1rem;
-}
-
-/*felles display: flex*/
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-.flex-row {
-    display: flex;
-    flex-direction: row; 
-
-}
-
 
 .main-title {
-    font-size: 3rem; 
-    color: white; 
-}
-h1, p {
-    text-align:center;
+    font-size: 3rem;
+    color: #ffffff;
 }
 
-.fa-solid, .fa-regular{
+.fa-solid, .fa-regular {
     font-size: 1.2em;
     padding: 6px;
 }
@@ -91,85 +44,132 @@ h1, p {
     font-size: 1em;
 }
 
-#oversikt-sm{
-    display: none;
-}
-
-
-.link-style{ /*brand-link*/
+.link-style {
     font-weight: 800;
-    text-decoration:underline 2.5px solid var(--brand-color);
-	text-decoration-skip-ink:none;
-}
-/*
-*{
-    border:1px solid red;
-}
-*/
-.link-style:hover{ /*brand-link*/
-    text-decoration:underline;
+    text-decoration: underline 2.5px solid var(--brand-color);
+    text-decoration-skip-ink: none;
 }
 
+.link-style:hover {
+    text-decoration: underline;
+}
 
-p{
+p {
     line-height: 1.5;
     text-align: justify;
     margin-bottom: 1rem;
 }
 
-.font-4xlarge{ /* finnes den?*/
+.bold {
+    font-weight: bold;
+}
+
+/* Fontstørrelser */
+.font-4xlarge {
     font-size: 3rem;
 }
 
-.font-3xlarge{
+.font-3xlarge {
     font-size: 2.25rem;
 }
 
-.font-2xlarge{
+.font-2xlarge {
     font-size: 1.75rem;
 }
 
-.font-xlarge{
+.font-xlarge {
     font-size: 1.5rem;
 }
 
-.font-xlarge a {
-    color:#FFF;
-}
-
-.font-large{
+.font-large {
     font-size: 1.25rem;
 }
 
-.font-medium{
+.font-medium {
     font-size: 1.125rem;
 }
 
-.font-small{
+.font-small {
     font-size: 1rem;
 }
-/* 
-font-xsmall = subjects
-*/
-.font-xsmall{
+
+.font-xsmall {
     font-size: 0.875rem;
     border-top: #000;
 }
 
-.bold{
-    font-weight: 700;
+/* 4. Felles komponenter */
+a {
+    text-decoration: none;
+    color: #000;
 }
 
+.hover-underline:hover {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
 
+.text-in-front {
+    position: relative;
+    z-index: 1;
+}
 
+/* Felles padding og margin */
+.padding-0-3 {
+    padding: 0.3rem;
+}
 
+.padding-1-25 {
+    padding: 1.25rem;
+}
 
-/*legg til styling for header*/
-/* Styling for Header STARTER HER */
-header{
-	background-color:var(--bgcolor);
-    padding-bottom: 20px;
-	position:sticky;
+.space-top-xsmall {
+    margin-top: 0.65rem;
+}
+
+.space-top-small {
+    margin-top: 1rem;
+}
+
+/* Felles display: flex */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Felles klasse for skygge */
+.shadow {
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, .23);
+}
+
+/* Felles klasse for runde hjørner */
+.rounded-squared-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.width-100, .body, .card-img img {
+    width: 100%;
+}
+
+/* 5. Styling for Header */
+header {
+    background-color: var(--bgcolor);
+    padding: 0 0 20px 0;
+    position: sticky;
 }
 
 .fa-solid:hover .menu a:hover {
@@ -178,86 +178,90 @@ header{
 }
 
 .navigation-bar {
-    padding-right: 50px;
+    padding: 50px 0 0 0;
 }
+
 .menu a:hover {
     color: #fff7f7;
     transition: 0.4s;
 }
+
 .menu a.active {
     background-color: var(--bgcolor);
-    color:#ffffff;
+    color: #ffffff;
 }
 
-.header-part1{
-	display:flex;
-	align-items:center;
-	justify-content:space-between
+.header-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header-part2{
-	padding-bottom:20px
+.header-part2 {
+    padding-bottom: 20px;
 }
-.school-logo{
-	height:100px;
+
+.school-logo {
+    height: 100px;
 }
-#side-menu,.menu-display{
-	display:none
+
+/* Meny-relaterte stiler */
+#side-menu, .menu-display {
+    display: none;
 }
-.menu-display label{
-	font-size:1.1em;
-	padding-right:50px
+
+.menu-display label {
+    font-size: 1.1em;
+    padding-right: 50px;
 }
-.study-overview{
+
+.study-overview {
     font-size: 1.2em;
 }
-.study-overview a{
+
+.study-overview a {
     text-decoration: underline;
 }
 
-.study-overview a:hover{
-    font-weight: bolder ;
+.study-overview a:hover {
+    font-weight: bolder;
 }
 
-.navigation-bar {    
-padding-top: 50px;}
-
-
-.navigation-bar .menu{
-	list-style:none;
-	margin-right:40px; 
+.navigation-bar .menu {
+    list-style: none;
+    margin-right: 40px;
 }
 
-#side-menu+label:before{
-	list-style-type:square;
+#side-menu+label:before {
+    list-style-type: square;
 }
-#side-menu:checked ~ .menu-display .menu-enter{
+
+#side-menu:checked ~ .menu-display .menu-enter {
     display: none;
 }
+
 #side-menu:checked ~ .menu-display .menu-exit {
     display: inline-block;
 }
+
 .menu-enter {
-	padding-right: 50px;
-}
-.school-logo,.study-overview{
-    padding-left:80px
-}
-.menu li{
-    margin:10px;
-    font-size:1em;
-
+    padding-right: 50px;
 }
 
+.school-logo, .study-overview {
+    padding-left: 80px;
+}
 
-/* Styling for Header SLUTTER HER */
+.menu li {
+    margin: 10px;
+    font-size: 1em;
+}
 
-/*legg til styling for footer*/
-/* Styling for footeren STARTER HER */
+/* 6. Styling for Footer */
 .footer {
     padding: 80px 50px;
     background-color: var(--bgcolor);
-    min-height: 200px; /* Sett minimum høyde */
+    min-height: 200px;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -266,41 +270,30 @@ padding-top: 50px;}
     margin-right: 4rem;
 }
 
-/* Kolonne 1: Tekstjustering */
 .col-1 {
-    flex: 2;  /* Gjør kolonne 1 bredere */
-    text-align: left; /* Tekst til venstre */
+    flex: 2;
+    text-align: left;
 }
-
-/* Tekststil i kolonne 1 */
 
 .col-1 h4 {
     font-weight: 100;
     font-size: 1em;
-    margin-bottom: 25px; /* Mellomrom mellom h4 og resten av teksten */
+    margin: 0 0 25px 0;
 }
 
-/* Stil for avsnitt i kolonne 1 */
 .col-1 p {
     font-weight: normal;
     line-height: 1.3;
     margin: 3px;
 }
 
-/* Lenke stil i kolonne 1 */
-.col-1 a {
-    font-weight: bold;
-}
-
-/* Kolonne 2 og 3 */
 .col-2, .col-3 {
-    flex: 1; /* Smalere kolonner */
-    text-align: left; /* Justert til venstre */
+    flex: 1;
+    text-align: left;
     font-weight: normal;
 }
 
-/* Fjerner punkttegn fra lister */
-.footer-col ul, .contact-info ul li{
+.footer-col ul, .contact-info ul li {
     list-style-type: none;
     padding: 0.1em;
 }
@@ -309,125 +302,42 @@ padding-top: 50px;}
     margin-bottom: 1rem;
 }
 
-/* Økt mellomrom for lenker i col-2 */
 .col-2 a {
     display: block;
-    margin-bottom: 0.8rem; /* Økt mellomrom mellom lenkene */
+    margin-bottom: 0.8rem;
 }
 
 .footer-col a:hover {
     text-decoration: underline;
 }
 
-
-/* Sosiale medier */
 .social-links li {
     margin-bottom: 10px;
 }
-/* Styling for footeren SLUTTER HER */
 
-/*for github-siden*/
-.github-page article{
-    margin: 40px;
-    background: #dfdcdc;
-    border-radius: 8px;
-}
-/*ikoner*/
-.fa-square-github {
-    font-size: 1.4em;
-}
-
-
-/* Heading 1 */
-.github-page h1{
-    font-weight: bold;
-    font-size: 3em;
-}
-
-.h2-style {
-    margin-top: 20px;
-    font-size: 2em;
-}
-
-
-/* Bilder med tekst */
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* To kolonner */
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.image-grid figure {
-    text-align: center;
-}
-
-.image-grid img {
-    width: 100%;
-    max-width: 100vw; 
-    height: auto; 
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/*bildetekst*/
-figcaption {
-    background-color: black;
-    color: white;
-    font-style: italic;
-    text-align: center;
-    font-size: 1.4em;
-  }
-
-  .github-page p{
-    font-size: 1.6em;
-
- }
- /*accessibility styling her*/
-
-
-
-
-
-
-
-
-
-
-
-
-/* INDEX*/
-/*ikoner for studiets oppbygging*/
-
-/* 
-course-information = intro-information
-*/
-
+/* 7. Hovedinnhold - Main Content */
 .background-index {
-    position: relative; 
-    height: 60vh; 
-    width: 60%; 
-    overflow: hidden; 
+    position: relative;
+    height: 60vh;
+    width: 60%;
+    overflow: hidden;
     margin: 2rem auto;
-
 }
 
 .background-index img {
-    position: absolute; 
-    width: 100%; 
-    height: 100%; 
+    position: absolute;
     object-fit: cover;
     z-index: -1;
 }
 
-.course-information{ /* container*/
+.course-information {
     margin-top: 100px;
     max-width: 80%;
     margin-right: auto;
     margin-left: auto;
 }
 
-.course-information-boxstory{ /*container-boxstroty*/
+.course-information-boxstory {
     background-color: var(--brand-color);
     padding: 10px;
     border: 15px double black;
@@ -438,55 +348,22 @@ course-information = intro-information
     margin: 5px;
 }
 
-
-.course-information-large{ /* container-lg*/
-    max-width: 90%;
-}
-
-.course-information-small{ /* container-sm*/
-    max-width: 70%;
-}
-
-/*fjernet flex*/
-
-
-
-iframe{
-    aspect-ratio: 16/9;
-}
-
-.space-top{
-    margin-top: 4rem;
-}
-
-.large-margin { /* section*/
+.large-margin {
     margin: 4.5rem 0;
 }
-.large-margin summary {  /*flytt "vis flere studier" i center*/
-    margin-left: 300px;
-}
-.large-margin h3{ /* section-h3*/
+
+.large-margin h3 {
     margin-bottom: 1rem;
 }
 
-.main-title{
-    font-size: 2em;
-    margin-bottom: 0px;
-}
-
-.subtitle{
-    font-weight: 500;
-    margin-top: 0.5rem;
-}
-
-.bachelorprogram-details{ /* info*/
+.bachelorprogram-details {
     margin-top: 2.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 2rem;
 }
 
-.bachelorprogram-details-box{ /* info-box*/
+.bachelorprogram-details-box {
     border-top: 1px solid #000;
     padding: 1rem 0;
     display: flex;
@@ -494,106 +371,30 @@ iframe{
     column-gap: 10px;
 }
 
-.bachelorprogram-details-box h3{ /* info-box h3*/
-    margin-bottom: 0;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.bachelorprogram-details-box p, li{ /* info-p*/
-    margin-top: 0px;
-    font-weight: 800;
-    margin-left: 40px;
-}
-
-.bachelorprogram-details-box.border-bottom-section { /*Nytt siden 21.11*/
-    border-bottom: 1px solid #444242; 
-
-}
-
-.mamo-video {
-    max-width: 500px;
-}
-
-.course-content{ /* introduction*/
+.course-content {
     display: flex;
     align-items: flex-start;
     column-gap: 20px;
     margin-top: 32px;
 }
 
-.course-content-optional{
+.course-content-optional {
     display: flex;
     justify-content: end;
     column-gap: 1rem;
 }
 
-.course-content-optional .first, .course-content-optional .last{
-    background-repeat: no-repeat;
-    padding-left: 1.25rem;
-}
-
-/*
-
-course-content,first and course-content.last = slett 
-change to solid icon
-*/
-
-/*introduction istedenfor course-content helt til hit*/
-
-.course-content-icon{
-    border: solid #000 1px;
-}
-
-.course-content-text > div{
+.course-content-text > div {
     padding-left: 22px;
 }
-
-.course-content summary{
-    font-weight: bold;
-    padding-bottom: 20px;
-}
-
-.course-content details{
-    width: 100%;
-}
-
-.course-content .semester summary {
-    background-color: #FFF;
-}
-
-.course-content .semester[open] summary {
-    background-color: var(--brand-color);
-}
-
-.course-content details details summary{
-    padding: 10px;
-    background-color: #dadada;
-    width: 100%;
-}
-
-.course-content details details{
-    margin-block: 24px;
-}
-
 
 .course-content p {
     margin-block: 24px;
 }
 
-.course-content li {
-    margin-block: 14px;
-}
-
-.semester h3 {
-	background-color: var(--bgcolor);
-    padding: 8px; /*Nytt*/
-    border-radius: 5px;
-}
-/*introduction istedenfor course-content helt til hit*/
 .curriculum {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
     padding-top: 16px;
     column-gap: 25px;
     row-gap: 12px;
@@ -604,24 +405,163 @@ change to solid icon
     background: #e5e1de;
     padding: 21px;
     border: 1px solid #a8a8a8;
-    border-radius: 8px;
     overflow: hidden;
 }
 
-/* Nytt siden 22.11*/
-.font-xsmall p {
-    padding-top: 8px;
+/* 8. Spesifikke sider */
+.github-page article {
+    margin: 40px;
+    background: #dfdcdc;
 }
 
-/* Ikonet for "valgfritt emne" */
+.github-page h1 {
+    font-size: 3em;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-grid figure {
+    text-align: center;
+}
+
+.image-grid img {
+    max-width: 100vw;
+    height: auto;
+}
+
+figcaption {
+    background-color: #000000;
+    color: #ffffff;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+/* 9. Media Queries */
+@media (max-width: 479px) {
+    .main-article {
+        height: 20vh;
+        padding: 5vh 3vw;
+    }
+    .content h1 {
+        font-size: 2.2rem;
+    }
+    .curriculum {
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        row-gap: 8px;
+    }
+}
+
+@media (max-width: 799px) {
+    .weekly-recipes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .CSSgal {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .curriculum {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 15px;
+        row-gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 1049px) {
+    .weekly-recipes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Additional CSS for INDEX Section */
+.course-information-large {
+    max-width: 90%;
+}
+
+.course-information-small {
+    max-width: 70%;
+}
+
+iframe {
+    aspect-ratio: 16/9;
+}
+
+.space-top {
+    margin-top: 4rem;
+}
+
+.subtitle {
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.bachelorprogram-details-box h3 {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.bachelorprogram-details-box p, li {
+    margin-top: 0px;
+    font-weight: 800;
+    margin-left: 40px;
+}
+
+.bachelorprogram-details-box.border-bottom-section {
+    border-bottom: 1px solid #444242;
+}
+
+.mamo-video {
+    max-width: 500px;
+}
+
+.course-content-icon {
+    border: solid #000 1px;
+}
+
+.course-content .semester summary {
+    background-color: #ffffff;
+}
+
+.course-content .semester[open] summary {
+    background-color: var(--brand-color);
+}
+
+.course-content details details summary {
+    padding: 10px;
+    background-color: #dadada;
+}
+
+.course-content details details {
+    margin-block: 24px;
+}
+
+.course-content li {
+    margin-block: 14px;
+}
+
+.semester h3 {
+    background-color: var(--bgcolor);
+    padding: 8px;
+    border-radius: 5px;
+}
+
 .curriculum-box h5 i.fa-star {
-    position: absolute; 
+    position: absolute;
     top: 8px;
     right: 8px;
     font-size: 1.2em;
 }
 
-/* For de obligatoriske fagene */
 .curriculum-box.single {
     background: #e9e4df;
     padding: 16px;
@@ -629,73 +569,61 @@ change to solid icon
     border-radius: 8px;
 }
 
-/* Emnegruppe */
 .group-subject {
-    grid-column: span 4; /*den vil ende på den tredje grid linjen fra startposisjonen (hentet fra: https://www.frontendreference.com/css/grid-column-end.html) */ 
+    grid-column: span 4;
     background: var(--brand-color);
     padding: 8px;
     text-align: left;
     font-size: 0.9em;
 }
 
-
-
-.master-program-box{
+.master-program-box {
     background-color: var(--brand-color);
     border-radius: 10px;
     border: 1px solid #a8a8a8;
 }
 
-/*Nytt siden 21/11*/
-.professor{ /*person*/
+.professor {
     border-top: 1px #2e2e2e solid;
     border-bottom: 1px #2e2e2e solid;
     padding: 2rem 0;
     height: 150px;
 }
 
-.professor img{ 
-    width: 100px;
-}
-
-.professor .contact{
-margin-bottom: 10px;
+.professor .contact {
+    margin-bottom: 10px;
 }
 
 .semester h4 {
-    /*har fjernet padding*/
     font-size: 1em;
 }
-.person .contact{
-	margin-top:10px
+
+.person .contact {
+    margin-top: 10px;
 }
 
-.professor .professor-info{
+.professor .professor-info {
     flex: 1;
     padding: 0 2rem;
 }
 
-.contact-leader{
+.contact-leader {
     display: flex;
     column-gap: 40px;
     align-items: stretch;
 }
 
-.qna-education{ /*.leder, qa*/
+.qna-education {
     flex: 1;
 }
 
-
-.courses{
+.courses {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    
 }
 
-.course{
-    /* border-top: 1px #2e2e2e solid; */
-    /* border-bottom: 1px #2e2e2e solid; */
+.course {
     padding: 25px;
     border: #000 1px solid;
     border-radius: 12px;
@@ -703,45 +631,42 @@ margin-bottom: 10px;
     justify-content: space-between;
 }
 
-.course i{
+.course i {
     transition: transform 100ms;
 }
 
-
-.course i:hover{
+.course i:hover {
     transform: translateX(30px);
 }
 
-.see-more{
+.see-more {
     margin-top: 40px;
 }
 
-.see-more summary{
+.see-more summary {
     text-align: center;
 }
 
-
-.professor-info .bold:hover{
+.professor-info .bold:hover {
     font-size: 1.3em;
     transition: 0.2s ease-in-out;
 }
 
-.scale-hover:hover{
+.scale-hover:hover {
     transform: scale(1.1);
     transition: 0.2s ease-in-out;
 }
 
-
-.course p{
+.course p {
     text-align: left;
 }
 
 .more-courses {
     display: grid;
-    gap:15px;
+    gap: 15px;
 }
 
-.program{
+.program {
     display: flex;
     justify-content: space-between;
     border-bottom: #2e2e2e solid 1px;
@@ -750,38 +675,26 @@ margin-bottom: 10px;
 
 .more-programs {
     padding-left: 500px;
-
-}
-/* .courses:last-child{
-    border-bottom: 1px #2e2e2e solid; */
-/* } */
-
-.course .course-info {
-    display: flex;
-    justify-content: space-between;
 }
 
-.studenthistory{ /*studenthistori*/
+.studenthistory {
     margin-bottom: 20px;
 }
 
-.bottom-card{
+.bottom-card {
     height: 400px;
 }
 
-
-.bottom-card .card-text{
-    /* padding: 2rem; */
+.bottom-card .card-text {
     padding-left: 50px;
     flex: 1;
-    /* width: 50%; */
 }
 
-.bottom-card .card-text h3{
+.bottom-card .card-text h3 {
     margin-top: 2rem;
 }
 
-.bottom-card .card-text p{
+.bottom-card .card-text p {
     line-height: 1.5;
 }
 
@@ -790,93 +703,60 @@ margin-bottom: 10px;
     height: 400px;
 }
 
-
 .bottom-card .card-img img {
-    width: 400px; /* ble endret størrelse*/
+    width: 400px;
     height: 330px;
     object-fit: cover;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
-
-
-.studenthistories-more{ /*studenthistorier*/
+.studenthistories-more {
     background-color: var(--brand-color);
     margin: 4rem auto;
     width: fit-content;
     column-gap: 60px;
-    
 }
 
-.studenthistories-more i{
+.studenthistories-more i {
     font-size: 1em;
-    /*padding-left: 100px;*/
 }
-/*.studenthistories-more {
-    font-size: 1.8em;
-} fjernet det, trenger ikke*/ 
 
-.studenthistories-more button{
+.studenthistories-more button {
     font-size: 1em;
-
 }
 
-.studenthistories-more:hover{
-    background-color: hsl(50, 100%, 45%);
+.studenthistories-more:hover {
+    background-color: #e8b200;
 }
 
-.studenthistories-more:hover a{ /*  new css (changed)*/
-    color: rgb(255, 61, 61);
+.studenthistories-more:hover a {
+    color: #ff3d3d;
 }
 
-
-
-
-/*index slutt*/
-
-/*activity*/
-
-/* H3 og H2 overskrifter */
+/* 10. Activity Styling */
 .footer-col h3, .activity-events-table td h3, .col-1 h3 {
     font-weight: bold;
     margin-bottom: 2px;
 }
-.h2-style {
-    display: flex;;
-    font-size: 2em;
-    margin-bottom: 0;
-}
-/* felles font størrelser*/ 
+
 .fa-bars, .fa-xmark, .navn, .content p {
     font-size: 1.6em;
 }
-/*100% av bilde/boks*/
-.body, .main-article .bakgrunnsbilde, .bubbles-background, .CSSgal .prev-next, .CSSgal .bullets {
-    width: 100%;
+
+.h2-style, .info {
+    color: #000000;
 }
 
-/*felles farger*/
-.h2-style, .info, #btn-to-top {
-    color: black;
-}
-/*felles plassering */ 
-.h2-style, .main-article, .activity-events, .weekly-recipes, .oppskrift-aside, .footer {
+.content-center, .h2-style, .footer {
     justify-content: center;
 }
 
-
-
-
-
-
-/* Styling for Main STARTER HER */
-/*Overskrift + bakgrunnsbilde*/
-
 .main-activity {
-      background-color: white;
+    background-color: transparent;
 }
+
 .main-article {
-    position: relative; 
+    position: relative;
     height: 25vh;
     padding: 40vh 5vw;
 }
@@ -893,64 +773,51 @@ margin-bottom: 10px;
 .content h1 {
     text-shadow: 2px 2px 2px #ffffff;
     font-size: 5rem;
-    font-weight: bold;
 }
 
-/* Om oss + Kontakt oss */
 .activity-info {
-    position: relative; 
-}
-.contact-us {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    position: relative;
+    display: flex; gap: 2em; /*endret*/
 }
 
 .bubbles-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.8;  
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.8; /*endret*/
+    z-index: -1;
     object-fit: cover;
 }
 
 .about-us {
-    position: relative; 
-    gap: 2em; 
-    max-width: 80%; 
-    margin: 2em auto;   
-    flex-wrap: wrap; 
-    z-index: 1;  
+    position: relative;
+    gap: 2em;
+    max-width: 80%;
+    margin: 2em auto;
+    flex-wrap: wrap;
+    z-index: 1;
 }
 
 .activity-text-img {
     border-radius: 16px;
-    max-width: 45%; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    z-index: 1;  
+    max-width: 45%;
+    z-index: 1;
 }
 
 .about-us-text {
     flex: 1;
-    padding: 1em;
-    background-color: #ffffff; 
-    border-radius: 16px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    text-align: left; 
-    z-index: 2; 
+    font: bold 1em Arial, sans-serif;
+    border-radius: 16px;
+    text-align: left;
+    z-index: 2;
 }
 
-.contact-us{
-    flex: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-}
-.contact-us-text {
+.contact-us {
+    display: flex; flex-direction: row; align-items: center; gap: 1em; /*endret*/
     border-top: 1px #2e2e2e solid;
     border-bottom: 1px #2e2e2e solid;
+    position: relative;
 }
+
 .contact-us-links a {
-    border: 2px solid black;
+    border: 2px solid #000000;
     padding: 0.5em;
     border-radius: 20px;
 }
@@ -960,7 +827,7 @@ margin-bottom: 10px;
 }
 .contact-us-links a:hover {
     background-color: #484545;
-    color: #fff;
+    color: #ffffff;
     transition: 0.3s ease-in-out;
 }
 
@@ -990,13 +857,12 @@ margin-bottom: 10px;
     width: 80%;
     max-width: 800px;
     border-collapse: collapse;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .activity-events-table thead {
     background-color: #a30e4e;
-    color: white;
+    color: #ffffff;
 }
 
 .activity-events-table th, .activity-events-table td {
@@ -1048,7 +914,6 @@ margin-bottom: 10px;
 .navn {
     padding-top: 40px;
     margin-bottom: 10px;
-    font-weight: bold;
     text-align: center;
     font-style: italic;
 }
@@ -1092,7 +957,7 @@ margin-bottom: 10px;
 }
 
 .CSSgal .prev-next a {
-    background: #fff;
+    background: #ffffff;
     position: absolute;
     width: 40px;
     height: 40px;
@@ -1198,18 +1063,19 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
 
 /*Styling for "5 gode tips til studentmaten"*/
 .oppskrift-aside {
-    padding: 15px;
-    padding-left: 30px;
-    align-items: center;
+    font-size: 1.4vw;
+    padding: 2em; 
+    max-width: 100%; 
     height: auto;
-    max-height: 500px;
+    max-height: 550px;
     background-color: #f3742a;
     border-radius: 40px;
     margin-left: 25px;
 }
 
 .oppskrift-aside li {
-    margin-bottom: 25px;
+    font-size: 1.3vw;
+    margin-top: 1em;
     font-style: italic;
 }
 
@@ -1286,11 +1152,7 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
         height:350px
     }
 
-    .oppskrift-aside {
-        max-width: 500px;
-        padding: 50px;
-        margin-top: 20px;
-    }
+
     .bubbles-background {
         height: 50%;
     }
@@ -1325,7 +1187,7 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
     }
 
     .bottom-card .card-text{
-        padding-left: 0;
+        padding: 2rem 0 0 50px;
     }
 
     .courses{
@@ -1369,11 +1231,7 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
         height:280px
     }
 
-    .oppskrift-aside {
-        max-width: 500px;
-        padding: 50px;
-        margin-top: 20px;
-    }
+   
     .bubbles-background {
         height: 65%;
     }
@@ -1420,18 +1278,16 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
         height:400px
     }
 
-    .oppskrift-aside {
-        max-width: 800px;
-        padding: 50px;
-        margin-top: 20px;
-    }
     .contact-us-links {
         grid-template-columns: 1fr 1fr;
     }
     .contact-us-image img {
         height: 200px
     }
- 
+    .oppskrift-aside, .oppskrift-aside li {
+        font-size: 2.5vmin;
+        max-height: 700px;
+    }
 
 }
 /* Media query for....*/
@@ -1444,16 +1300,6 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
     .CSSgal .slide img {
         width: 490px;
         height:300px
-    }
-
-    .oppskrift-aside {
-        width: 100%;
-        margin-top: 20px;
-    }
-    .oppskrift-aside li {
-        margin-bottom: 25px;
-        font-style: italic;
-        font-size: 1.1em;
     }
 }
 @media (max-width: 1200px) {
