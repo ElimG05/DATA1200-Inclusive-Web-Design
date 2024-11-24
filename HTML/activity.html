@@ -29,9 +29,9 @@
          </div> 
          <!--Navigasjonsbar. Her er en oversikt over alle sidene våre-->
          <nav class="navigation-bar">
-            <ul class="menu">
+            <ul class="menu flex-row">
                 <li><a href="index.html">Index</a></li>
-                <li><a class="active" href="activity.html">Activity</a></li><!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
+                <li><a class="active padding-0-4" href="activity.html">Activity</a></li><!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
                 <li><a href="github.html">GitHub</a></li>
                 <li><a href="accessibility.html">Accessibility</a></li>
             </ul>
@@ -44,19 +44,20 @@
             <i class="fa-solid fa-less-than"></i>Studieoversikt</a>
         </div>
     </header>
-    <main>
+    <main class="main-activity">
         <!--Hovedseksjonen: bakgrunnsbilde + Overskrift-->
-        <article class="main-article"> <!--bytt navn på class-->
+        <article class="main-article flex-center"> <!--bytt navn på class-->
             <div class="content">
                 <img src="../HTML/multimedia/bakgrunnsbilde-main-article.jpeg" alt="bakgrunnsbilde" class="bakgrunnsbilde">
-                <h1>Studentkjøkkenet</h1>
-                <p>En studentforening for deg som liker å lage mat</p>
+                <h1 class="text-in-front">Studentkjøkkenet</h1>
+                <p class="text-in-front">En studentforening for deg som liker å lage mat</p>
             </div>
         </article>
         <!--Om oss: litt bakgrunnhistorie og info om studentforeningen vår-->
         <article class="activity-info">
             <img src="../HTML/multimedia/bubbles-background-top.jpeg" alt="Blob Background" class="bubbles-background">
-            <div class="about-us">
+            <div class="about-us flex-center">
+                <img src="../HTML/multimedia/about-us-side-image.jpeg" alt="Simple Dish" class="activity-text-img">
                 <div class="about-us-text">
                     <h2 class="h2-style">Om oss</h2>
                     <p>Vi startet som fire venninner med en felles lidenskap for matlaging.
@@ -69,8 +70,6 @@
                     
                     <p>Det er helt gratis å være med, og alt du trenger er litt kreativitet og godt humør. Vi ser fram til å møte deg!</p>
                 </div>
-                
-                <img src="../HTML/multimedia/about-us-side-image.jpeg" alt="Simple Dish" class="activity-box-img">
             </div>
         </article>
         <img src="../HTML/multimedia/activitylogo.jpeg" class="activity-logo" alt="Activity Logo">
@@ -191,41 +190,42 @@
         </article>
         <!--Kontaktinformasjon-->
         <article class="activity-info">
-            <img src="../HTML/multimedia/bubbles-background-bottom.jpeg" alt="Blob Background 2" class="bubbles-background">
-            <div class="contact-us"> 
-                <div class="contact-us-text">
-                    <div class="contact-info">
-                        <h2 class="h2-style">Kontakt oss</h2>
-                        <ul>
-                            <li>+471928393</li>
-                            <li>studentkjøkkenet@oslomet.no</li>
-                        </ul>
-                    </div>
-                    <div class="contact-us-links"> <!-- linkene til sosiale medier er hentet fra: https://www.sio.no/-->
-                        <a href="https://www.facebook.com/SiOStudentliv/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
-                        <a href="https://no.linkedin.com/school/oslomet/" target="_blank" ><i class="fa-brands fa-tiktok"></i> Tikok</a>
-                        <a href="https://www.instagram.com/siostudentliv/#" target="_blank" ><i class="fa-brands fa-instagram"></i> Instagram</a>
-                        <a href="https://www.youtube.com/c/SiOStudentliv" target="_blank" ><i class="fa-brands fa-youtube"></i> Youtube</a>
+            <img src="../HTML/multimedia/bubbles-background-bottom.jpeg" alt="Blob Background" class="bubbles-background">
+            <div class="contact-us">
+                <div class="about-us">
+                    <div class="contact-us-text">
+                            <h2 class="h2-style">Kontakt oss</h2>
+                            <ul>
+                                <li>+471928393</li>
+                                <li>studentkjøkkenet@oslomet.no</li>
+                            </ul>
+                            <div class="contact-us-links"> <!-- linkene til sosiale medier er hentet fra: https://www.sio.no/-->
+                                <a href="https://www.facebook.com/SiOStudentliv/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                                <a href="https://no.linkedin.com/school/oslomet/" target="_blank" ><i class="fa-brands fa-tiktok"></i> Tikok</a>
+                                <a href="https://www.instagram.com/siostudentliv/#" target="_blank" ><i class="fa-brands fa-instagram"></i> Instagram</a>
+                                <a href="https://www.youtube.com/c/SiOStudentliv" target="_blank" ><i class="fa-brands fa-youtube"></i> Youtube</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-us-image"> <img src="../HTML/multimedia/contact-us-side-image.jpg" alt="Social cooking" class="activity-box-img"></div>
+                <div class="contact-us-image"> <img src="../HTML/multimedia/contact-us-side-image.jpg" alt="Social cooking" class="activity-text-img"></div>
             </div>
         </article>
     </main>
     <!--Footer: felles for alle sidene våre-->
     <footer>
-        <div class="footer">
+        <div class="footer flex-row">
           <!--første del av footeren: kort info om skolen-->
-            <div class="footer-col col-1">
+            <div class="footer-col col-1 flex-column">
                 <h3>OSLO METROPOLITAN UNIVERSITY</h3>
                 <h4>STORBYUNIVERSITET<h4>
                     <p>Postboks 4, St. Olavs plass</p>
                     <p>0130 Oslo</p>
                     <p>Tlf.: 67 23 50 00 </p>
-                    <a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a>
+                    <a href="https://www.oslomet.no/om/kontakt"  class="space-top-xsmall">Kontakt oss</a>
                 </div>
                 <!--andre delen av footeren: en liste med nyttig lenker fra OsloMet-->
-                <div class="footer-col col-2">
+                <div class="footer-col col-2 flex-column">
                     <h3>Nyttige lenker</h3>
                     <ul>
                         <li> <a href="https://www.oslomet.no/en">English</a> </li>
@@ -237,7 +237,7 @@
                     </ul>
                 </div>
                 <!--tredje del av footeren: en oversikt over skolen sosiale medier-->
-                <div class="footer-col col-3">
+                <div class="footer-col col-3 flex-column">
                     <h3>Sosiale medier</h3>
                     <ul class="social-links">
                         <li> <a href="https://www.facebook.com/oslomet/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a> </li>

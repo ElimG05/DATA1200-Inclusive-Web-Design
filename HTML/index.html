@@ -26,8 +26,8 @@
          </div> 
          <!--Navigasjonsbar. Her er en oversikt over alle sidene våre-->
          <nav class="navigation-bar">
-            <ul class="menu">
-                <li><a class="active" href="index.html">Index</a></li><!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
+            <ul class="menu flex-row">
+                <li><a class="active padding-0-3" href="index.html">Index</a></li><!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
                 <li><a href="activity.html">Activity</a></li>
                 <li><a href="github.html">GitHub</a></li>
                 <li><a href="accessibility.html">Accessibility</a></li>
@@ -37,14 +37,14 @@
        <!--Andre delen av headeren (part 2) som består av "studieoversikt"-->
         <div class="header-part2"></div>
         <div class="study-overview">
-            <a href="https://www.oslomet.no/studier/studieoversikt" class="study-overview-link">
+            <a href="https://www.oslomet.no/studier/studieoversikt" class="study-overview-link padding-0-3">
             <i class="fa-solid fa-less-than"></i>Studieoversikt</a>
         </div>
     </header>
-    <main>
-      <article class="background-index">
+    <main class="index">
+      <article class="background-index flex-center">
         <img src="../HTML/multimedia/background-img-index.png" alt="background-img">
-          <h1 class="main-title text-container">Matematisk modellering <br> og <br> datavitenskap – ingeniør </h1>
+          <h1 class="main-title text-in-front">Matematisk modellering <br> og <br> datavitenskap – ingeniør </h1>
       </article>
       <article class="course-information">
         <div class="title space-top">
@@ -228,7 +228,7 @@
                   <div>
                     <div class="semester">
                       <!--Semester 1-->
-                      <h3>Semester 1</h3>
+                      <h3 class="space-top-small">Semester 1</h3>
                       <div class="curriculum">
                         <div class="curriculum-box">
                           <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST">
@@ -270,7 +270,7 @@
                     </div>
                     <div class="semester">
                       <!--Semester 2-->
-                      <h3>Semester 2</h3>
+                      <h3 class="space-top-small">Semester 2</h3>
                       <div class="curriculum">
                         <div class="curriculum-box">
                           <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAFE1000/2024/H%C3%98ST">
@@ -308,7 +308,7 @@
                   <summary>2. studieår</summary>
                   <div>
                     <div class="semester">
-                      <h3>Semester 3</h3>
+                      <h3 class="space-top-small">Semester 3</h3>
                       <div class="curriculum">
                         <!-- Matematikk 2000 -->
                         <div class="curriculum-box single">
@@ -334,7 +334,7 @@
                       <div class="curriculum">
                         <!-- Emnegruppe: Matematikk og fysikk -->
                         <div class="curriculum-box group-subject">
-                          <h4>Emnegruppe: Matematikk og fysikk</h4>
+                          <h4 class="space-top-xsmall">Emnegruppe: Matematikk og fysikk</h4>
                         </div>
                         <div class="curriculum-box">
                           <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">
@@ -347,7 +347,7 @@
                         </div>
                         <!-- Emnegruppe: Statistiske og datadrevne metoder -->
                         <div class="curriculum-box group-subject">
-                          <h4>Emnegruppe: Statistiske og datadrevne metoder</h4>
+                          <h4 class="space-top-xsmall">Emnegruppe: Statistiske og datadrevne metoder</h4>
                         </div>
                         <div class="curriculum-box">
                           <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">
@@ -360,7 +360,7 @@
                         </div>
                         <!-- Emnegruppe: Vitenskapelige beregninger -->
                         <div class="curriculum-box group-subject">
-                          <h4>Emnegruppe: Vitenskapelige beregninger</h4>
+                          <h4 class="space-top-xsmall">Emnegruppe: Vitenskapelige beregninger</h4>
                         </div>
                         <div class="curriculum-box">
                           <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2100/2024/H%C3%98ST">
@@ -374,7 +374,7 @@
                       </div>
                     </div>
                     <div class="semester">
-                      <h3>Semester 4</h3>
+                      <h3 class="space-top-small">Semester 4</h3>
                       <div class="curriculum">
                         <!-- Matematikk 4000 - Rad alene -->
                         <div class="curriculum-box single">
@@ -388,7 +388,7 @@
                         </div>
                         <!-- Emnegruppe: Matematikk og fysikk -->
                         <div class="curriculum-box group-subject">
-                          <h4>Emnegruppe: Matematikk og fysikk</h4>
+                          <h4 class="space-top-xsmall">Emnegruppe: Matematikk og fysikk</h4>
                         </div>
                         <div class="curriculum-box">
                           <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2400/2024/H%C3%98ST">
@@ -410,7 +410,7 @@
                         </div>
                         <!-- Emnegruppe: Statistiske og datadrevne metoder -->
                         <div class="curriculum-box group-subject">
-                          <h4>Emnegruppe: Statistiske og datadrevne metoder</h4>
+                          <h4 class="space-top-xsmall">Emnegruppe: Statistiske og datadrevne metoder</h4>
                         </div>
                         <div class="curriculum-box">
                           <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3100/2024/H%C3%98ST">
@@ -443,7 +443,7 @@
                         </div>
                         <!-- Emnegruppe: Vitenskapelige beregninger -->
                         <div class="curriculum-box group-subject">
-                          <h4>Emnegruppe: Vitenskapelige beregninger</h4>
+                          <h4 class="space-top-xsmall">Emnegruppe: Vitenskapelige beregninger</h4>
                         </div>
                         <div class="curriculum-box">
                           <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST">
@@ -472,7 +472,7 @@
                   <summary>3. studieår</summary>
                   <div>
                     <div class="semester">
-                      <h3>Semester 5</h3>
+                      <h3 class="space-top-small">Semester 5</h3>
                       <div class="curriculum">
                         <!-- Matematikk 3000 - Rad alene -->
                         <div class="curriculum-box single">
@@ -486,7 +486,7 @@
                         </div>
                         <!-- Emnegruppe: Matematikk og fysikk -->
                         <div class="curriculum-box group-subject">
-                          <h4>Emnegruppe: Matematikk og fysikk</h4>
+                          <h4 class="space-top-xsmall">Emnegruppe: Matematikk og fysikk</h4>
                         </div>
                         <div class="curriculum-box">
                           <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST">
@@ -539,7 +539,7 @@
                         </div>
                         <!-- Emnegruppe: Statistiske og datadrevne metoder -->
                         <div class="curriculum-box group-subject">
-                          <h4>Emnegruppe: Statistiske og datadrevne metoder</h4>
+                          <h4 class="space-top-xsmall">Emnegruppe: Statistiske og datadrevne metoder</h4>
                         </div>
                         <div class="curriculum-box">
                           <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3625/2024/H%C3%98ST">
@@ -592,7 +592,7 @@
                         </div>
                         <!-- Emnegruppe: Vitenskapelige beregninger -->
                         <div class="curriculum-box group-subject">
-                          <h4>Emnegruppe: Vitenskapelige beregninger</h4>
+                          <h4 class="space-top-xsmall">Emnegruppe: Vitenskapelige beregninger</h4>
                         </div>
                         <div class="curriculum-box">
                           <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">
@@ -646,7 +646,7 @@
                       </div>
                     </div>
                     <div class="semester">
-                      <h3>Semester 6</h3>
+                      <h3 class="space-top-small">Semester 6</h3>
                       <div class="curriculum">
                         <!-- Bacheloroppgave in its own box, spanning 4 columns -->
                         <div class="curriculum-box single">
@@ -660,7 +660,7 @@
                         </div>
                         <!-- Emnegruppe: Matematikk og fysikk -->
                         <div class="curriculum-box group-subject">
-                          <h4>Emnegruppe: Matematikk og fysikk</h4>
+                          <h4 class="space-top-xsmall">Emnegruppe: Matematikk og fysikk</h4>
                         </div>
                         <div class="curriculum-box">
                           <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">
@@ -704,7 +704,7 @@
                         </div>
                         <!-- Emnegruppe: Statistiske og datadrevne metoder -->
                         <div class="curriculum-box group-subject">
-                          <h4>Emnegruppe: Statistiske og datadrevne metoder</h4>
+                          <h4 class="space-top-xsmall">Emnegruppe: Statistiske og datadrevne metoder</h4>
                         </div>
                         <div class="curriculum-box">
                           <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">
@@ -738,7 +738,7 @@
                         </div>
                         <!-- Emnegruppe: Vitenskapelige beregninger -->
                         <div class="curriculum-box group-subject">
-                          <h4>Emnegruppe: Vitenskapelige beregninger</h4>
+                          <h4 class="space-top-xsmall">Emnegruppe: Vitenskapelige beregninger</F>
                         </div>
                         <div class="curriculum-box">
                           <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST">
@@ -848,7 +848,7 @@
           <div class="course-content">
             <details class="course-content-text">
               <summary class="font-large">Videre studiemuligheter ved OsloMet</summary>
-              <div class="master-program-box">
+              <div class="master-program-box padding-0-3 space-top-xsmall">
                 <ul>
                   <div>
                     <a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">
@@ -868,12 +868,12 @@
           <div class="large-margin qna-education">
             <!-- Faglig leder -->
             <h3 class="font-xlarge">Faglig leder</h3>
-            <div class="professor">
+            <div class="professor flex-center">
               <img src="../HTML/multimedia/fagleder.png" alt="Kristoffer Herland Hellton">
               <div class="professor-info">
                 <a class="bold" href="https://www.oslomet.no/om/ansatt/krhel3944/">Kristoffer Herland Hellton</a>
                 <p class="status">førsteamanuensis</p>
-                <div class="contact">
+                <div class="contact space-top-xsmall">
                   <span class="phone">+47 672 37 240 </span>
                   <span>| kristoffer.hellton@oslomet.no</span>
                 </div>
@@ -888,7 +888,7 @@
             <!-- Spørsmål om utdanningen -->
             <h3 class="font-xlarge">Spørsmål om utdanningen?</h3>
             <div class="person">
-              <a class="professor link-style hover-underline" href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student">Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</a>
+              <a class="professor flex-center link-style hover-underline" href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student">Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</a>
             </div>
           </div>
         </article>
@@ -896,7 +896,7 @@
         <article class="large-margin">
           <h3 class="font-3xlarge">Du er kanskje også interessert i disse?</h3>
           <div class="courses">
-            <div class="course course-link">
+            <div class="course flex-column course-link">
               <div class="program">
                 <span>Bachelorprogram</span>
                 <span>Oslo</span>
@@ -909,7 +909,7 @@
                 </a>
               </div>
             </div>
-            <div class="course course-link">
+            <div class="course flex-column course-link">
               <div class="program">
                 <span>Bachelorprogram</span>
                 <span>Oslo</span>
@@ -922,7 +922,7 @@
                 </a>
               </div>
             </div>
-            <div class="course course-link">
+            <div class="course flex-column course-link">
               <div class="program">
                 <span>Bachelorprogram</span>
                 <span>Oslo</span>
@@ -935,7 +935,7 @@
                 </a>
               </div>
             </div>
-            <div class="course course-link">
+            <div class="course flex-column course-link">
               <div class="program">
                 <span>Bachelorprogram</span>
                 <span>Oslo</span>
@@ -948,7 +948,7 @@
                 </a>
               </div>
             </div>
-            <div class="course course-link">
+            <div class="course flex-column course-link">
               <div class="program">
                 <span>Bachelorprogram</span>
                 <span>Oslo</span>
@@ -961,7 +961,7 @@
                 </a>
               </div>
             </div>
-            <div class="course course-link">
+            <div class="course flex-column course-link">
               <div class="program">
                 <span>Bachelorprogram</span>
                 <span>Oslo</span>
@@ -978,7 +978,7 @@
           <details class="see-more">
             <summary class="font-large">Vis flere studier</summary>
             <div class="courses">
-              <div class="course course-link">
+              <div class="course flex-column course-link">
                 <div class="program">
                   <span>Bachelorprogram</span>
                   <span>Oslo</span>
@@ -991,7 +991,7 @@
                   </a>
                 </div>
               </div>
-              <div class="course course-link">
+              <div class="course flex-column course-link">
                 <div class="program">
                   <span>Bachelorprogram</span>
                   <span>Oslo</span>
@@ -1004,7 +1004,7 @@
                   </a>
                 </div>
               </div>
-              <div class="course course-link">
+              <div class="course flex-column course-link">
                 <div class="program">
                   <span>Studentforening</span>
                   <span>Oslo</span>
@@ -1024,8 +1024,8 @@
         <article class="course-information course-information-large">
           <h2 class="font-3xlarge studenthistory">Studenthistorier</h2>
           <div class="course-information-boxstory">
-            <div class="bottom-card">
-              <div class="card-img">
+            <div class="bottom-card flex-center padding-1-25">
+              <div class="card-img flex-center">
                 <img src="../HTML/multimedia/picture 2 person.jpg" alt="">
               </div>
               <div class="card-text">
@@ -1041,7 +1041,7 @@
               </div>
             </div>
           </div>
-          <div class="studenthistories-more font-large">
+          <div class="studenthistories-more font-large padding-1-25 flex-center">
             <a href="https://www.oslomet.no/studier/studenthistorier">Flere studenthistorier <i class="button fa-solid fa-greater-than"></i>
             </a>
           </div>
@@ -1050,18 +1050,18 @@
     </main>
     <!--Footer: felles for alle sidene våre-->
   <footer>
-    <div class="footer">
+    <div class="footer flex-row">
       <!--første del av footeren: kort info om skolen-->
-        <div class="footer-col col-1">
+        <div class="footer-col col-1 flex-column">
             <h3>OSLO METROPOLITAN UNIVERSITY</h3>
             <h4>STORBYUNIVERSITET<h4>
                 <p>Postboks 4, St. Olavs plass</p>
                 <p>0130 Oslo</p>
                 <p>Tlf.: 67 23 50 00 </p>
-                <a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a>
+                <a href="https://www.oslomet.no/om/kontakt" class="space-top-xsmall">Kontakt oss</a>
             </div>
             <!--andre delen av footeren: en liste med nyttig lenker fra OsloMet-->
-            <div class="footer-col col-2">
+            <div class="footer-col col-2 flex-column">
                 <h3>Nyttige lenker</h3>
                 <ul>
                     <li> <a href="https://www.oslomet.no/en">English</a> </li>
@@ -1073,7 +1073,7 @@
                 </ul>
             </div>
             <!--tredje del av footeren: en oversikt over skolen sosiale medier-->
-            <div class="footer-col col-3">
+            <div class="footer-col col-3 flex-column">
                 <h3>Sosiale medier</h3>
                 <ul class="social-links">
                     <li> <a href="https://www.facebook.com/oslomet/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a> </li>

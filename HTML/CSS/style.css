@@ -1,13 +1,23 @@
 /* Generell styling for alle sidene */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden; /*unngå scrolling sidelengs*/
     background-color: rgb(240, 240, 240);
     color: rgb(31, 30, 30);
     font-size: 1.2em;
+}
+
+:root{
+    --brand-color: #ffd404;
+    --bgcolor: #ff9310;
 }
 
 a {
@@ -20,12 +30,45 @@ a {
     text-decoration-skip-ink:none;
 }
 
-
-.text-container {
+.text-in-front {
     position: relative;
     z-index: 1; 
-    padding: 20px; 
 }
+
+/*felles padding og margin*/
+.padding-0-3 {
+    padding: 0.3rem;
+}
+
+.padding-1-25 {
+    padding: 1.25rem;
+}
+
+.space-top-xsmall {
+    margin-top: 0.65rem;
+}
+
+
+.space-top-small {
+    margin-top: 1rem;
+}
+
+/*felles display: flex*/
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row; 
+
+}
+
 
 .main-title {
     font-size: 3rem; 
@@ -48,25 +91,14 @@ h1, p {
     font-size: 1em;
 }
 
-
-:root{
-    --brand-color: #ffd404
-}
-
 #oversikt-sm{
     display: none;
 }
 
-article {
-    margin-top: 2%;
-    margin-left: 50px;
-    margin-right: 50px;
-
-}
 
 .link-style{ /*brand-link*/
     font-weight: 800;
-    text-decoration:underline 2.5px solid #ffd404;
+    text-decoration:underline 2.5px solid var(--brand-color);
 	text-decoration-skip-ink:none;
 }
 /*
@@ -79,28 +111,11 @@ article {
 }
 
 
-p, h1, h2, h3, h4, h5, h6{
-    margin: 0;
-    padding: 0;
-}
-
 p{
     line-height: 1.5;
     text-align: justify;
     margin-bottom: 1rem;
 }
-
-*{
-    box-sizing: border-box;
-}
-
-
-
-/*a{
-    color: var(--brand-color);
-    text-decoration: none;
-    font-size: inherit;
-}*/
 
 .font-4xlarge{ /* finnes den?*/
     font-size: 3rem;
@@ -152,7 +167,7 @@ font-xsmall = subjects
 /*legg til styling for header*/
 /* Styling for Header STARTER HER */
 header{
-	background-color:#ff9310;
+	background-color:var(--bgcolor);
     padding-bottom: 20px;
 	position:sticky;
 }
@@ -170,8 +185,7 @@ header{
     transition: 0.4s;
 }
 .menu a.active {
-    padding: 5px;
-    background-color: #ff9310;
+    background-color: var(--bgcolor);
     color:#ffffff;
 }
 
@@ -198,9 +212,7 @@ header{
     font-size: 1.2em;
 }
 .study-overview a{
-	color:#000;
     text-decoration: underline;
-    padding: 5px;
 }
 
 .study-overview a:hover{
@@ -212,17 +224,10 @@ padding-top: 50px;}
 
 
 .navigation-bar .menu{
-	display:flex;
 	list-style:none;
-	margin-right:40px;
-    display: flex;
-    flex-direction: row;  
+	margin-right:40px; 
 }
 
-.menu li a{
-	color:#000;
-	font-size:1.2em;
-}
 #side-menu+label:before{
 	list-style-type:square;
 }
@@ -251,16 +256,13 @@ padding-top: 50px;}
 /* Styling for footeren STARTER HER */
 .footer {
     padding: 80px 50px;
-    background-color: #ff9310;
+    background-color: var(--bgcolor);
     min-height: 200px; /* Sett minimum høyde */
-    display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
 .footer-col {
-    display: flex;
-    flex-direction: column;
     margin-right: 4rem;
 }
 
@@ -275,7 +277,6 @@ padding-top: 50px;}
 .col-1 h4 {
     font-weight: 100;
     font-size: 1em;
-    margin-top: 0px;
     margin-bottom: 25px; /* Mellomrom mellom h4 og resten av teksten */
 }
 
@@ -288,7 +289,6 @@ padding-top: 50px;}
 
 /* Lenke stil i kolonne 1 */
 .col-1 a {
-    margin-top: 10px;
     font-weight: bold;
 }
 
@@ -328,14 +328,12 @@ padding-top: 50px;}
 
 /*for github-siden*/
 .github-page article{
-    padding: 20px;
     margin: 40px;
     background: #dfdcdc;
     border-radius: 8px;
 }
 /*ikoner*/
 .fa-square-github {
-    padding: 20px;
     font-size: 1.4em;
 }
 
@@ -377,7 +375,6 @@ figcaption {
     background-color: black;
     color: white;
     font-style: italic;
-    padding: 5px;
     text-align: center;
     font-size: 1.4em;
   }
@@ -407,30 +404,20 @@ course-information = intro-information
 */
 
 .background-index {
-    position: relative; /* Viktig for å kunne plassere bilde og tekst korrekt */
-    height: 60vh; /* Høyde for bakgrunnsseksjonen */
-    width: 60%; /* Full bredde */
-    overflow: hidden; /* Hindrer at elementer går utenfor containeren */
-    display: flex;
-    align-items: center; /* Sentrerer innholdet vertikalt */
-    justify-content: center;
+    position: relative; 
+    height: 60vh; 
+    width: 60%; 
+    overflow: hidden; 
     margin: 2rem auto;
 
 }
 
 .background-index img {
-    position: absolute; /* Bildet skal ligge absolutt for å være bak teksten */
-    width: 100%; /* Bildet dekker hele bredden */
-    height: 100%; /* Bildet dekker hele høyden */
-    object-fit: cover; /* Sørger for at bildet dekker hele containeren uten å bli deformert */
-    z-index: -1; /* Sørger for at bildet ligger bak teksten */
-}
-
-.text-container {
-    position: relative; /* Sørger for at teksten ligger foran bildet */
-    z-index: 1; /* Sørger for at teksten vises over bildet */
-    color: white; /* Hvit tekst for bedre kontrast mot bakgrunnen */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Tekstskygge for bedre lesbarhet */
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    z-index: -1;
 }
 
 .course-information{ /* container*/
@@ -441,7 +428,7 @@ course-information = intro-information
 }
 
 .course-information-boxstory{ /*container-boxstroty*/
-    background-color: #ffd404;
+    background-color: var(--brand-color);
     padding: 10px;
     border: 15px double black;
 }
@@ -599,9 +586,8 @@ change to solid icon
 }
 
 .semester h3 {
-	background-color: #ff9310;
+	background-color: var(--bgcolor);
     padding: 8px; /*Nytt*/
-    margin-top: 12px; /*Nytt*/
     border-radius: 5px;
 }
 /*introduction istedenfor course-content helt til hit*/
@@ -625,7 +611,6 @@ change to solid icon
 /* Nytt siden 22.11*/
 .font-xsmall p {
     padding-top: 8px;
-    margin: 0; 
 }
 
 /* Ikonet for "valgfritt emne" */
@@ -647,7 +632,7 @@ change to solid icon
 /* Emnegruppe */
 .group-subject {
     grid-column: span 4; /*den vil ende på den tredje grid linjen fra startposisjonen (hentet fra: https://www.frontendreference.com/css/grid-column-end.html) */ 
-    background: #ffd404;
+    background: var(--brand-color);
     padding: 8px;
     text-align: left;
     font-size: 0.9em;
@@ -656,17 +641,13 @@ change to solid icon
 
 
 .master-program-box{
-    margin-top: 10px;
-    background-color: #ffd404;
-    padding: 5px;
+    background-color: var(--brand-color);
     border-radius: 10px;
     border: 1px solid #a8a8a8;
 }
 
 /*Nytt siden 21/11*/
 .professor{ /*person*/
-    display: flex;
-    align-items: center;
     border-top: 1px #2e2e2e solid;
     border-bottom: 1px #2e2e2e solid;
     padding: 2rem 0;
@@ -678,16 +659,14 @@ change to solid icon
 }
 
 .professor .contact{
-margin-top: 10px;
 margin-bottom: 10px;
 }
 
 .semester h4 {
     /*har fjernet padding*/
     font-size: 1em;
-    margin-top: 10px
 }
-.person .contact,.semester h4{
+.person .contact{
 	margin-top:10px
 }
 
@@ -720,10 +699,7 @@ margin-bottom: 10px;
     padding: 25px;
     border: #000 1px solid;
     border-radius: 12px;
-    background-color: #ffd404;
-    color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
+    background-color: var(--brand-color);
     justify-content: space-between;
 }
 
@@ -742,7 +718,6 @@ margin-bottom: 10px;
 
 .see-more summary{
     text-align: center;
-    margin: 0;
 }
 
 
@@ -770,8 +745,7 @@ margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     border-bottom: #2e2e2e solid 1px;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
+    margin: 1rem 0 1rem;
 }
 
 .more-programs {
@@ -787,20 +761,12 @@ margin-bottom: 10px;
     justify-content: space-between;
 }
 
-.course .course-info span{
-    margin-top: 10px;
-    padding: 0 20px 0 0;
-}
-
 .studenthistory{ /*studenthistori*/
     margin-bottom: 20px;
 }
 
 .bottom-card{
-    display: flex;
-    align-items: center;
     height: 400px;
-    padding: 20px;
 }
 
 
@@ -822,9 +788,6 @@ margin-bottom: 10px;
 .bottom-card .card-img {
     flex: 1;
     height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -838,13 +801,9 @@ margin-bottom: 10px;
 
 
 .studenthistories-more{ /*studenthistorier*/
-    display: flex;
     background-color: var(--brand-color);
-    padding: 1.5rem 1.5rem;
     margin: 4rem auto;
-    color: #000;
     width: fit-content;
-    align-items: center;
     column-gap: 60px;
     
 }
@@ -895,12 +854,9 @@ margin-bottom: 10px;
 .body, .main-article .bakgrunnsbilde, .bubbles-background, .CSSgal .prev-next, .CSSgal .bullets {
     width: 100%;
 }
-/*text-decoration: none*/
-.menu li a, .contact-us-links a, .navn a, .CSSgal .prev-next a, .col-1 a, .footer-col a, .col-2 a, #btn-to-top {
-    text-decoration-line: none;
-}
+
 /*felles farger*/
-.h2-style, .study-overview a, .menu li a, .contact-us-links a, .navn, .navn a, .info, .col-1 a, .footer-col a, .col-2 a, #btn-to-top, .contact-info ul li {
+.h2-style, .info, #btn-to-top {
     color: black;
 }
 /*felles plassering */ 
@@ -915,13 +871,14 @@ margin-bottom: 10px;
 
 /* Styling for Main STARTER HER */
 /*Overskrift + bakgrunnsbilde*/
+
+.main-activity {
+      background-color: white;
+}
 .main-article {
     position: relative; 
     height: 25vh;
     padding: 40vh 5vw;
-    display: flex;
-    align-items: center;
-    text-align: center;
 }
 
 .main-article .bakgrunnsbilde {
@@ -934,78 +891,63 @@ margin-bottom: 10px;
 }
 
 .content h1 {
-    margin-bottom: 0px;
     text-shadow: 2px 2px 2px #ffffff;
     font-size: 5rem;
     font-weight: bold;
 }
 
-
-.content p {
-    margin-top: 5px;
-}
-
-
 /* Om oss + Kontakt oss */
 .activity-info {
-    position: relative;
-    color: #333;
-    padding: 4em 2em;
-    text-align: center;
-    overflow: hidden;
+    position: relative; 
+}
+.contact-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .bubbles-background {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 100%;
-    z-index: -1; 
-    opacity: 0.7; 
+    left: 0;
+    opacity: 0.8;  
+    object-fit: cover;
 }
 
 .about-us {
-    display: flex;  
-    max-width: 860px; 
-    margin: 0 auto;   
-    gap: 2em;
+    position: relative; 
+    gap: 2em; 
+    max-width: 80%; 
+    margin: 2em auto;   
+    flex-wrap: wrap; 
+    z-index: 1;  
 }
 
-.about-us-text h2 {
-    margin-top: 0;
+.activity-text-img {
+    border-radius: 16px;
+    max-width: 45%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 1;  
 }
 
-.about-us p {
-    text-align: left;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    opacity: 1;
-}
 .about-us-text {
-    grid-column-start: 2;
-    background-color: white;
-    border-radius: 50px;
-    box-shadow: 0 0 40px 0 rgba(0, 0, 0, .23);
+    flex: 1;
     padding: 1em;
-    padding-top: 2em;
-    height: 500px;
+    background-color: #ffffff; 
+    border-radius: 16px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: left; 
+    z-index: 2; 
 }
-.activity-box-img {
-    border-radius: 50px;
-    box-shadow: 0 0 40px 0 rgba(0, 0, 0, .23);
-    height: 550px;
-    width: auto;
-}
+
 .contact-us{
-    display: flex;
-    align-items: center;
-    border-top: 1px #2e2e2e solid;
-    border-bottom: 1px #2e2e2e solid;
-    padding: 1.5rem 0;
+    flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
+}
+.contact-us-text {
+    border-top: 1px #2e2e2e solid;
+    border-bottom: 1px #2e2e2e solid;
 }
 .contact-us-links a {
     border: 2px solid black;
@@ -1022,15 +964,18 @@ margin-bottom: 10px;
     transition: 0.3s ease-in-out;
 }
 
-.contact-us-image img {
-    height: 300px
+.contact-us-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+    z-index: 2; /* Ensure it's above the bubble background */
 }
-
 /* Kommende aktiviteter */
 .activity-logo {
     height: 100px;
     display: block;
-    margin: 2em auto;
+    margin: 4em auto;
 }
 
 /* Kommende aktiviteter som en tabell */
@@ -1364,8 +1309,7 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
         width: 100%;
     }
 
-    main{
-        margin: 0;
+    .main-index{
         width: 100%
     }
 
@@ -1394,7 +1338,6 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
     }
 
     nav{
-        padding: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;

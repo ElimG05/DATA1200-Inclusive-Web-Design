@@ -26,7 +26,7 @@
          </div> 
          <!--Navigasjonsbar. Her er en oversikt over alle sidene våre-->
          <nav class="navigation-bar">
-            <ul class="menu">
+            <ul class="menu flex-row">
                 <li><a href="index.html">Index</a></li>
                 <li><a href="activity.html">Activity</a></li>
                 <li><a class="active" href="github.html">GitHub</a></li><!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
@@ -43,8 +43,8 @@
     </header>
     <main class="github-page">
       <!--En kort introduksjon om samarbeidet i GitHub-->
-      <article class="introduction">
-          <h1>GitHub<i class="fa-brands fa-square-github"></i></h1>
+      <article class="introduction padding-1-25">
+          <h1>GitHub<i class="fa-brands fa-square-github padding-1-25"></i></h1>
           <h2 class="h2-style">Samarbeidet på GitHub</h2>
           <p>
               I løpet av denne perioden har vi brukt GitHub aktivt for å strukturere, dele og utvikle prosjektet vårt.
@@ -57,7 +57,7 @@
       </article>
 
       <!--Commit-historikk fra repositoryen inkludert to bilder-->
-      <article class="code-commit">
+      <article class="code-commit padding-1-25">
           <h2 class="h2-style">Commit historikk</h2>
           <p>
               Commit-historikken på GitHub har vært en viktig funksjon for oss. Det har gitt oss en detaljert logg over alle
@@ -67,17 +67,17 @@
           <div class="image-grid">
               <figure>
                   <img src="./images/commit-image-1.png" alt="Commit-historikk fra activity-siden">
-                  <figcaption>Commit-historikk fra activity-siden.</figcaption>
+                  <figcaption class="padding-0-4">Commit-historikk fra activity-siden.</figcaption>
               </figure>
               <figure>
                   <img src="./images/commit-image-2.png" alt="Commit-historikk fra index-siden">
-                  <figcaption>Commit-historikk fra index-siden.</figcaption>
+                  <figcaption class="padding-0-4">Commit-historikk fra index-siden.</figcaption>
               </figure>
           </div>
       </article>
 
       <!--Spesifikke endringer i repositoryen inkludert to bilder-->
-      <article class="specific-code-changes">
+      <article class="specific-code-changes padding-1-25">
           <h2 class="h2-style">Visuell sporing av endringer</i></h2>
           <p>
               En annen viktig funksjon GitHub har er å kartlegge alle endringene man gjør etter hvert som man committer. Dette
@@ -87,17 +87,17 @@
           <div class="image-grid">
               <figure>
                   <img src="./images/specific-code-changes-image-1.png" alt="Spesifikke endringer fra activity-siden">
-                  <figcaption>Spesifikke endringer fra activity-siden.</figcaption>
+                  <figcaption class="padding-0-4">Spesifikke endringer fra activity-siden.</figcaption>
               </figure>
               <figure>
                   <img src="./images/specific-code-changes-image-2.png" alt="Spesifikke endringer fra index-siden">
-                  <figcaption>Spesifikke endringer fra index-siden.</figcaption>
+                  <figcaption class="padding-0-4">Spesifikke endringer fra index-siden.</figcaption>
               </figure>
           </div>
       </article>
 
       <!--En liste med fordeler ved GitHub-->
-      <article class="benefits">
+      <article class="benefits padding-1-25">
           <h2 class="h2-style">Fordeler med GitHub</h2>
           <ul>
               <li>Branches: Gir muligheten for å kunne jobbe med separate deler av prosjektet uten å påvirke hovedkoden.</li>
@@ -110,18 +110,18 @@
     </main>
   <!--Footer: felles for alle sidene våre-->
   <footer>
-  <div class="footer">
+  <div class="footer flex-row">
     <!--første del av footeren: kort info om skolen-->
-      <div class="footer-col col-1">
+      <div class="footer-col col-1 flex-column">
           <h3>OSLO METROPOLITAN UNIVERSITY</h3>
           <h4>STORBYUNIVERSITET<h4>
               <p>Postboks 4, St. Olavs plass</p>
               <p>0130 Oslo</p>
               <p>Tlf.: 67 23 50 00 </p>
-              <a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a>
+              <a href="https://www.oslomet.no/om/kontakt" class="space-top-xsmall">Kontakt oss</a>
           </div>
           <!--andre delen av footeren: en liste med nyttig lenker fra OsloMet-->
-          <div class="footer-col col-2">
+          <div class="footer-col col-2 flex-column">
               <h3>Nyttige lenker</h3>
               <ul>
                   <li> <a href="https://www.oslomet.no/en">English</a> </li>
@@ -133,7 +133,7 @@
               </ul>
           </div>
           <!--tredje del av footeren: en oversikt over skolen sosiale medier-->
-          <div class="footer-col col-3">
+          <div class="footer-col col-3 flex-column">
               <h3>Sosiale medier</h3>
               <ul class="social-links">
                   <li> <a href="https://www.facebook.com/oslomet/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a> </li>
