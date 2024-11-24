@@ -1,15 +1,330 @@
 /* Generell styling for alle sidene */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    overflow-x: hidden; /*unngå scrolling sidelengs*/
+    background-color: rgb(240, 240, 240);
+    color: rgb(31, 30, 30);
+    font-size: 1.2em;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
+    text-decoration-skip-ink:none;
+}
+
+
+.text-container {
+    position: relative;
+    z-index: 1; 
+    padding: 20px; 
+}
+
+.main-title {
+    font-size: 3rem; 
+    color: white; 
+}
+h1, p {
+    text-align:center;
+}
+
+.fa-solid, .fa-regular{
+    font-size: 1.2em;
+    padding: 6px;
+}
+
+.fa-arrow-right {
+    padding-left: 180px;
+}
+
+.fa-greater-than {
+    font-size: 1em;
+}
+
+
+:root{
+    --brand-color: #ffd404
+}
+
+#oversikt-sm{
+    display: none;
+}
+
+article {
+    margin-top: 2%;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.link-style{ /*brand-link*/
+    font-weight: 800;
+    text-decoration:underline 2.5px solid #ffd404;
+	text-decoration-skip-ink:none;
+}
+/*
+*{
+    border:1px solid red;
+}
+*/
+.link-style:hover{ /*brand-link*/
+    text-decoration:underline;
+}
+
+
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+/*a{
+    color: var(--brand-color);
+    text-decoration: none;
+    font-size: inherit;
+}*/
+
+.font-4xlarge{ /* finnes den?*/
+    font-size: 3rem;
+}
+
+.font-3xlarge{
+    font-size: 2.25rem;
+}
+
+.font-2xlarge{
+    font-size: 1.75rem;
+}
+
+.font-xlarge{
+    font-size: 1.5rem;
+}
+
+.font-xlarge a {
+    color:#FFF;
+}
+
+.font-large{
+    font-size: 1.25rem;
+}
+
+.font-medium{
+    font-size: 1.125rem;
+}
+
+.font-small{
+    font-size: 1rem;
+}
+/* 
+font-xsmall = subjects
+*/
+.font-xsmall{
+    font-size: 0.875rem;
+    border-top: #000;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+
+
+
+
 /*legg til styling for header*/
+/* Styling for Header STARTER HER */
+header{
+	background-color:#ff9310;
+    padding-bottom: 20px;
+	position:sticky;
+}
+
+.fa-solid:hover .menu a:hover {
+    font-size: 1.5em;
+    transition: 0.4s;
+}
+
+.navigation-bar {
+    padding-right: 50px;
+}
+.menu a:hover {
+    color: #fff7f7;
+    transition: 0.4s;
+}
+.menu a.active {
+    padding: 5px;
+    background-color: #ff9310;
+    color:#ffffff;
+}
+
+.header-part1{
+	display:flex;
+	align-items:center;
+	justify-content:space-between
+}
+
+.header-part2{
+	padding-bottom:20px
+}
+.school-logo{
+	height:100px;
+}
+#side-menu,.menu-display{
+	display:none
+}
+.menu-display label{
+	font-size:1.1em;
+	padding-right:50px
+}
+.study-overview{
+    font-size: 1.2em;
+}
+.study-overview a{
+	color:#000;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.study-overview a:hover{
+    font-weight: bolder ;
+}
+
+.navigation-bar {    
+padding-top: 50px;}
+
+
+.navigation-bar .menu{
+	display:flex;
+	list-style:none;
+	margin-right:40px;
+    display: flex;
+    flex-direction: row;  
+}
+
+.menu li a{
+	color:#000;
+	font-size:1.2em;
+}
+#side-menu+label:before{
+	list-style-type:square;
+}
+#side-menu:checked ~ .menu-display .menu-enter{
+    display: none;
+}
+#side-menu:checked ~ .menu-display .menu-exit {
+    display: inline-block;
+}
+.menu-enter {
+	padding-right: 50px;
+}
+.school-logo,.study-overview{
+    padding-left:80px
+}
+.menu li{
+    margin:10px;
+    font-size:1em;
+
+}
+
+
+/* Styling for Header SLUTTER HER */
 
 /*legg til styling for footer*/
+/* Styling for footeren STARTER HER */
+.footer {
+    padding: 80px 50px;
+    background-color: #ff9310;
+    min-height: 200px; /* Sett minimum høyde */
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+/* Kolonne 1: Tekstjustering */
+.col-1 {
+    flex: 2;  /* Gjør kolonne 1 bredere */
+    text-align: left; /* Tekst til venstre */
+}
+
+/* Tekststil i kolonne 1 */
+
+.col-1 h4 {
+    font-weight: 100;
+    font-size: 1em;
+    margin-top: 0px;
+    margin-bottom: 25px; /* Mellomrom mellom h4 og resten av teksten */
+}
+
+/* Stil for avsnitt i kolonne 1 */
+.col-1 p {
+    font-weight: normal;
+    line-height: 1.3;
+    margin: 3px;
+}
+
+/* Lenke stil i kolonne 1 */
+.col-1 a {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Kolonne 2 og 3 */
+.col-2, .col-3 {
+    flex: 1; /* Smalere kolonner */
+    text-align: left; /* Justert til venstre */
+    font-weight: normal;
+}
+
+/* Fjerner punkttegn fra lister */
+.footer-col ul, .contact-info ul li{
+    list-style-type: none;
+    padding: 0.1em;
+}
+
+.footer-col a {
+    margin-bottom: 1rem;
+}
+
+/* Økt mellomrom for lenker i col-2 */
+.col-2 a {
+    display: block;
+    margin-bottom: 0.8rem; /* Økt mellomrom mellom lenkene */
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+
+/* Sosiale medier */
+.social-links li {
+    margin-bottom: 10px;
+}
+/* Styling for footeren SLUTTER HER */
 
 /*for github-siden*/
 .github-page article{
@@ -71,281 +386,52 @@ figcaption {
     font-size: 1.6em;
 
  }
- /**/
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-.hover-underline:hover {
-    text-decoration: underline;
-    text-decoration-skip-ink:none;
-}
-
-.background-index {
-    position: relative; 
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    height: 60vh;
-    max-width: 100%;
-    text-align: center;
-}
-
-.bakgrunnsbilde-index {
-    position: absolute;
-    top: 0;
-    left: 260px;
-    height: 100%;
-    object-fit: cover; 
-    z-index: -1; 
-}
-
-.text-container {
-    position: relative;
-    z-index: 1; 
-    padding: 20px; 
-}
-
-.main-title {
-    font-size: 3rem; 
-    color: white; 
-}
-
-
-h1, p {
-    text-align:center;
-}
-/* Kristine header*/
-nav {
-    background-color: #ffd404;
-    padding: 1em;
-    padding-left: 275px;
-    padding-right: 275px;
-    display: grid;
-    grid-template-columns: repeat(15, 1fr);
-    row-gap: 2em;
-}
-.logo {
-    width: 65px;
-    grid-column: 1/7;
-}
-#oversikt {
-    display: flex;
-    grid-column: 14/15;
-    gap: 20px;
-    list-style: none;
-    text-decoration: none;
-    font-size: 16px;
-    color: #333;
-}
-#studieoversikt {
-    grid-row: 2;
-    text-decoration: underline;
-}
-.dropbtn {
-    background-color: #ffd404;
-    color: #333;
-    border: none;
-}
-.meny {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-meny {
-    display: none;
-    position: absolute;
-    background-color: #ffd404;
-    min-width: 500px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
-    z-index: 1;
-}
-.dropdown-meny a {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown-meny a:hover {background-color: burlywood;}
-.meny:hover .dropdown-meny {display: block;}
+ /*accessibility styling her*/
 
 
 
 
-/* Syifa Aulia . INDEX*/
+
+
+
+
+
+
+
+
+/* INDEX*/
 /*ikoner for studiets oppbygging*/
-.fa-solid, .fa-regular{
-    font-size: 1.2em;
-    padding: 6px;
-}
-
-.fa-arrow-right {
-    padding-left: 180px;
-}
-
-.fa-greater-than {
-    font-size: 1em;
-}
-
-
-:root{
-    --brand-color: #ffd404
-}
-
-#oversikt-sm{
-    display: none;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    background-color: rgb(240, 240, 240);
-}
-
-
-h1, p {
-    text-align:center;
-}
-
-
-article {
-    margin-top: 2%;
-    margin-left: 50px;
-    margin-right: 50px;
-
-}
-
-.link-style{ /*brand-link*/
-    font-weight: 800;
-    text-decoration:underline 2.5px solid #ffd404;
-	text-decoration-skip-ink:none;
-}
-/*
-*{
-    border:1px solid red;
-}
-*/
-.link-style:hover{ /*brand-link*/
-    text-decoration:underline;
-}
-
-.footer {
-    padding: 80px;
-    background-color: #ffd404;
-    display: flex;
-    font-size: small;
-    justify-content: center
-}
-
-.footer div {
-    text-align: center;
-    flex-grow: 1;
-    
-}
-
-
-.col-1 p {
-    margin-top: 5px;      
-    margin-bottom: 5px;   
-}
-
-
-.col-2 ul li, .col-3 ul li {
-    margin-bottom: 15px;
-    list-style-type: none;
-}
-
-
-p, h1, h2, h3, h4, h5, h6{
-    margin: 0;
-    padding: 0;
-}
-
-p{
-    line-height: 1.5;
-    text-align: justify;
-    margin-bottom: 1rem;
-}
-
-*{
-    box-sizing: border-box;
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(31, 30, 30);
-    font-size: 16px;
-}
-
-.background-index{
-    position: relative;
-    padding-block: 64px;
-}
-
-.background-index .background-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    overflow: hidden;
-    z-index: -1;
-
-}
-
-/*a{
-    color: var(--brand-color);
-    text-decoration: none;
-    font-size: inherit;
-}*/
-
-.font-4xlarge{ /* finnes den?*/
-    font-size: 3rem;
-}
-
-.font-3xlarge{
-    font-size: 2.25rem;
-}
-
-.font-2xlarge{
-    font-size: 1.75rem;
-}
-
-.font-xlarge{
-    font-size: 1.5rem;
-}
-
-.font-xlarge a {
-    color:#FFF;
-}
-
-.font-large{
-    font-size: 1.25rem;
-}
-
-.font-medium{
-    font-size: 1.125rem;
-}
-
-.font-small{
-    font-size: 1rem;
-}
-/* 
-font-xsmall = subjects
-*/
-.font-xsmall{
-    font-size: 0.875rem;
-    border-top: #000;
-}
-
-.bold{
-    font-weight: 700;
-}
 
 /* 
 course-information = intro-information
 */
+
+.background-index {
+    position: relative; /* Viktig for å kunne plassere bilde og tekst korrekt */
+    height: 60vh; /* Høyde for bakgrunnsseksjonen */
+    width: 60%; /* Full bredde */
+    overflow: hidden; /* Hindrer at elementer går utenfor containeren */
+    display: flex;
+    align-items: center; /* Sentrerer innholdet vertikalt */
+    justify-content: center;
+    margin: 2rem auto;
+
+}
+
+.background-index img {
+    position: absolute; /* Bildet skal ligge absolutt for å være bak teksten */
+    width: 100%; /* Bildet dekker hele bredden */
+    height: 100%; /* Bildet dekker hele høyden */
+    object-fit: cover; /* Sørger for at bildet dekker hele containeren uten å bli deformert */
+    z-index: -1; /* Sørger for at bildet ligger bak teksten */
+}
+
+.text-container {
+    position: relative; /* Sørger for at teksten ligger foran bildet */
+    z-index: 1; /* Sørger for at teksten vises over bildet */
+    color: white; /* Hvit tekst for bedre kontrast mot bakgrunnen */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Tekstskygge for bedre lesbarhet */
+}
 
 .course-information{ /* container*/
     margin-top: 100px;
@@ -567,56 +653,7 @@ change to solid icon
     font-size: 0.9em;
 }
 
-@media (max-width: 1200px) {
-    .curriculum {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 15px;
-        row-gap: 10px;
-    }
 
-    .curriculum-box {
-        padding: 16px;
-    }
-
-    .group-subject {
-        grid-column: span 3;
-        padding: 8px;
-    }
-}
-
-@media (max-width: 850px) {
-    .curriculum {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 15px;
-        row-gap: 10px;
-    }
-
-    .curriculum-box {
-        padding: 16px;
-    }
-
-    .group-subject {
-        grid-column: span 2;
-        padding: 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    .curriculum {
-        grid-template-columns: 1fr;
-        column-gap: 10px;
-        row-gap: 8px;
-    }
-
-    .curriculum-box {
-        padding: 12px;
-    }
-
-    .group-subject {
-        grid-column: span 1;
-        padding: 8px;
-    }
-}
 
 .master-program-box{
     margin-top: 10px;
@@ -835,6 +872,490 @@ margin-bottom: 10px;
 
 
 
+
+/*index slutt*/
+
+/*activity*/
+
+/* H3 og H2 overskrifter */
+.footer-col h3, .activity-events-table td h3, .col-1 h3 {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.h2-style {
+    display: flex;;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+/* felles font størrelser*/ 
+.fa-bars, .fa-xmark, .navn, .content p {
+    font-size: 1.6em;
+}
+/*100% av bilde/boks*/
+.body, .main-article .bakgrunnsbilde, .bubbles-background, .CSSgal .prev-next, .CSSgal .bullets {
+    width: 100%;
+}
+/*text-decoration: none*/
+.menu li a, .contact-us-links a, .navn a, .CSSgal .prev-next a, .col-1 a, .footer-col a, .col-2 a, #btn-to-top {
+    text-decoration-line: none;
+}
+/*felles farger*/
+.h2-style, .study-overview a, .menu li a, .contact-us-links a, .navn, .navn a, .info, .col-1 a, .footer-col a, .col-2 a, #btn-to-top, .contact-info ul li {
+    color: black;
+}
+/*felles plassering */ 
+.h2-style, .main-article, .activity-events, .weekly-recipes, .oppskrift-aside, .footer {
+    justify-content: center;
+}
+
+
+
+
+
+
+/* Styling for Main STARTER HER */
+/*Overskrift + bakgrunnsbilde*/
+.main-article {
+    position: relative; 
+    height: 25vh;
+    padding: 40vh 5vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.main-article .bakgrunnsbilde {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content h1 {
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 2px #ffffff;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+
+.content p {
+    margin-top: 5px;
+}
+
+
+/* Om oss + Kontakt oss */
+.activity-info {
+    position: relative;
+    color: #333;
+    padding: 4em 2em;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bubbles-background {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    z-index: -1; 
+    opacity: 0.7; 
+}
+
+.about-us {
+    display: flex;  
+    max-width: 860px; 
+    margin: 0 auto;   
+    gap: 2em;
+}
+
+.about-us-text h2 {
+    margin-top: 0;
+}
+
+.about-us p {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    opacity: 1;
+}
+.about-us-text {
+    grid-column-start: 2;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, .23);
+    padding: 1em;
+    padding-top: 2em;
+    height: 500px;
+}
+.activity-box-img {
+    border-radius: 50px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, .23);
+    height: 550px;
+    width: auto;
+}
+.contact-us{
+    display: flex;
+    align-items: center;
+    border-top: 1px #2e2e2e solid;
+    border-bottom: 1px #2e2e2e solid;
+    padding: 1.5rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+.contact-us-links a {
+    border: 2px solid black;
+    padding: 0.5em;
+    border-radius: 20px;
+}
+.contact-us-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.contact-us-links a:hover {
+    background-color: #484545;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-us-image img {
+    height: 300px
+}
+
+/* Kommende aktiviteter */
+.activity-logo {
+    height: 100px;
+    display: block;
+    margin: 2em auto;
+}
+
+/* Kommende aktiviteter som en tabell */
+
+.activity-events {
+    display: flex;
+    margin-top: 2em;
+    padding-bottom: 6em;
+}
+
+.activity-events-table {
+    width: 80%;
+    max-width: 800px;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.activity-events-table thead {
+    background-color: #a30e4e;
+    color: white;
+}
+
+.activity-events-table th, .activity-events-table td {
+    padding: 1em;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.activity-events-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+
+/* Styling for Ukens Oppskrifter*/
+/*Styling for image-silder. Store deler av koden er hentet fra RESPONSIVE CSS3 SLIDE CAROUSEL GALLERY: http://stackoverflow.com/a/34696029/383904*/
+.recipes {
+    padding-bottom: 100px;
+
+}
+.weekly-recipes {
+    display: flex;
+    flex-direction: row;
+    padding: 45px;
+    align-items: stretch;
+}
+
+.CSSgal {
+    background-color: #a14c99;
+    border: 6px double #000000;
+    position: relative;
+    overflow: hidden;/* For å skjule innhold som går utenfor silderen-siden man er på */
+    height: 100%;
+    max-width: 800px; 
+}
+
+.CSSgal s{
+    display: none; /*for å unngå at man blir scrollet nedover når man prøver å prøve slideren*/
+}
+
+.CSSgal .slider {
+    white-space: nowrap; /*for å unngå at inneholdet brytes i deler*/
+    transition: 0.7s ease-in-out;
+}
+
+.slider img {
+    height: 350px;
+    width: auto;
+}
+
+.navn {
+    padding-top: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+}
+.navn a:hover {
+    color: #f3742a;
+}
+
+.info {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Hvert enkelt side i slideren*/
+.CSSgal .slider > * {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    background: none 50% no-repeat;
+    background-size: cover;
+}
+
+.CSSgal .slide img {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #000000;
+}
+
+.CSSgal .prev-next {
+    position: absolute;
+    z-index: 1; /*for at knappene skal kunne ligge over de andre elementene*/
+    top: 50%;
+    height: 0;
+}
+
+.CSSgal .prev-next > div + div {
+    visibility: hidden;
+}
+
+.CSSgal .prev-next a {
+    background: #fff;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    opacity: 0.7;
+    transform: translateY(-50%); /* Flytter knappen opp halvparten av høyden */
+}
+
+.CSSgal .prev-next a + a {
+    right: 0px;
+}
+
+.CSSgal .bullets {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.CSSgal .bullets > a {
+    display: inline-block;
+    width: 25px;
+    height: 22px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 7px;
+    background:#fff
+}
+
+.CSSgal .bullets > a:hover {
+    transform: scale(1.2);
+}
+
+/*Vise hvilken silder-side er aktiv*/
+.CSSgal > s:target ~ .bullets > * {
+    background:#dcdada;
+}
+#s1:target ~ .bullets > *:nth-child(1) {
+    background: rgba(98, 75, 226, 0.5);
+}
+#s2:target ~ .bullets > *:nth-child(2) {
+    background: rgba(98, 75, 226, 0.5);
+}
+#s3:target ~ .bullets > *:nth-child(3) {
+    background: rgba(98, 75, 226, 0.5);
+}
+#s4:target ~ .bullets > *:nth-child(4) {
+    background: rgba(98, 75, 226, 0.5);
+}
+#s5:target ~ .bullets > *:nth-child(5) {
+    background: rgba(98, 75, 226, 0.5);
+}
+#s6:target ~ .bullets > *:nth-child(6) {
+    background: rgba(98, 75, 226, 0.5);
+}
+
+/* Skjuling og visning av prev/next-knappene */
+.CSSgal > s:target ~ .prev-next > * {
+    visibility: hidden; 
+}
+#s1:target ~ .prev-next > *:nth-child(1) {
+    visibility: visible;
+}
+#s2:target ~ .prev-next > *:nth-child(2) {
+    visibility: visible;
+}
+#s3:target ~ .prev-next > *:nth-child(3) {
+    visibility: visible;
+}
+#s4:target ~ .prev-next > *:nth-child(4) {
+    visibility: visible;
+}
+#s5:target ~ .prev-next > *:nth-child(5) {
+    visibility: visible;
+}
+#s6:target ~ .prev-next > *:nth-child(6) {
+    visibility: visible;
+}
+
+/* Slider animasjon. Når knappene blir tatt i bruk endres posisjonen til slider-sidene ved å bruke 
+transformering langs X-aksen, slik at innholdet sklir horisontalt. */
+#s1:target ~ .slider {
+    transform: translateX(0%);
+}
+#s2:target ~ .slider {
+    transform: translateX(-100%);
+}
+#s3:target ~ .slider {
+    transform: translateX(-200%);
+}
+#s4:target ~ .slider {
+    transform: translateX(-300%);
+}
+#s5:target ~ .slider {
+    transform: translateX(-400%);
+}
+#s6:target ~ .slider {
+    transform: translateX(-500%);
+}
+
+/*Styling for "5 gode tips til studentmaten"*/
+.oppskrift-aside {
+    padding: 15px;
+    padding-left: 30px;
+    align-items: center;
+    height: auto;
+    max-height: 500px;
+    background-color: #f3742a;
+    border-radius: 40px;
+    margin-left: 25px;
+}
+
+.oppskrift-aside li {
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+/* style et knappe-utseende på link opp til anker*/
+#btn-to-top { 
+    background: #ef5800;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    padding: 1em;
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+/* Media query for.... */
+
+/* Under 450px */
+@media (max-width: 479px) {
+    .main-article {
+        height: 20vh;
+        padding: 5vh 3vw;
+    }
+    
+    .content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .content p {
+        font-size: 0.8rem;
+        max-width: 90%;
+    }
+    .curriculum {
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        row-gap: 8px;
+    }
+
+    .curriculum-box {
+        padding: 12px;
+    }
+
+    .group-subject {
+        grid-column: span 1;
+        padding: 8px;
+    }
+}
+/*Under 995px og over 450px*/
+@media (min-width: 480px) and (max-width: 750px) {
+    .main-article {
+        height: 30vh; 
+        padding: 10vh 5vw;
+    }
+    
+    .content h1 {
+        font-size: 3rem;
+    }
+    
+    .content p {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .weekly-recipes {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .CSSgal {
+        max-width: 500px
+    }
+
+    .CSSgal .slide img {
+        width: 400px;
+        height:350px
+    }
+
+    .oppskrift-aside {
+        max-width: 500px;
+        padding: 50px;
+        margin-top: 20px;
+    }
+    .bubbles-background {
+        height: 50%;
+    }
+    .about-us img {
+        display: flex;
+        flex-grow: 1;
+        margin-right:3rem;
+        margin-left: 3rem;
+        }
+}
 @media only screen and (max-width: 784px) {
     .bachelorprogram-details{
         grid-template-columns: repeat(1, 1fr);
@@ -890,4 +1411,153 @@ margin-bottom: 10px;
         display: none;
     }
 }
-/*index slutt*/
+@media only screen and (max-width: 799px) {
+    .weekly-recipes {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .CSSgal {
+        max-width: 600px
+    }
+
+    .CSSgal .slide img {
+        width: 450px;
+        height:280px
+    }
+
+    .oppskrift-aside {
+        max-width: 500px;
+        padding: 50px;
+        margin-top: 20px;
+    }
+    .bubbles-background {
+        height: 65%;
+    }
+    .about-us {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-us img {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    }
+}
+@media (max-width: 850px) {
+    .curriculum {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+        row-gap: 10px;
+    }
+
+    .curriculum-box {
+        padding: 16px;
+    }
+
+    .group-subject {
+        grid-column: span 2;
+        padding: 8px;
+    }
+}
+/* Media query for... */
+@media only screen and (max-width: 1049px) {
+    .weekly-recipes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .CSSgal {
+        max-width: 750px
+    }
+
+    .CSSgal .slide img {
+        width: 600px;
+        height:400px
+    }
+
+    .oppskrift-aside {
+        max-width: 800px;
+        padding: 50px;
+        margin-top: 20px;
+    }
+    .contact-us-links {
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-us-image img {
+        height: 200px
+    }
+ 
+
+}
+/* Media query for....*/
+@media (max-width: 1220px) and (min-width: 1050px) {
+
+    .CSSgal {
+        max-width: 590px;
+    }
+
+    .CSSgal .slide img {
+        width: 490px;
+        height:300px
+    }
+
+    .oppskrift-aside {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .oppskrift-aside li {
+        margin-bottom: 25px;
+        font-style: italic;
+        font-size: 1.1em;
+    }
+}
+@media (max-width: 1200px) {
+    .curriculum {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 15px;
+        row-gap: 10px;
+    }
+    
+    .curriculum-box {
+        padding: 16px;
+    }
+    
+    .group-subject {
+        grid-column: span 3;
+        padding: 8px;
+    }
+}
+    
+
+
+@media only screen and (max-width:  1320px) {
+    .CSSgal {
+        max-width: 710px; 
+    }
+/*
+    .CSSgal .slide img {
+        width: 500px;
+    }
+
+    .oppskrift-aside {
+        width: 100%;
+        margin-top: 20px;
+    }
+        */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
