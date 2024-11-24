@@ -6,7 +6,7 @@
     <title>GitHub</title>
     <link rel ="stylesheet" href="./CSS/style.css">
     <!--OsloMet logo i browser tap (https://www.geeksforgeeks.org/how-to-add-a-browser-tab-icon-favicon-for-a-website/)-->
-    <link rel="icon" href=""  type="image/x-icon"> 
+    <link rel="icon" href="../HTML/multimedia/oslomet_logo_tap.jpeg"  type="image/jpeg"> 
     <!--Ikonene vi har tatt i bruk er hentet fra front-awesome (https://www.w3schools.com/icons/fontawesome5_intro.asp)-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -14,8 +14,8 @@
     <!--Header: felles for alle sider-->
     <header>
         <!--Første delen av headeren (part 1) som består av oslomet-logoen og navigasjonsbaren-->
-        <div class="header-part1">
-            <a href="https://www.oslomet.no/"> <img src="../Images/oslomet_logo.jpeg" alt="Oslomet-Forside" class="school-logo"></a> 
+        <div class="header-part1 flex-center">
+            <a href="https://www.oslomet.no/"> <img src="../HTML/multimedia/oslomet_logo.jpeg" alt="Oslomet Logo" class="school-logo" loading="lazy"></a> <!--Bildekilde: Fotograf: Oslomet, Kilde: https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap , men justert bakgrunnsfarge, -->
          <!--Hamburger Meny. Her er planen at utseende på menyen skal endres når man trykker den, slik at det er enklet å se om den er trykket på eller ikke-->
          <input class="side-menu" type="checkbox" id="side-menu" />
          <div class="menu-display">
@@ -27,9 +27,9 @@
          <!--Navigasjonsbar. Her er en oversikt over alle sidene våre-->
          <nav class="navigation-bar">
             <ul class="menu flex-row">
-                <li><a href="index.html">Index</a></li>
+                <li><a class="active padding-0-3" href="index.html">Index</a></li><!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
                 <li><a href="activity.html">Activity</a></li>
-                <li><a class="active" href="github.html">GitHub</a></li><!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
+                <li><a href="github.html">GitHub</a></li>
                 <li><a href="accessibility.html">Accessibility</a></li>
             </ul>
          </nav>
@@ -37,7 +37,7 @@
        <!--Andre delen av headeren (part 2) som består av "studieoversikt"-->
         <div class="header-part2"></div>
         <div class="study-overview">
-            <a href="https://www.oslomet.no/studier/studieoversikt" class="study-overview-link">
+            <a href="https://www.oslomet.no/studier/studieoversikt" class="study-overview-link padding-0-3">
             <i class="fa-solid fa-less-than"></i>Studieoversikt</a>
         </div>
     </header>

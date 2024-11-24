@@ -6,7 +6,7 @@
     <title>Accessibility</title>
     <link rel ="stylesheet" href="./CSS/style.css">
     <!--OsloMet logo i browser tap (https://www.geeksforgeeks.org/how-to-add-a-browser-tab-icon-favicon-for-a-website/)-->
-    <link rel="icon" href=""  type="image/x-icon"> 
+    <link rel="icon" href="../HTML/multimedia/oslomet_logo_tap.jpeg"  type="image/jpeg"> 
     <!--Ikonene vi har tatt i bruk er hentet fra front-awesome (https://www.w3schools.com/icons/fontawesome5_intro.asp)-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -14,8 +14,8 @@
     <!--Header: felles for alle sider-->
     <header>
         <!--Første delen av headeren (part 1) som består av oslomet-logoen og navigasjonsbaren-->
-        <div class="header-part1">
-            <a href="https://www.oslomet.no/"> <img src="../Images/oslomet_logo.jpeg" alt="Oslomet-Forside" class="school-logo"></a> 
+        <div class="header-part1 flex-center">
+            <a href="https://www.oslomet.no/"> <img src="../HTML/multimedia/oslomet_logo.jpeg" alt="Oslomet Logo" class="school-logo" loading="lazy"></a> <!--Bildekilde: Fotograf: Oslomet, Kilde: https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap , men justert bakgrunnsfarge, -->
          <!--Hamburger Meny. Her er planen at utseende på menyen skal endres når man trykker den, slik at det er enklet å se om den er trykket på eller ikke-->
          <input class="side-menu" type="checkbox" id="side-menu" />
          <div class="menu-display">
@@ -26,49 +26,88 @@
          </div> 
          <!--Navigasjonsbar. Her er en oversikt over alle sidene våre-->
          <nav class="navigation-bar">
-            <ul class="menu">
-                <li><a href="index.html">Index</a></li>
+            <ul class="menu flex-row">
+                <li><a class="active padding-0-3" href="index.html">Index</a></li><!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
                 <li><a href="activity.html">Activity</a></li>
                 <li><a href="github.html">GitHub</a></li>
-                <li><a class="active" href="accessibility.html">Accessibility</a></li><!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
+                <li><a href="accessibility.html">Accessibility</a></li>
             </ul>
          </nav>
         </div> 
        <!--Andre delen av headeren (part 2) som består av "studieoversikt"-->
         <div class="header-part2"></div>
         <div class="study-overview">
-            <a href="https://www.oslomet.no/studier/studieoversikt" class="study-overview-link">
+            <a href="https://www.oslomet.no/studier/studieoversikt" class="study-overview-link padding-0-3">
             <i class="fa-solid fa-less-than"></i>Studieoversikt</a>
         </div>
     </header>
-    <main>
-      <article> 
+    <main class="github-page">
+      <!--En kort introduksjon om samarbeidet i GitHub-->
+      <article class="introduction padding-1-25 rounded-squared-box">
           <h1>Accessibility</h1>
-          <p> </p>
-          <h3> </h3>
-          <p> </p>
+          <h2 class="h2-style">Skriv noe her..</h2>
+          <p>
+              skriv noe her..
+          </p>
       </article>
-      <article> 
-          <h3> </h3>
+
+      <!--Commit-historikk fra repositoryen inkludert to bilder-->
+      <article class="code-commit padding-1-25">
+          <h2 class="h2-style">Skriv noe her..</h2>
+          <p>
+             skriv noe her...
+          </p>
+          <div class="image-grid shadow width-100">
+              <figure>
+                  <img src="" alt="">
+                  <figcaption class="padding-0-4">Skriv noe her</figcaption>
+              </figure>
+              <figure>
+                  <img src="" alt="">
+                  <figcaption class="padding-0-4">Skriv noe her..</figcaption>
+              </figure>
+          </div>
       </article>
-      <aside>
-          <h4> </h4>
-      </aside>
-  </main>
+
+      <!--Spesifikke endringer i repositoryen inkludert to bilder-->
+      <article class="specific-code-changes padding-1-25">
+          <h2 class="h2-style">Skriv noe her..</i></h2>
+          <p>
+            SKriv noe her...
+          </p>
+          <div class="image-grid shadow width-100">
+              <figure>
+                  <img src="" alt="" class="rounded-squared-box">
+                  <figcaption class="padding-0-4" class="rounded-squared-box">Skriv noe her..</figcaption>
+              </figure>
+              <figure>
+                  <img src="" alt="" class="rounded-squared-box">
+                  <figcaption class="padding-0-4">Skriv noe her..</figcaption>
+              </figure>
+          </div>
+      </article>
+
+      <!--En liste med fordeler ved GitHub-->
+      <article class="benefits padding-1-25">
+          <h2 class="h2-style">Skriv noe her...</h2>
+          <ul>
+          </ul>
+      </article>
+    </main>
   <!--Footer: felles for alle sidene våre-->
   <footer>
-  <div class="footer">
+  <div class="footer flex-row">
     <!--første del av footeren: kort info om skolen-->
-      <div class="footer-col col-1">
+      <div class="footer-col col-1 flex-column">
           <h3>OSLO METROPOLITAN UNIVERSITY</h3>
           <h4>STORBYUNIVERSITET<h4>
               <p>Postboks 4, St. Olavs plass</p>
               <p>0130 Oslo</p>
               <p>Tlf.: 67 23 50 00 </p>
-              <a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a>
+              <a href="https://www.oslomet.no/om/kontakt" class="space-top-xsmall bold">Kontakt oss</a>
           </div>
           <!--andre delen av footeren: en liste med nyttig lenker fra OsloMet-->
-          <div class="footer-col col-2">
+          <div class="footer-col col-2 flex-column">
               <h3>Nyttige lenker</h3>
               <ul>
                   <li> <a href="https://www.oslomet.no/en">English</a> </li>
@@ -80,7 +119,7 @@
               </ul>
           </div>
           <!--tredje del av footeren: en oversikt over skolen sosiale medier-->
-          <div class="footer-col col-3">
+          <div class="footer-col col-3 flex-column">
               <h3>Sosiale medier</h3>
               <ul class="social-links">
                   <li> <a href="https://www.facebook.com/oslomet/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a> </li>
