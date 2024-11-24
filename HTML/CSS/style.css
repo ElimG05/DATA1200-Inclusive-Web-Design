@@ -319,15 +319,20 @@ header {
 .background-index {
     position: relative;
     height: 60vh;
-    width: 60%;
     overflow: hidden;
     margin: 2rem auto;
 }
 
 .background-index img {
     position: absolute;
+    width: 100;
+    height: 100%;
     object-fit: cover;
     z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Flytter bildet til midten */
+    
 }
 
 .course-information {
@@ -583,21 +588,25 @@ iframe {
     border: 1px solid #a8a8a8;
 }
 
+.contact-leader {
+    display: flex;
+    column-gap: 40px;
+    align-items: stretch;
+}
+
 .professor {
     border-top: 1px #2e2e2e solid;
     border-bottom: 1px #2e2e2e solid;
     padding: 2rem 0;
     height: 150px;
 }
+.professor img {
+    width: 100px;
+}
 
 .professor .contact {
     margin-bottom: 10px;
 }
-
-.semester h4 {
-    font-size: 1em;
-}
-
 .person .contact {
     margin-top: 10px;
 }
@@ -605,12 +614,6 @@ iframe {
 .professor .professor-info {
     flex: 1;
     padding: 0 2rem;
-}
-
-.contact-leader {
-    display: flex;
-    column-gap: 40px;
-    align-items: stretch;
 }
 
 .qna-education {
