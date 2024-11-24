@@ -123,6 +123,10 @@ a {
     padding: 1.25rem;
 }
 
+.padding-1 {
+    padding: 1rem;
+}
+
 .space-top-xsmall {
     margin-top: 0.65rem;
 }
@@ -708,7 +712,7 @@ iframe {
 
 .bottom-card .card-img img {
     width: 400px;
-    height: 330px;
+    height: 250px;
     object-fit: cover;
     border-radius: 5px;
 }
