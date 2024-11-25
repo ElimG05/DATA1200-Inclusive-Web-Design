@@ -184,6 +184,10 @@ header {
     position: sticky;
 }
 
+.menu a:hover {
+    font-size: 1.5em;
+    transition: 0.4s;
+}
 
 .navigation-bar {
     padding: 50px 0 0 0;
@@ -740,9 +744,6 @@ iframe {
 .fa-bars, .fa-xmark, .navn, .activity-content p {
     font-size: 1.6em;
     font-weight: bolder;
-}
-
-.activity-content p {
     -webkit-text-stroke: 0.6px #ffffff
 }
 
