@@ -27,10 +27,10 @@
          <!--Navigasjonsbar. Her er en oversikt over alle sidene våre-->
          <nav class="navigation-bar">
             <ul class="menu flex-row">
-                <li><a class="active padding-0-3" href="index.html">Index</a></li><!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
+                <li><a href="index.html">Index</a></li><!--Isolerer den siden man er på under "active", slik at det er enkelt for å se hvilken side man befinner seg på-->  
                 <li><a href="activity.html">Activity</a></li>
                 <li><a href="github.html">GitHub</a></li>
-                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a class="active padding-0-3" href="accessibility.html">Accessibility</a></li>
             </ul>
          </nav>
         </div> 
@@ -42,57 +42,93 @@
         </div>
     </header>
     <main class="github-page">
-      <!--En kort introduksjon om samarbeidet i GitHub-->
+      <!--En kort introduksjon om Accessbility-->
       <article class="introduction padding-1-25 rounded-squared-box">
           <h1>Accessibility</h1>
-          <h2 class="h2-style">Skriv noe her..</h2>
           <p>
-              skriv noe her..
+            Accessbility på sider er en viktig faktor for å sikre at alle, uavhengig av funkjsjonsnivå, har mulighet til å bruke digitale tjenester. Det er lovpålagt i mange land,  blandt dem er Norge med Likestillings- og diskrimineringsloven, som krever dette.
           </p>
       </article>
 
-      <!--Commit-historikk fra repositoryen inkludert to bilder-->
+      <!--Lighthouse test av nettsidene-->
       <article class="code-commit padding-1-25">
-          <h2 class="h2-style">Skriv noe her..</h2>
+          <h2 class="h2-style">Lighthouse</h2>
           <p>
-             skriv noe her...
+            Vi brukte den automatiserte testen ‘lighthouse’, et verktøy for testing av nettsiders ytelse og tilgjengelighet, for å teste sidenes ytelse og accessibility. 
           </p>
           <div class="image-grid shadow width-100">
               <figure>
-                  <img src="" alt="">
-                  <figcaption class="padding-0-4">Skriv noe her</figcaption>
+                  <img src="../HTML/multimedia/lighthouse-activity_test1.jpg" alt="Lighthouse test av acticity">
+                  <figcaption class="padding-0-4">Activity</figcaption>
               </figure>
               <figure>
-                  <img src="" alt="">
-                  <figcaption class="padding-0-4">Skriv noe her..</figcaption>
+                  <img src="../HTML/multimedia/lighthouse-index_test2.jpg" alt="Lighthouse test av index">
+                  <figcaption class="padding-0-4">Index</figcaption>
               </figure>
           </div>
       </article>
 
-      <!--Spesifikke endringer i repositoryen inkludert to bilder-->
+      <!--Endringer ut ifra lighthouse tilbakemelding-->
       <article class="specific-code-changes padding-1-25">
-          <h2 class="h2-style">Skriv noe her..</i></h2>
-          <p>
-            SKriv noe her...
+          <p>  
+                Spesifikt for actvity så endret vi farge på tekst med for liten kontrast, for å gjøre det lettere å lese:
           </p>
           <div class="image-grid shadow width-100">
-              <figure>
-                  <img src="" alt="" class="rounded-squared-box">
-                  <figcaption class="padding-0-4" class="rounded-squared-box">Skriv noe her..</figcaption>
-              </figure>
-              <figure>
-                  <img src="" alt="" class="rounded-squared-box">
-                  <figcaption class="padding-0-4">Skriv noe her..</figcaption>
-              </figure>
+                  <img src="../HTML/multimedia/accessibility-farge_endringer.jpg" alt="fargeendring før og etter bilde" class="rounded-squared-box">
           </div>
       </article>
 
-      <!--En liste med fordeler ved GitHub-->
-      <article class="benefits padding-1-25">
-          <h2 class="h2-style">Skriv noe her...</h2>
-          <ul>
-          </ul>
-      </article>
+      <article class="specific-code-changes padding-1-25">
+        <p>  
+            I tillegg, i tråd med ‘lighthouse’ sine tilbakemeldinger så passet vi på at linker i tekst var passende beskrivende, og la inn aria-labels ellers:
+        </p>
+        <div class="image-grid shadow width-100">
+                <img src="../HTML/multimedia/accessibility-aria_label.jpg" alt="eksempel på aria-label" class="rounded-squared-box">
+        </div>
+    </article>
+
+    <article class="specific-code-changes padding-1-25">
+        <p>  
+            Aria-label for ‘slider’ har fått en aria-live= «polite» for å informere skjermlesere om at siden kan endres dynamisk, men skjermleseren vil fullføre det den leser først:
+        </p>
+        <div class="image-grid shadow width-100">
+                <img src="../HTML/multimedia/accessibility-polite_slider.jpg" alt="justeringer på slider for skjermoppleser" class="rounded-squared-box">
+        </div>
+    </article>
+
+      <!--Andre justeringer utenom lighthouse tilbakemeldinger-->
+      <article class="specific-code-changes padding-1-25">
+        <h2 class="h2-style">Andre justeringer</i></h2>
+        <p>  
+            Utenom dette så har vi justert sidene for å gjøre dem mest mulig enkle for alle brukere.
+            Vi laget en link som gir mulighet for å hoppe over navigasjonen for å gjøre siden enklere for skjermopplesere.
+        </p>
+        <div class="image-grid shadow width-100">
+                <img src="../HTML/multimedia/accessibility-skip_to_main.jpg" alt="vise kode som hopper til main" class="rounded-squared-box">
+        </div>
+    </article>
+    <article class="specific-code-changes padding-1-25">
+        <p>  
+            Vi har også lagt til captions og scopes på tables for å passe på at skjermopplesere leser opp at header er kolonneoverskrifter, så tabellen blir mer oversiktlig;
+        </p>
+        <div class="image-grid shadow width-100">
+                <img src="../HTML/multimedia/accessibility-accsessible_table.jpg" alt="viser mer accessible table" class="rounded-squared-box">
+        </div>
+    </article>
+
+    <!--Ny test med lighthouse-->
+    <article class="specific-code-changes padding-1-25">
+        <h2 class="h2-style">Lighthouse</i></h2>
+        <p>
+            Våre første resultater viste at activity-siden fikk 14/16 poeng og index-siden fikk 19/22 poeng. Etter flere justeringer, inkludert anbefalinger fra Lighthouse og egne justeringer, fikk vi 25/25 og 25/27 poeng.
+        </p>
+        <div class="image-grid shadow width-100">
+            <figure>
+                <img src="../HTML/multimedia/lighthouse-activity-index_test3.jpg" alt="Lighthouse test bedre resultater" class="rounded-squared-box">
+                <figcaption class="padding-0-4">Skriv noe her..</figcaption>
+            </figure>
+        </div>
+    </article>
     </main>
   <!--Footer: felles for alle sidene våre-->
   <footer>
