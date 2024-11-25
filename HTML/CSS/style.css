@@ -27,7 +27,6 @@ h1, p {
 .main-title {
     font-size: 3.5rem;
     color: #ffffff;
-    -webkit-text-stroke: 2px #000000
 }
 
 .fa-solid, .fa-regular {
@@ -37,6 +36,11 @@ h1, p {
 
 .fa-greater-than {
     font-size: 1rem;
+}
+
+.fa-greater-than:hover {
+    font-size: larger;
+    transition: 0.3s ease-in-out;
 }
 
 .link-style {
@@ -81,7 +85,7 @@ p {
 }
 
 .font-medium {
-    font-size: 1.125rem;
+    font-size: 1.1rem;
 }
 
 .font-small {
@@ -185,7 +189,7 @@ header {
 }
 
 .menu a:hover {
-    font-size: 1.5em;
+    font-size: 1.2rem;
     transition: 0.4s;
 }
 
@@ -382,10 +386,10 @@ header {
 }
 
 .bachelorprogram-details {
-    margin-top: 2.5rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolonner */
+    gap: 2rem;
+    margin-top: 2.5rem;
 }
 
 .bachelorprogram-details-box {
@@ -424,7 +428,7 @@ header {
 
 .curriculum {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* Standard for større skjermer (4 kolonner) */
     padding-top: 8px;
     padding-bottom: 10px;
     column-gap: 25px;
@@ -573,7 +577,7 @@ iframe {
 
 .contact-leader {
     display: flex;
-    column-gap: 40px;
+    column-gap: 20px;
     align-items: stretch;
 }
 
@@ -606,7 +610,7 @@ iframe {
 
 .professor .professor-info {
     flex: 1;
-    padding: 0 2rem;
+    padding: 0 0 0 2rem;
 }
 
 .qna-education {
@@ -682,34 +686,43 @@ iframe {
 .studenthistory {
     margin-bottom: 20px;
 }
-
 .bottom-card {
-    height: 400px;
-}
-
-.bottom-card .card-text {
-    padding-left: 30px;
-    flex: 1;
-}
-
-.bottom-card .card-text h3 {
-    margin-top: 2rem;
-}
-
-.bottom-card .card-text p {
-    line-height: 1.5;
+    display: flex;
+    flex-direction: column; /* Standard: vertikal layout på små skjermer */
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    max-width: 100%; 
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .bottom-card .card-img {
-    flex: 1;
-    height: 400px;
+    width: 100%; 
+    height: auto; 
+    max-width: 100%;
 }
 
 .bottom-card .card-img img {
-    width: 500px;
-    height: 330px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 5px;
+}
+
+.bottom-card .card-text {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bottom-card .card-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.bottom-card .card-text p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 
 .studenthistories-more {
@@ -1087,204 +1100,298 @@ transformering langs X-aksen, slik at innholdet sklir horisontalt. */
     z-index: 1000;
 }
 
-@media only screen and (max-width: 550px) {
-    .school-logo {
-        max-width: 130px;
-    }
+/* 1200px og større (desktop) */
+@media only screen and (min-width: 1200px) {
+
     .main-activity {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
-    
+
+    .bubbles-background {
+        height: 60%;
+    }
+
+    .about-us-text {
+        min-width: 350px;
+    }
+
+    .bottom-card {
+        flex-direction: row; /* Horisontal layout */
+        justify-content: space-between;
+        height: 40vh;
+    }
+
+    .bottom-card .card-text {
+        width: 50%;
+    }
+
+    .bottom-card .card-img {
+        width: 45%;
+    }
+
+    /* Curriculum layout: 4 kolonner, 4 rader */
+    .curriculum {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 kolonner */
+        grid-template-rows: repeat(4, auto); /* 4 rader */
+        column-gap: 25px;
+        row-gap: 12px;
+    }
+}
+
+/* 1050px - 1199px (små desktop) */
+@media only screen and (max-width: 1199px) and (min-width: 1050px) {
+
+    .main-activity {
+        font-size: 1rem;
+    }
+
     .bubbles-background {
         height: 50%;
     }
+
     .about-us-text {
         min-width: 300px;
     }
 
+    .bachelorprogram-details {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Tre kolonner */
+        gap: 2rem;
+    }
+
+    .bachelorprogram-details-box.border-bottom-section {
+        border-bottom: none;
+    }
+
+    /* Curriculum layout: 3 kolonner, 3 rader */
     .curriculum {
-        grid-template-columns: 1fr;
-        column-gap: 10px;
-        row-gap: 8px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+        grid-template-rows: repeat(3, auto); /* 3 rader */
+        gap: 2rem;
     }
 
-    .curriculum-box {
-        padding: 12px;
+    .courses {
+        font-size: 0.75rem;
+        grid-template-columns: repeat(2, 1fr); /* To kolonner */
+        gap: 10px;
     }
-
-    .group-subject {
-        grid-column: span 1;
-        padding: 8px;
-    }
-    .oppskrift-aside, .oppskrift-aside li {
-        max-height: 655px;
-    }
-    
 }
-@media only screen and (max-width: 850px) {
+
+/* 800px - 1049px (tablets og små skjermer) */
+@media only screen and (max-width: 1049px) and (min-width: 800px) {
+
+    .main-activity {
+        font-size: 0.9rem;
+    }
+
+    .bubbles-background {
+        height: 50%;
+    }
+
+    .about-us-text {
+        font-size: 0.9rem;
+        min-width: 100%;
+    }
+
+    .bachelorprogram-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* To kolonner */
+        gap: 2rem;
+    }
+
+    .bachelorprogram-details-box.border-bottom-section {
+        border-bottom: none;
+    }
+
+    /* Curriculum layout: 2 kolonner, 2 rader */
     .curriculum {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 15px;
-        row-gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr; /* En kolonne */
     }
 
-    .curriculum-box {
-        padding: 16px;
+    .contact-leader {
+        font-size: small;
+        flex-direction: column; /* Vertikal layout */
+        row-gap: 5px; /* Plass mellom elementene */
     }
 
-    .group-subject {
-        grid-column: span 2;
-        padding: 8px;
+    .bottom-card .card-text {
+        width: 100%;
+        text-align: center;
     }
-    #side-menu:checked+.menu-display+.navigation-bar, .menu-display{
-        display:block
+
+    .bottom-card .card-img {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Endringer for courses */
+    .courses {
+        font-size: 0.75rem;
+        grid-template-columns: repeat(2, 1fr); /* To kolonner */
+        gap: 10px;
+    }
 }
 
-.menu-exit {
-    display: none;
-}
+/* 550px - 799px (mobil og små enheter) */
+@media only screen and (max-width: 799px) and (min-width: 550px) {
 
-.navigation-bar{
-    display:none;
-    position:absolute;
-    top:100px;
-    right:0px;
-    width:100vw;
-    background-color:#ff9310;
-    border-radius:20px;
-    z-index:1;
-    padding: 0 0 0 0;
-}
-.navigation-bar .menu{ 
-    flex-direction: column; /**/
-    align-items:end;
-    justify-content: end;
+    .bachelorprogram-details {
+        display: grid; /* Vis som grid */
+        grid-template-columns: 1fr; /* Én kolonne */
+        gap: 1.5rem;
+    }
 
-}
-.menu a:hover {
-    color: #fff7f7;
-    transition: 0.4s;
-}
-.school-logo,.study-overview{
-    padding-left:35px
+    .bachelorprogram-details-box {
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
 
-}
+    .curriculum, .curriculum-box {
+        display: grid;
+        grid-template-columns: 1fr; /* En kolonne */
+    }
 
-.bubbles-background {
-    height: 65%;
-}
-.activity-info {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-.contact-us-image img {
-    margin-bottom: 1em;
-}
+    .index .course-information {
+        margin: 40px auto;
+        max-width: 100%;
+    }
 
-.bachelorprogram-details {
-    grid-template-columns: repeat(1, 1fr);
-}
+    .main-title {
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 10px 0;
+    }
 
-.course-information, .course-information-small, .course-information-large {
-    width: 100%;
-}
+    .course {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
 
-.main-index {
-    width: 100%;
-}
+    .bottom-card {
+        flex-direction: column; /* Vertikal layout */
+        width: 100%;
+        padding: 10px;
+    }
 
-.bottom-card {
-    height: auto;
-    flex-direction: column;
-    row-gap: 30px;
-}
+    .bottom-card .card-text {
+        width: 100%;
+        text-align: center;
+    }
 
-.bottom-card .card-img {
-    width: 100%;
-}
+    .bottom-card .card-img {
+        width: 100%;
+        margin-top: 10px;
+    }
 
-.bottom-card .card-text {
-    padding: 2rem 0 0 50px;
-}
-
-.courses {
-    grid-template-columns: 1fr;
-}
-
-.contact-leader {
-    flex-direction: column;
-    row-gap: 20px;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#oversikt-sm {
-    display: flex;
-    flex-direction: column;
-    row-gap: 12px;
-}
-
-#oversikt, #studieoversikt {
-    display: none;
-}
-.main-article {
-    height: 45vh; 
-    padding: 10vh 5vw; 
-}
-.activity-content h1 {
-    font-size: 2.2rem;
-}
-.activity-content p {
-    font-size: 0.9rem;
-    -webkit-text-stroke: 0;
-}
-.navn {
-    font-size: 1.3em;
-}
-.CSSgal {
-    max-width: 295px;
-}
-
-.CSSgal .slide img {
-    width: 245px;
-    height: 150px;
-}
-}
-
-@media only screen and (max-width: 1050px) {
-    .weekly-recipes {
+    .contact-leader {
+        font-size: 0.8rem;
         flex-direction: column;
-        align-items: center;
-    }
-    .contact-us-links {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media only screen and (max-width: 1200px) {
-    .curriculum {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 15px;
-        row-gap: 10px;
+        row-gap: 5px;
     }
 
-    .curriculum-box {
-        padding: 16px;
+    .contact-leader img {
+        height: 15vh;
+        width: auto;
     }
-    
-    .group-subject {
-        grid-column: span 3;
-        padding: 8px;
+
+    .bottom-card {
+        flex-direction: column; /* Vertikal layout */
+        padding: 10px;
+        width: 100%;
     }
-    .oppskrift-aside, .oppskrift-aside li {
-        font-size: 0.9em;
-        padding-left: 0%;
+
+    .courses {
+        font-size: 0.75rem;
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
-    
+}
+
+/* For skjermstørrelser mindre enn 550px */
+@media only screen and (max-width: 550px) {
+
+    .bachelorprogram-details {
+        display: block; /* Vis som blokk (én kolonne) under 550px */
+        padding: 0 10px;
+    }
+
+    .bachelorprogram-details-box {
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .bachelorprogram-details-box.border-bottom-section {
+        border-bottom: none;
+    }
+
+    .curriculum, .curriculum-box {
+        display: block; /* Endre layout til blokk */
+    }
+
+    .index .course-information {
+        margin: 40px auto;
+        max-width: 100%;
+    }
+
+    .main-title {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .course {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .contact-leader img {
+        height: 15vh;
+        width: auto;
+    }
+
+    .bottom-card {
+        flex-direction: column; /* Vertikal layout */
+        padding: 10px;
+        width: 100%;
+    }
+
+    .bottom-card {
+        flex-direction: column; /* Vertikal layout */
+        width: 100%;
+        padding: 10px;
+    }
+
+    .bottom-card .card-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bottom-card .card-img {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .contact-leader {
+        font-size: 0.8rem;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    .courses {
+        font-size: 0.75rem;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .course-content-optional {
+        font-size: small;
+        flex-direction: column;
+    }
 }
 
 
