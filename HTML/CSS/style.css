@@ -160,6 +160,23 @@ a {
     width: 100%;
 }
 
+/*felles styling for tables*/
+.table-styling {
+    width: 80%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.table-styling th, .table-styling td {
+    padding: 1em;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.table-styling tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
 /* Styling for Header */
 header {
     background-color: var(--bgcolor);
@@ -398,6 +415,11 @@ header {
 
 .course-content p {
     margin-block: 8px;
+}
+
+.index-thead {
+    background-color: var(--brand-color);
+    color: #ffffff;
 }
 
 .curriculum {
@@ -714,7 +736,7 @@ iframe {
 }
 
 /* Spesielt for Activity */
-.footer-col h3, .activity-events-table td h3, .col-1 h3 {
+.footer-col h3, .table-styling td h3, .col-1 h3 {
     font-weight: bold;
     margin-bottom: 2px;
 }
@@ -836,29 +858,15 @@ iframe {
     margin: 4em auto;
 }
 
-/* Kommende aktiviteter som en tabell */
 .activity-events {
     display: flex;
     margin-top: 2em;
     padding-bottom: 6em;
 }
 
-.activity-events-table {
-    width: 80%;
-    font-size: 1em;
-    margin-top: 1em;
-    border-collapse: collapse;
-}
-
-.activity-events-table thead {
+.activity-thead {
     background-color: #a30e4e;
     color: #ffffff;
-}
-
-.activity-events-table th, .activity-events-table td {
-    padding: 1em;
-    text-align: center;
-    border: 1px solid #ddd;
 }
 
 
